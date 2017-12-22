@@ -1,0 +1,1152 @@
+1513833254770	geckodriver	INFO	geckodriver 0.19.1
+1513833254778	geckodriver	INFO	Listening on 127.0.0.1:39421
+1513833255220	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.TrWRvXmPbTmg"
+1513833271138	Marionette	INFO	Enabled via --marionette
+1513833324060	Marionette	INFO	Listening on port 38437
+1513834774433	geckodriver	INFO	geckodriver 0.19.1
+1513834774456	geckodriver	INFO	Listening on 127.0.0.1:42757
+1513834775967	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.jsQ1ZT1sdlfM"
+1513834791918	Marionette	INFO	Enabled via --marionette
+[Parent 80092, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Parent 80092, Gecko_IOThread] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc, line 22
+[Parent 80092, Gecko_IOThread] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc, line 22
+[Parent 80092, Gecko_IOThread] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc, line 22
+[Parent 80092, Gecko_IOThread] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc, line 22
+[Parent 80092, Gecko_IOThread] WARNING: pipe error (51): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Parent 80092, Gecko_IOThread] WARNING: pipe error (53): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Parent 80092, Gecko_IOThread] WARNING: pipe error (55): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Parent 80092, Gecko_IOThread] WARNING: pipe error (60): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Parent 80092, Gecko_IOThread] WARNING: pipe error (62): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513834860012	geckodriver	INFO	geckodriver 0.19.1
+1513834860027	geckodriver	INFO	Listening on 127.0.0.1:49767
+1513834860277	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.jh7gUgKoy62q"
+1513834867949	Marionette	INFO	Enabled via --marionette
+1513834885015	Marionette	INFO	Listening on port 39373
+1513834885442	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513834885557	Marionette	DEBUG	Register listener.js for window 2147483649
+1513834887898	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513834889610	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513834889610	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513834895321	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.baidu.com/"
+1513834896154	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.baidu.com/"
+1513834909748	geckodriver	INFO	geckodriver 0.19.1
+1513834909876	geckodriver	INFO	Listening on 127.0.0.1:59127
+1513834911256	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.a7eg9luQAmZW"
+[Child 79789, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513834955690	Marionette	INFO	Enabled via --marionette
+1513835062054	Marionette	INFO	Listening on port 41619
+ExceptionHandler::GenerateDump cloned child 80598
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+JavaScript error: resource:///modules/sessionstore/SessionSaver.jsm, line 186: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIAppShellService.hiddenDOMWindow]
+[Parent 80316, Gecko_IOThread] WARNING: waitpid failed pid:80376 errno:10: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/base/process_util_posix.cc, line 276
+1513837933672	geckodriver	INFO	geckodriver 0.19.1
+1513837933692	geckodriver	INFO	Listening on 127.0.0.1:57051
+1513837937505	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.lePjU0BOQvoC"
+1513837943453	Marionette	INFO	Enabled via --marionette
+1513837954400	Marionette	INFO	Listening on port 41253
+1513837954956	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513837955030	Marionette	DEBUG	Register listener.js for window 2147483649
+1513837956558	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513837957294	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513837957297	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513837962251	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.baidu.com/"
+1513837963060	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.baidu.com/"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1513838316678	geckodriver	INFO	geckodriver 0.19.1
+1513838316687	geckodriver	INFO	Listening on 127.0.0.1:57639
+1513838316948	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ge3W6vI4ltx2"
+1513838328169	Marionette	INFO	Enabled via --marionette
+1513838337700	Marionette	INFO	Listening on port 43955
+1513838338020	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513838338149	Marionette	DEBUG	Register listener.js for window 2147483649
+1513838338421	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513838339029	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513838339030	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513838340701	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.baidu.com/"
+1513838341837	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.baidu.com/"
+1513840623500	geckodriver	INFO	geckodriver 0.19.1
+1513840623505	geckodriver	INFO	Listening on 127.0.0.1:59723
+1513840623699	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ub0XRT0taqzN"
+1513840626898	Marionette	INFO	Enabled via --marionette
+1513840638111	Marionette	INFO	Listening on port 37035
+1513840638467	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513840638604	Marionette	DEBUG	Register listener.js for window 2147483649
+1513840639020	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513840639206	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513840639207	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513840640671	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.baidu.com/"
+1513840641630	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.baidu.com/"
+[Child 81837, Chrome_ChildThread] WARNING: pipe error (45): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 81837, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 81837, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+1513840669187	geckodriver	INFO	geckodriver 0.19.1
+1513840669192	geckodriver	INFO	Listening on 127.0.0.1:42985
+1513840669386	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.HoHMAH0JrsB0"
+1513840673388	Marionette	INFO	Enabled via --marionette
+1513840684026	Marionette	INFO	Listening on port 33937
+1513840684201	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513840684319	Marionette	DEBUG	Register listener.js for window 2147483649
+1513840685373	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513840685555	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513840685555	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513840686769	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.baidu.com/"
+1513840688554	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.baidu.com/"
+1513842406021	geckodriver	INFO	geckodriver 0.19.1
+1513842406087	geckodriver	INFO	Listening on 127.0.0.1:35239
+1513842407478	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.IWfBHWxNNFB6"
+1513842417452	Marionette	INFO	Enabled via --marionette
+1513842443392	Marionette	INFO	Listening on port 33565
+1513842443810	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513842443928	Marionette	DEBUG	Register listener.js for window 2147483649
+1513842450510	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513842455271	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513842455271	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513842465492	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://user.qzone.qq.com/822989010/2"
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/engine/migrate-plugin.js,/qzone/v8/engine/console-plus/console-plus.js,/qzone/v8/engine/request/request_61221.js,/qzone/v8/core/interface_mini.js?max_age=60628, line 4392: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/dress/xextend.js,/qzone/v8/dress/data.js,/qzone/v8/dress/viewbase.js,/qzone/v8/dress/dditem.js,/qzone/v8/dress/menuview_v8.js,/qzone/v8/dress/weather.js,/qzone/v8/dress/visitors.js, line 656: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+1513842487021	Marionette	DEBUG	Received DOM event "pageshow" for "https://user.qzone.qq.com/822989010/2"
+1513842655165	geckodriver	INFO	geckodriver 0.19.1
+1513842655176	geckodriver	INFO	Listening on 127.0.0.1:34705
+1513842656369	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.yb65hxGfeb1I"
+1513842660470	Marionette	INFO	Enabled via --marionette
+1513842667464	Marionette	INFO	Listening on port 44567
+1513842667924	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513842668043	Marionette	DEBUG	Register listener.js for window 2147483649
+1513842668908	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513842670455	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513842670455	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513842676672	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://user.qzone.qq.com/822989010/2"
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/engine/migrate-plugin.js,/qzone/v8/engine/console-plus/console-plus.js,/qzone/v8/engine/request/request_61221.js,/qzone/v8/core/interface_mini.js?max_age=60628, line 4392: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/dress/xextend.js,/qzone/v8/dress/data.js,/qzone/v8/dress/viewbase.js,/qzone/v8/dress/dditem.js,/qzone/v8/dress/menuview_v8.js,/qzone/v8/dress/weather.js,/qzone/v8/dress/visitors.js, line 656: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+1513842687994	Marionette	DEBUG	Received DOM event "pageshow" for "https://user.qzone.qq.com/822989010/2"
+1513843568957	geckodriver	INFO	geckodriver 0.19.1
+1513843568973	geckodriver	INFO	Listening on 127.0.0.1:39381
+1513843569400	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.SAFxFpyq5HL4"
+Error: GDK_BACKEND does not match available displays
+1513843981670	geckodriver	INFO	geckodriver 0.19.1
+1513843981682	geckodriver	INFO	Listening on 127.0.0.1:55971
+1513843981944	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.fNkyRs6VmHuS"
+1513843987975	Marionette	INFO	Enabled via --marionette
+1513844014417	Marionette	INFO	Listening on port 40177
+1513844015198	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513844015324	Marionette	DEBUG	Register listener.js for window 2147483649
+1513844016633	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513844019973	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513844019973	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513844031677	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://user.qzone.qq.com/822989010/2"
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/engine/migrate-plugin.js,/qzone/v8/engine/console-plus/console-plus.js,/qzone/v8/engine/request/request_61221.js,/qzone/v8/core/interface_mini.js?max_age=60628, line 4392: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/dress/xextend.js,/qzone/v8/dress/data.js,/qzone/v8/dress/viewbase.js,/qzone/v8/dress/dditem.js,/qzone/v8/dress/menuview_v8.js,/qzone/v8/dress/weather.js,/qzone/v8/dress/visitors.js, line 656: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+1513844045592	Marionette	DEBUG	Received DOM event "pageshow" for "https://user.qzone.qq.com/822989010/2"
+1513844052827	Marionette	DEBUG	Register listener.js for window 2147483657
+1513844053107	Marionette	DEBUG	Register listener.js for window 2147483659
+JavaScript error: https://qzonestyle.gtimg.cn/ac/qzone/qzfl/qzfl_v8_2.1.65.js, line 90: NS_ERROR_NOT_INITIALIZED: 
+ExceptionHandler::GenerateDump cloned child 83391
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1513850329277	geckodriver	INFO	geckodriver 0.19.1
+1513850329285	geckodriver	INFO	Listening on 127.0.0.1:45483
+1513850330483	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.t5zEsjE0bQ6G"
+1513850336191	Marionette	INFO	Enabled via --marionette
+1513850365602	Marionette	INFO	Listening on port 38407
+1513850368079	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 123"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:123 < onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:138 < _middleware/</<()@resource://activity-stream/lib/Store.jsm:52 < Store/this[method]()@resource://activity-stream/lib/Store.jsm:31 < uninit()@resource://activity-stream/lib/Store.jsm:151 < uninit()@resource://activity-stream/lib/ActivityStream.jsm:266 < uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:80 < shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:196 < callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4509 < observe()@resource://gre/modules/addons/XPIProvider.jsm:2281
+1513850368899	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513850884394	geckodriver	INFO	geckodriver 0.19.1
+1513850884414	geckodriver	INFO	Listening on 127.0.0.1:50121
+1513850884647	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.9a6aMvkhcvgP"
+1513850890638	Marionette	INFO	Enabled via --marionette
+1513850904372	Marionette	INFO	Listening on port 39431
+1513850905910	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513850905998	Marionette	DEBUG	Register listener.js for window 2147483649
+1513851048869	geckodriver	INFO	geckodriver 0.19.1
+1513851048952	geckodriver	INFO	Listening on 127.0.0.1:46329
+1513851053605	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.saD8CJ5StjkJ"
+1513851068043	Marionette	INFO	Enabled via --marionette
+1513851081263	Marionette	INFO	Listening on port 45993
+1513851081729	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513851082073	Marionette	DEBUG	Register listener.js for window 2147483649
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1513851137481	geckodriver	INFO	geckodriver 0.19.1
+1513851137486	geckodriver	INFO	Listening on 127.0.0.1:57435
+1513851137832	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ayzuuKc6koui"
+1513851142447	Marionette	INFO	Enabled via --marionette
+1513851151839	Marionette	INFO	Listening on port 43473
+1513851152223	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513851152340	Marionette	DEBUG	Register listener.js for window 2147483649
+1513851155666	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513851163775	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513851163776	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513851167713	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://user.qzone.qq.com/822989010/2"
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/engine/migrate-plugin.js,/qzone/v8/engine/console-plus/console-plus.js,/qzone/v8/engine/request/request_61221.js,/qzone/v8/core/interface_mini.js?max_age=60628, line 4392: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/dress/xextend.js,/qzone/v8/dress/data.js,/qzone/v8/dress/viewbase.js,/qzone/v8/dress/dditem.js,/qzone/v8/dress/menuview_v8.js,/qzone/v8/dress/weather.js,/qzone/v8/dress/visitors.js, line 656: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+1513851277781	geckodriver	INFO	geckodriver 0.19.1
+1513851277794	geckodriver	INFO	Listening on 127.0.0.1:39379
+1513851277994	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.tkYeeLQkQwAP"
+1513851281962	Marionette	INFO	Enabled via --marionette
+1513851293945	Marionette	INFO	Listening on port 41571
+1513851294159	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513851294317	Marionette	DEBUG	Register listener.js for window 2147483649
+1513851295283	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513851296736	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513851296736	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513851300632	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://user.qzone.qq.com/822989010/2"
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/engine/migrate-plugin.js,/qzone/v8/engine/console-plus/console-plus.js,/qzone/v8/engine/request/request_61221.js,/qzone/v8/core/interface_mini.js?max_age=60628, line 4392: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/dress/xextend.js,/qzone/v8/dress/data.js,/qzone/v8/dress/viewbase.js,/qzone/v8/dress/dditem.js,/qzone/v8/dress/menuview_v8.js,/qzone/v8/dress/weather.js,/qzone/v8/dress/visitors.js, line 656: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+1513854905910	geckodriver	INFO	geckodriver 0.19.1
+1513854905979	geckodriver	INFO	Listening on 127.0.0.1:33483
+1513854913960	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.UXXubg4AIjYa"
+1513854934060	Marionette	INFO	Enabled via --marionette
+1513854964261	Marionette	INFO	Listening on port 40245
+1513854964839	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513854965228	Marionette	DEBUG	Register listener.js for window 2147483649
+1513854967459	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513854970274	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513854970274	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513854974716	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://user.qzone.qq.com/822989010/2"
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/engine/migrate-plugin.js,/qzone/v8/engine/console-plus/console-plus.js,/qzone/v8/engine/request/request_61221.js,/qzone/v8/core/interface_mini.js?max_age=60628, line 4392: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/dress/xextend.js,/qzone/v8/dress/data.js,/qzone/v8/dress/viewbase.js,/qzone/v8/dress/dditem.js,/qzone/v8/dress/menuview_v8.js,/qzone/v8/dress/weather.js,/qzone/v8/dress/visitors.js, line 656: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+1513855022618	geckodriver	INFO	geckodriver 0.19.1
+1513855022632	geckodriver	INFO	Listening on 127.0.0.1:51043
+1513855023010	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.A5VXW8rzjYva"
+1513855029777	Marionette	INFO	Enabled via --marionette
+1513855040248	Marionette	INFO	Listening on port 42493
+1513855040521	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513855040683	Marionette	DEBUG	Register listener.js for window 2147483649
+1513855041110	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513855042476	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513855042477	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513855054211	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://user.qzone.qq.com/822989010/2"
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/engine/migrate-plugin.js,/qzone/v8/engine/console-plus/console-plus.js,/qzone/v8/engine/request/request_61221.js,/qzone/v8/core/interface_mini.js?max_age=60628, line 4392: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/dress/xextend.js,/qzone/v8/dress/data.js,/qzone/v8/dress/viewbase.js,/qzone/v8/dress/dditem.js,/qzone/v8/dress/menuview_v8.js,/qzone/v8/dress/weather.js,/qzone/v8/dress/visitors.js, line 656: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+1513855064903	Marionette	DEBUG	Received DOM event "pageshow" for "https://user.qzone.qq.com/822989010/2"
+1513913693732	geckodriver	INFO	geckodriver 0.19.1
+1513913693748	geckodriver	INFO	Listening on 127.0.0.1:49171
+1513913694914	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.YSB1J2HpgOgG"
+1513913702879	Marionette	INFO	Enabled via --marionette
+1513913751010	Marionette	INFO	Listening on port 37781
+1513913751818	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513913752016	Marionette	DEBUG	Register listener.js for window 2147483649
+1513913754629	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513913755441	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513913755442	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513913760675	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.baidu.com/"
+1513913761756	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.baidu.com/"
+[Child 101722, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513913973651	geckodriver	INFO	geckodriver 0.19.1
+1513913973662	geckodriver	INFO	Listening on 127.0.0.1:44313
+1513913974811	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.drBO8ry4X3y2"
+1513913980520	Marionette	INFO	Enabled via --marionette
+1513913994115	Marionette	INFO	Listening on port 37647
+1513913994818	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513913994945	Marionette	DEBUG	Register listener.js for window 2147483649
+1513914137926	geckodriver	INFO	geckodriver 0.19.1
+1513914137946	geckodriver	INFO	Listening on 127.0.0.1:52767
+1513914138147	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.gpkbaOda7Ge1"
+1513914142305	Marionette	INFO	Enabled via --marionette
+1513914155441	Marionette	INFO	Listening on port 40139
+1513914155779	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513914155913	Marionette	DEBUG	Register listener.js for window 2147483649
+1513914193906	geckodriver	INFO	geckodriver 0.19.1
+1513914193914	geckodriver	INFO	Listening on 127.0.0.1:40549
+1513914194143	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Pp18fXQBOQqH"
+1513914198018	Marionette	INFO	Enabled via --marionette
+1513914203141	Marionette	INFO	Listening on port 45833
+1513914203680	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513914203899	Marionette	DEBUG	Register listener.js for window 2147483649
+1513914255560	geckodriver	INFO	geckodriver 0.19.1
+1513914255573	geckodriver	INFO	Listening on 127.0.0.1:42883
+1513914255869	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.zOXgrVFJqJHa"
+1513914260010	Marionette	INFO	Enabled via --marionette
+1513914266660	Marionette	INFO	Listening on port 33169
+1513914266844	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513914266908	Marionette	DEBUG	Register listener.js for window 2147483649
+1513914379008	geckodriver	INFO	geckodriver 0.19.1
+1513914379037	geckodriver	INFO	Listening on 127.0.0.1:33975
+1513914380233	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.P0jqVMhctcp6"
+1513914384034	Marionette	INFO	Enabled via --marionette
+1513914393214	Marionette	INFO	Listening on port 42751
+1513914393720	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513914393973	Marionette	DEBUG	Register listener.js for window 2147483649
+1513914394532	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513914395085	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513914395086	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513914395158	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513914401137	Marionette	DEBUG	Register listener.js for window 4294967297
+1513914401420	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1513914401523	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo.html"
+1513914401641	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo.html"
+1513914496964	geckodriver	INFO	geckodriver 0.19.1
+1513914496985	geckodriver	INFO	Listening on 127.0.0.1:54393
+1513914497346	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.cYrAbi4cwTgc"
+1513914500116	Marionette	INFO	Enabled via --marionette
+1513914518995	Marionette	INFO	Listening on port 44641
+1513914519276	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513914519396	Marionette	DEBUG	Register listener.js for window 2147483649
+1513914521237	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513914522749	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513914522750	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513914522751	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513914532468	Marionette	DEBUG	Register listener.js for window 4294967297
+1513914532697	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1513914532960	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo.html"
+1513914533040	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo.html"
+1513914589085	geckodriver	INFO	geckodriver 0.19.1
+1513914589121	geckodriver	INFO	Listening on 127.0.0.1:60193
+1513914589367	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.uE22hDOwnmgA"
+1513914592176	Marionette	INFO	Enabled via --marionette
+1513914600489	Marionette	INFO	Listening on port 41177
+1513914601100	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513914606590	Marionette	DEBUG	Register listener.js for window 2147483649
+1513914608355	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513914608463	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513914608464	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513914608552	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513914617916	Marionette	DEBUG	Register listener.js for window 4294967297
+1513914618125	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo.html, line 28: TypeError: parent.QZONE is undefined
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo.html, line 80: TypeError: parent.g_V is undefined
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo.html, line 84: ReferenceError: QZBlog is not defined
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo.html, line 477: ReferenceError: QZBlog is not defined
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo.html, line 483: ReferenceError: QZAPP is not defined
+1513914622238	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo.html"
+1513914622277	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo.html"
+1513917545065	geckodriver	INFO	geckodriver 0.19.1
+1513917545090	geckodriver	INFO	Listening on 127.0.0.1:50551
+1513917546701	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.J5CYg3kDYdVx"
+1513917563949	Marionette	INFO	Enabled via --marionette
+1513917650173	Marionette	INFO	Listening on port 44633
+[Parent 103624, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+1513919749925	geckodriver	INFO	geckodriver 0.19.1
+1513919749936	geckodriver	INFO	Listening on 127.0.0.1:52879
+1513919750165	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.HXR460Yyijkx"
+1513919756241	Marionette	INFO	Enabled via --marionette
+1513919779442	Marionette	INFO	Listening on port 44571
+1513919783151	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513919783330	Marionette	DEBUG	Register listener.js for window 2147483649
+1513919786245	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513919786272	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513919786273	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513919786376	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513919804858	Marionette	DEBUG	Register listener.js for window 4294967297
+1513919805098	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+1513919806673	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 106: TypeError: parent.QZONE is undefined
+1513919806723	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513919821638	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://i.qq.com/?rd=1"
+1513919828194	Marionette	DEBUG	Received DOM event "pageshow" for "https://i.qq.com/?rd=1"
+1513920080762	geckodriver	INFO	geckodriver 0.19.1
+1513920080796	geckodriver	INFO	Listening on 127.0.0.1:59387
+1513920081026	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.8GnxflSK9vct"
+1513920083077	Marionette	INFO	Enabled via --marionette
+1513920086643	Marionette	INFO	Listening on port 33909
+1513920086717	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513920086774	Marionette	DEBUG	Register listener.js for window 2147483649
+1513920087446	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513920087487	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513920087489	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513920087514	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513920089009	Marionette	DEBUG	Register listener.js for window 4294967297
+1513920089109	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513920089181	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513920090446	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 104640, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513920198091	geckodriver	INFO	geckodriver 0.19.1
+1513920198099	geckodriver	INFO	Listening on 127.0.0.1:37183
+1513920198260	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.yyYwdwaATg5Q"
+1513920199306	Marionette	INFO	Enabled via --marionette
+1513920201774	Marionette	INFO	Listening on port 45011
+1513920201827	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513920201943	Marionette	DEBUG	Register listener.js for window 2147483649
+1513920203264	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513920203316	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513920203317	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513920203317	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513920205588	Marionette	DEBUG	Register listener.js for window 4294967297
+1513920206318	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513920206415	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513920212025	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 104789, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513920222910	geckodriver	INFO	geckodriver 0.19.1
+1513920222918	geckodriver	INFO	Listening on 127.0.0.1:42141
+1513920223136	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.EnX03nosC6G6"
+1513920224290	Marionette	INFO	Enabled via --marionette
+1513920226407	Marionette	INFO	Listening on port 45321
+1513920226409	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513920226500	Marionette	DEBUG	Register listener.js for window 2147483649
+1513920226830	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513920226898	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513920226903	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513920226903	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513920228410	Marionette	DEBUG	Register listener.js for window 4294967297
+1513920228527	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513920228608	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513920230723	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 104926, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513920380782	geckodriver	INFO	geckodriver 0.19.1
+1513920380789	geckodriver	INFO	Listening on 127.0.0.1:33137
+1513920382005	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ieItPjzCgQN2"
+1513920383756	Marionette	INFO	Enabled via --marionette
+1513920386235	Marionette	INFO	Listening on port 44085
+1513920386244	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513920386340	Marionette	DEBUG	Register listener.js for window 2147483649
+1513920387633	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513920387719	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513920387719	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513920387723	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513920388274	Marionette	DEBUG	Register listener.js for window 4294967297
+1513920388352	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513920388423	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513920389935	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[Child 105090, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 105090, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513920465903	geckodriver	INFO	geckodriver 0.19.1
+1513920465912	geckodriver	INFO	Listening on 127.0.0.1:36637
+1513920466118	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.IjUXp7nfRFa0"
+1513920467674	Marionette	INFO	Enabled via --marionette
+1513920470343	Marionette	INFO	Listening on port 36187
+1513920470406	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513920470494	Marionette	DEBUG	Register listener.js for window 2147483649
+1513920470841	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513920470889	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513920470890	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513920470970	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513920472637	Marionette	DEBUG	Register listener.js for window 4294967297
+1513920472739	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513920472835	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513920475059	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513920515943	geckodriver	INFO	geckodriver 0.19.1
+1513920515967	geckodriver	INFO	Listening on 127.0.0.1:41741
+1513920516625	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.G8IWO4qzb81y"
+1513920523812	Marionette	INFO	Enabled via --marionette
+1513920605930	Marionette	INFO	Listening on port 36583
+ExceptionHandler::GenerateDump cloned child 105424
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+1513920670872	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1513920671591	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1513920799453	geckodriver	INFO	geckodriver 0.19.1
+1513920799460	geckodriver	INFO	Listening on 127.0.0.1:50479
+1513920799652	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Vby6OFFd2piQ"
+1513920807517	Marionette	INFO	Enabled via --marionette
+1513920818893	Marionette	INFO	Listening on port 39221
+1513920819442	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513920819558	Marionette	DEBUG	Register listener.js for window 2147483649
+1513920820093	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513920820146	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513920820153	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513920820158	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513920820869	Marionette	DEBUG	Register listener.js for window 4294967297
+1513920820987	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513920821164	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513920822472	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513920852710	geckodriver	INFO	geckodriver 0.19.1
+1513920852717	geckodriver	INFO	Listening on 127.0.0.1:45403
+1513920852931	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.N4HiJvruIu9d"
+1513920854648	Marionette	INFO	Enabled via --marionette
+1513920860159	Marionette	INFO	Listening on port 33271
+1513920860222	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513920860275	Marionette	DEBUG	Register listener.js for window 2147483649
+1513920883231	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513920883261	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513920883261	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513920883272	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513920885069	Marionette	DEBUG	Register listener.js for window 4294967297
+1513920885174	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513920885310	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513920886807	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 105728, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513920903387	geckodriver	INFO	geckodriver 0.19.1
+1513920903411	geckodriver	INFO	Listening on 127.0.0.1:39709
+1513920904570	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.MH1F9SlmnKjX"
+1513920907386	Marionette	INFO	Enabled via --marionette
+1513920912912	Marionette	INFO	Listening on port 38613
+1513920912966	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513920913038	Marionette	DEBUG	Register listener.js for window 2147483649
+1513920913823	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513920913863	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513920913863	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513920913875	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513920915329	Marionette	DEBUG	Register listener.js for window 4294967297
+1513920915424	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513920915508	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513920917505	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513920934742	geckodriver	INFO	geckodriver 0.19.1
+1513920934780	geckodriver	INFO	Listening on 127.0.0.1:36693
+1513920934976	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.zeeY2m4SAxiR"
+1513920936580	Marionette	INFO	Enabled via --marionette
+1513920940479	Marionette	INFO	Listening on port 36839
+1513920940534	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513920940601	Marionette	DEBUG	Register listener.js for window 2147483649
+1513920941148	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513920941190	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513920941190	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513920941193	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513920943245	Marionette	DEBUG	Register listener.js for window 4294967297
+1513920943384	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513920943506	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513920946070	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[Child 105999, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513921074236	geckodriver	INFO	geckodriver 0.19.1
+1513921074255	geckodriver	INFO	Listening on 127.0.0.1:36807
+1513921075409	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.yVOtnJHnqeed"
+1513921076933	Marionette	INFO	Enabled via --marionette
+1513921079859	Marionette	INFO	Listening on port 43981
+1513921079962	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513921080153	Marionette	DEBUG	Register listener.js for window 2147483649
+1513921080420	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513921080445	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513921080445	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513921080446	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513921082400	Marionette	DEBUG	Register listener.js for window 4294967297
+1513921082515	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513921082652	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513921085527	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[Child 106149, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513921163049	geckodriver	INFO	geckodriver 0.19.1
+1513921163074	geckodriver	INFO	Listening on 127.0.0.1:40447
+1513921164203	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.J0Z1acWH9EsH"
+1513921165541	Marionette	INFO	Enabled via --marionette
+1513921172085	Marionette	INFO	Listening on port 36915
+1513921172161	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513921172226	Marionette	DEBUG	Register listener.js for window 2147483649
+1513921172966	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513921173023	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513921173023	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513921173033	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513921176867	Marionette	DEBUG	Register listener.js for window 4294967297
+1513921176990	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513921177193	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513921178469	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[Child 106290, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2400C1,name=PContent::Msg_GraphicsError) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1513921251638	geckodriver	INFO	geckodriver 0.19.1
+1513921251669	geckodriver	INFO	Listening on 127.0.0.1:34393
+1513921252878	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.tUqVGeQk2zKR"
+1513921254998	Marionette	INFO	Enabled via --marionette
+1513921258263	Marionette	INFO	Listening on port 45687
+1513921258339	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513921258379	Marionette	DEBUG	Register listener.js for window 2147483649
+1513921259103	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513921259134	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513921259135	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513921259176	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513921260878	Marionette	DEBUG	Register listener.js for window 4294967297
+1513921260960	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513921261047	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513921263522	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[Child 106432, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 106432, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513921686730	geckodriver	INFO	geckodriver 0.19.1
+1513921686750	geckodriver	INFO	Listening on 127.0.0.1:38273
+1513921687837	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.fhzDaA7zQaqX"
+1513921689496	Marionette	INFO	Enabled via --marionette
+1513921693409	Marionette	INFO	Listening on port 40099
+1513921693536	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513921693618	Marionette	DEBUG	Register listener.js for window 2147483649
+1513921694021	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513921694227	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513921694228	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513921694235	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513921696395	Marionette	DEBUG	Register listener.js for window 4294967297
+1513921696569	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513921696785	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513921701119	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513921851446	geckodriver	INFO	geckodriver 0.19.1
+1513921851471	geckodriver	INFO	Listening on 127.0.0.1:51975
+1513921852629	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ar73zUEb7K3P"
+1513921854885	Marionette	INFO	Enabled via --marionette
+1513921858448	Marionette	INFO	Listening on port 39653
+1513921858533	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513921858630	Marionette	DEBUG	Register listener.js for window 2147483649
+1513921859346	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513921859399	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513921859405	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513921859411	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513921861521	Marionette	DEBUG	Register listener.js for window 4294967297
+1513921861644	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513921862074	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513921866109	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[Child 106798, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2400C1,name=PContent::Msg_GraphicsError) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1513925121430	geckodriver	INFO	geckodriver 0.19.1
+1513925121445	geckodriver	INFO	Listening on 127.0.0.1:43249
+1513925122614	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Q0dhnJMDoePT"
+1513925124146	Marionette	INFO	Enabled via --marionette
+1513925128731	Marionette	INFO	Listening on port 44497
+1513925129026	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513925129123	Marionette	DEBUG	Register listener.js for window 2147483649
+1513925131113	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513925131163	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513925131163	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513925131164	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513925134206	Marionette	DEBUG	Register listener.js for window 4294967297
+1513925134322	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513925134719	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513925139647	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513925451908	geckodriver	INFO	geckodriver 0.19.1
+1513925452186	geckodriver	INFO	Listening on 127.0.0.1:54887
+1513925453497	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.7sic2SUQBR0C"
+1513925458636	Marionette	INFO	Enabled via --marionette
+1513925472034	Marionette	INFO	Listening on port 36229
+1513925472096	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513925472183	Marionette	DEBUG	Register listener.js for window 2147483649
+1513925472888	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513925472928	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513925472929	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513925472948	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513925475227	Marionette	DEBUG	Register listener.js for window 4294967297
+1513925475363	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513925475484	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513925476649	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 107617, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513925520698	geckodriver	INFO	geckodriver 0.19.1
+1513925520710	geckodriver	INFO	Listening on 127.0.0.1:36593
+1513925520891	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.l1EThSxmFum3"
+1513925522623	Marionette	INFO	Enabled via --marionette
+1513925526551	Marionette	INFO	Listening on port 42491
+1513925526634	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513925526733	Marionette	DEBUG	Register listener.js for window 2147483649
+1513925527406	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513925527532	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513925527532	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513925527543	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513925529070	Marionette	DEBUG	Register listener.js for window 4294967297
+1513925529155	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513925529250	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513925533786	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513925616699	geckodriver	INFO	geckodriver 0.19.1
+1513925616723	geckodriver	INFO	Listening on 127.0.0.1:58047
+1513925617884	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.qflLUogWTZHI"
+1513925619808	Marionette	INFO	Enabled via --marionette
+1513925623260	Marionette	INFO	Listening on port 33003
+1513925623339	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513925623395	Marionette	DEBUG	Register listener.js for window 2147483649
+1513925623994	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513925624079	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513925624081	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513925624100	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513925626153	Marionette	DEBUG	Register listener.js for window 4294967297
+1513925626217	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513925626320	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513925627487	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[Child 107920, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2400C1,name=PContent::Msg_GraphicsError) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1513925769579	geckodriver	INFO	geckodriver 0.19.1
+1513925769597	geckodriver	INFO	Listening on 127.0.0.1:44529
+1513925770994	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.KLHxHnYI0phO"
+1513925772588	Marionette	INFO	Enabled via --marionette
+1513925776064	Marionette	INFO	Listening on port 45389
+1513925776158	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513925776203	Marionette	DEBUG	Register listener.js for window 2147483649
+1513925777120	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513925777140	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513925777150	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513925777168	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513925780037	Marionette	DEBUG	Register listener.js for window 4294967297
+1513925780139	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513925780486	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513925785980	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 108076, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513926122075	geckodriver	INFO	geckodriver 0.19.1
+1513926122103	geckodriver	INFO	Listening on 127.0.0.1:48395
+1513926122327	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.UxzvbYUujIMS"
+1513926124682	Marionette	INFO	Enabled via --marionette
+1513926129348	Marionette	INFO	Listening on port 39257
+1513926129434	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513926129519	Marionette	DEBUG	Register listener.js for window 2147483649
+1513926130031	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513926130087	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513926130090	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513926130102	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513926132776	Marionette	DEBUG	Register listener.js for window 4294967297
+1513926133071	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513926133510	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513926135711	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513926360433	geckodriver	INFO	geckodriver 0.19.1
+1513926360438	geckodriver	INFO	Listening on 127.0.0.1:50545
+1513926360687	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.45HCQ8Qkswg6"
+1513926362380	Marionette	INFO	Enabled via --marionette
+1513926365712	Marionette	INFO	Listening on port 38933
+1513926365759	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513926365806	Marionette	DEBUG	Register listener.js for window 2147483649
+1513926366388	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513926366398	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513926366399	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513926366434	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513926368861	Marionette	DEBUG	Register listener.js for window 4294967297
+1513926368940	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513926369169	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513926371558	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 108430, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513926432935	geckodriver	INFO	geckodriver 0.19.1
+1513926432956	geckodriver	INFO	Listening on 127.0.0.1:48053
+1513926434140	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Di8kNLRYbE9D"
+1513926436963	Marionette	INFO	Enabled via --marionette
+1513926441432	Marionette	INFO	Listening on port 44583
+1513926441526	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513926441618	Marionette	DEBUG	Register listener.js for window 2147483649
+1513926442390	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513926442420	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513926442434	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513926442454	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513926444341	Marionette	DEBUG	Register listener.js for window 4294967297
+1513926444516	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513926444721	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513926446049	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[Child 108576, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2400C1,name=PContent::Msg_GraphicsError) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1513927271149	geckodriver	INFO	geckodriver 0.19.1
+1513927271162	geckodriver	INFO	Listening on 127.0.0.1:59563
+1513927271336	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ZkoLbgtM0yIW"
+1513927273368	Marionette	INFO	Enabled via --marionette
+1513927278139	Marionette	INFO	Listening on port 37601
+1513927278760	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513927278881	Marionette	DEBUG	Register listener.js for window 2147483649
+1513927279468	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513927279495	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513927279500	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513927279511	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513927288561	Marionette	DEBUG	Register listener.js for window 4294967297
+1513927288667	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513927288962	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513927290381	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513927537882	geckodriver	INFO	geckodriver 0.19.1
+1513927537892	geckodriver	INFO	Listening on 127.0.0.1:33873
+1513927539046	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.M1ZKRR7lgumG"
+1513927540356	Marionette	INFO	Enabled via --marionette
+1513927548164	Marionette	INFO	Listening on port 34757
+1513927548264	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513927548322	Marionette	DEBUG	Register listener.js for window 2147483649
+1513927550580	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513927550606	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513927550608	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513927550616	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513927553275	Marionette	DEBUG	Register listener.js for window 4294967297
+1513927553355	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513927553500	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513927558303	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513927616397	geckodriver	INFO	geckodriver 0.19.1
+1513927616409	geckodriver	INFO	Listening on 127.0.0.1:49965
+1513927617207	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.j7ExBPHeqv0F"
+1513927626338	Marionette	INFO	Enabled via --marionette
+1513927654046	Marionette	INFO	Listening on port 35711
+1513927655326	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513927655412	Marionette	DEBUG	Register listener.js for window 2147483649
+1513927663635	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513927665361	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513927665363	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513927665478	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513927683132	Marionette	DEBUG	Register listener.js for window 4294967297
+1513927683471	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513927684306	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513927686958	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[Parent 108932, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+1513927734685	geckodriver	INFO	geckodriver 0.19.1
+1513927734703	geckodriver	INFO	Listening on 127.0.0.1:37573
+1513927735632	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.5YFQrKngngaF"
+JavaScript error: resource:///modules/sessionstore/SessionSaver.jsm, line 186: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIAppShellService.hiddenDOMWindow]
+1513927750323	Marionette	INFO	Enabled via --marionette
+1513927756361	Marionette	INFO	Listening on port 40431
+1513927756604	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513927756658	Marionette	DEBUG	Register listener.js for window 2147483649
+1513927757377	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513927757391	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513927757392	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513927757417	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513927758788	Marionette	DEBUG	Register listener.js for window 4294967297
+1513927758962	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513927759246	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513927761180	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[Child 109335, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 109335, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+Sandbox: Unexpected EOF, op 0 flags 0302 path /dev/shm/org.chromium.SiBBcP
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x470002,name=PLayerTransaction::Msg_Update) Channel error: cannot send/recv
+
+1513928231287	geckodriver	INFO	geckodriver 0.19.1
+1513928231315	geckodriver	INFO	Listening on 127.0.0.1:54225
+1513928232528	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.DEImVdhlgGXJ"
+1513928234967	Marionette	INFO	Enabled via --marionette
+1513928238730	Marionette	INFO	Listening on port 36619
+1513928238826	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513928238961	Marionette	DEBUG	Register listener.js for window 2147483649
+1513928239454	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513928239629	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513928239630	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513928239632	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513928241932	Marionette	DEBUG	Register listener.js for window 4294967297
+1513928242254	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513928246053	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513928247339	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 109527, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513928531928	geckodriver	INFO	geckodriver 0.19.1
+1513928531944	geckodriver	INFO	Listening on 127.0.0.1:51153
+1513928532266	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.5q58CuIhz2So"
+1513928534700	Marionette	INFO	Enabled via --marionette
+1513928539380	Marionette	INFO	Listening on port 44253
+1513928539494	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513928539579	Marionette	DEBUG	Register listener.js for window 2147483649
+1513928540597	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513928540628	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513928540628	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513928540631	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513928544395	Marionette	DEBUG	Register listener.js for window 4294967297
+1513928544677	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513928545202	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513928546359	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+Sandbox: Unexpected EOF, op 0 flags 0302 path /dev/shm/org.chromium.PV7NZB
+[GFX1-]: Failed 2 buffer db=0 dw=0 for 0, 0, 1270, 1024
+[Child 109716, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 109716, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 109716, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 109716, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 109716, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 109716, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 109716, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 109716, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 109716, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 109716, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 109716, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 109716, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 109716, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 109716, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 109716, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+1513928638744	geckodriver	INFO	geckodriver 0.19.1
+1513928638757	geckodriver	INFO	Listening on 127.0.0.1:59517
+1513928638972	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.tpgMjUws8IYc"
+1513928640275	Marionette	INFO	Enabled via --marionette
+1513928643599	Marionette	INFO	Listening on port 36199
+1513928643973	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513928644036	Marionette	DEBUG	Register listener.js for window 2147483649
+1513928644817	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513928644967	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513928644967	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513928644974	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513928648077	Marionette	DEBUG	Register listener.js for window 4294967297
+1513928648216	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513928648485	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513928650014	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1513928689973	geckodriver	INFO	geckodriver 0.19.1
+1513928690004	geckodriver	INFO	Listening on 127.0.0.1:37823
+1513928690350	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.GfjrDSKabmbo"
+1513928692637	Marionette	INFO	Enabled via --marionette
+1513928697417	Marionette	INFO	Listening on port 34117
+1513928697542	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513928697625	Marionette	DEBUG	Register listener.js for window 2147483649
+1513928698606	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513928698648	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513928698649	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513928698659	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513928701443	Marionette	DEBUG	Register listener.js for window 4294967297
+1513928701697	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513928702045	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513928707078	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 110028, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513929728021	geckodriver	INFO	geckodriver 0.19.1
+1513929728058	geckodriver	INFO	Listening on 127.0.0.1:45421
+1513929729160	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.4Q23RURSlleY"
+1513929730840	Marionette	INFO	Enabled via --marionette
+1513929736055	Marionette	INFO	Listening on port 39757
+1513929736435	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513929736542	Marionette	DEBUG	Register listener.js for window 2147483649
+1513929737861	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513929737915	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513929737917	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513929737917	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513929743777	Marionette	DEBUG	Register listener.js for window 4294967297
+1513929743867	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513929744050	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513929745044	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513930112308	geckodriver	INFO	geckodriver 0.19.1
+1513930112455	geckodriver	INFO	Listening on 127.0.0.1:36533
+1513930114110	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.haOcRvDhEvdC"
+1513930131664	Marionette	INFO	Enabled via --marionette
+1513930190432	Marionette	INFO	Listening on port 45999
+ExceptionHandler::GenerateDump cloned child 110625
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+1513930270861	geckodriver	INFO	geckodriver 0.19.1
+1513930270877	geckodriver	INFO	Listening on 127.0.0.1:41399
+1513930272286	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.hDjeDiP9z7Ig"
+1513930279510	Marionette	INFO	Enabled via --marionette
+1513930290938	Marionette	INFO	Listening on port 44191
+1513930291249	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513930291382	Marionette	DEBUG	Register listener.js for window 2147483649
+1513930293656	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513930293692	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513930293692	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513930293696	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513930300835	Marionette	DEBUG	Register listener.js for window 4294967297
+1513930300955	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513930301231	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513930305737	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513930362517	geckodriver	INFO	geckodriver 0.19.1
+1513930362624	geckodriver	INFO	Listening on 127.0.0.1:41721
+1513930364054	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.hkTAoQeEBjMk"
+1513930369308	Marionette	INFO	Enabled via --marionette
+1513930379968	Marionette	INFO	Listening on port 34605
+1513930380050	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513930380131	Marionette	DEBUG	Register listener.js for window 2147483649
+1513930382052	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513930382098	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513930382098	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513930382100	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513930392317	Marionette	DEBUG	Register listener.js for window 4294967297
+1513930392444	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513930392787	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513930397477	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513930460057	geckodriver	INFO	geckodriver 0.19.1
+1513930460078	geckodriver	INFO	Listening on 127.0.0.1:42703
+1513930460359	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.kihputeOLRMV"
+1513930462519	Marionette	INFO	Enabled via --marionette
+1513930466862	Marionette	INFO	Listening on port 40955
+1513930467037	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513930467116	Marionette	DEBUG	Register listener.js for window 2147483649
+1513930467788	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513930467853	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513930467860	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513930467880	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513930472445	Marionette	DEBUG	Register listener.js for window 4294967297
+1513930472565	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513930472901	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513930474553	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1513930611065	geckodriver	INFO	geckodriver 0.19.1
+1513930611090	geckodriver	INFO	Listening on 127.0.0.1:42073
+1513930612325	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.WkEjkHDaMPWt"
+1513930614827	Marionette	INFO	Enabled via --marionette
+1513930619677	Marionette	INFO	Listening on port 32833
+1513930619823	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513930619942	Marionette	DEBUG	Register listener.js for window 2147483649
+1513930620752	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513930620875	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513930620876	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513930620885	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513930624403	Marionette	DEBUG	Register listener.js for window 4294967297
+1513930624544	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513930624685	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513930626429	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[Child 111204, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 111204, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513930733418	geckodriver	INFO	geckodriver 0.19.1
+1513930733428	geckodriver	INFO	Listening on 127.0.0.1:57463
+1513930733686	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Y6Sbu2d84sGb"
+1513930735488	Marionette	INFO	Enabled via --marionette
+1513930739809	Marionette	INFO	Listening on port 41037
+1513930739905	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513930739956	Marionette	DEBUG	Register listener.js for window 2147483649
+1513930744358	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513930744437	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513930744437	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513930744444	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513930747790	Marionette	DEBUG	Register listener.js for window 4294967297
+1513930748093	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513930748568	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513930749747	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[Child 111359, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2400C1,name=PContent::Msg_GraphicsError) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1513930844251	geckodriver	INFO	geckodriver 0.19.1
+1513930844265	geckodriver	INFO	Listening on 127.0.0.1:37601
+1513930844864	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.37dNBjAfEZzb"
+1513930846793	Marionette	INFO	Enabled via --marionette
+1513930854349	Marionette	INFO	Listening on port 36681
+1513930854426	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513930854484	Marionette	DEBUG	Register listener.js for window 2147483649
+1513930855061	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513930855276	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513930855277	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513930855302	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513930856981	Marionette	DEBUG	Register listener.js for window 4294967297
+1513930857112	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513930857439	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513930859487	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513931048425	geckodriver	INFO	geckodriver 0.19.1
+1513931048443	geckodriver	INFO	Listening on 127.0.0.1:53429
+1513931049573	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.5kdQYodOWXLp"
+1513931051968	Marionette	INFO	Enabled via --marionette
+1513931055829	Marionette	INFO	Listening on port 46293
+1513931055915	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513931055985	Marionette	DEBUG	Register listener.js for window 2147483649
+1513931056733	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513931056780	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513931056781	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513931056785	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513931060214	Marionette	DEBUG	Register listener.js for window 4294967297
+1513931060449	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513931062411	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513931075753	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 111701, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513931204522	geckodriver	INFO	geckodriver 0.19.1
+1513931204540	geckodriver	INFO	Listening on 127.0.0.1:42577
+1513931204776	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.IMxuB6932ExV"
+1513931206304	Marionette	INFO	Enabled via --marionette
+1513931214211	Marionette	INFO	Listening on port 42819
+1513931214253	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513931214312	Marionette	DEBUG	Register listener.js for window 2147483649
+1513931550984	geckodriver	INFO	geckodriver 0.19.1
+1513931551017	geckodriver	INFO	Listening on 127.0.0.1:60425
+1513931552147	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.05kskOGqslQf"
+1513931565075	Marionette	INFO	Enabled via --marionette
+1513931594295	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js :: shutdown :: line 200"  data: no] Stack trace: shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:200 < callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4509 < observe()@resource://gre/modules/addons/XPIProvider.jsm:2281
+1513931600193	Marionette	INFO	Listening on port 33243
+1513931601339	Marionette	WARN	TLS certificate errors will be ignored for this session
+ExceptionHandler::GenerateDump cloned child 112056
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1513932459199	geckodriver	INFO	geckodriver 0.19.1
+1513932459210	geckodriver	INFO	Listening on 127.0.0.1:57125
+1513932460362	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.1HGfCjj96wOv"
+1513932464054	Marionette	INFO	Enabled via --marionette
+1513932469322	Marionette	INFO	Listening on port 36919
+1513932470410	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513932470567	Marionette	DEBUG	Register listener.js for window 2147483649
+1513932473567	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513932473620	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513932473621	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513932473912	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513932476940	Marionette	DEBUG	Register listener.js for window 4294967297
+1513932477050	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513932477406	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513932481423	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513932669591	geckodriver	INFO	geckodriver 0.19.1
+1513932669625	geckodriver	INFO	Listening on 127.0.0.1:57439
+1513932669831	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.1GNOHzaSXxhQ"
+1513932685788	Marionette	INFO	Enabled via --marionette
+1513932716480	Marionette	INFO	Listening on port 40833
+1513932716872	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513932716974	Marionette	DEBUG	Register listener.js for window 2147483649
+1513932724059	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513932724344	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513932724346	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513932724352	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513932730310	Marionette	DEBUG	Register listener.js for window 4294967297
+1513932730559	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513932731558	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513932737741	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+[Child 112569, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+Sandbox: Unexpected EOF, op 0 flags 0302 path /dev/shm/org.chromium.TttBfe
+ExceptionHandler::GenerateDump cloned child 112615
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1513932838912	geckodriver	INFO	geckodriver 0.19.1
+1513932838927	geckodriver	INFO	Listening on 127.0.0.1:35011
+1513932840176	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.WPKwOdaRf5DL"
+1513932842890	Marionette	INFO	Enabled via --marionette
+1513932849349	Marionette	INFO	Listening on port 38211
+1513932849540	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513932849686	Marionette	DEBUG	Register listener.js for window 2147483649
+1513932850497	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513932850533	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513932850533	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513932850534	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483649"
+1513932858347	Marionette	DEBUG	Register listener.js for window 4294967297
+1513932858460	Marionette	DEBUG	Check readyState "uninitialized for "about:blank"
+JavaScript error: file:///home/bcg/samba/test/selenium/qqdemo_context.html, line 162: ReferenceError: _dw is not defined
+1513932858665	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
+1513932859639	Marionette	DEBUG	Received DOM event "pageshow" for "file:///home/bcg/samba/test/selenium/qqdemo_context.html"
