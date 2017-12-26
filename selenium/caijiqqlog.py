@@ -1,6 +1,6 @@
 #coding:utf-8
 from selenium import webdriver
-import time,os,re,urllib,urllib2,hashlib
+import time,os,re,urllib,urllib2,hashlib,sys
 
 #import xlrd,xlwt
 #from xlutils.copy import copy
@@ -15,165 +15,166 @@ import time,os,re,urllib,urllib2,hashlib
 #driver.set_preference('network.proxy.http', '127.0.0.1')
 #driver.set_preference('network.proxy.http_port', 17890)
 #driver.maximize_window() 
-
-#driver.minimize_window() 
-#driver=webdriver.Firefox()
+driver=webdriver.Firefox()
+driver.minimize_window() 
+reload(sys)
+sys.setdefaultencoding( "utf-8" )
 def get_shuoshuo(qq,path):
     #testexist(path)
 	try:
 		#driver.set_page_load_timeout(10)
-		#driver.get('https://user.qzone.qq.com/822989010/2')
-		driver.get('file:///home/bcg/samba/test/selenium/qqdemo.html')
+		#https://user.qzone.qq.com/822989010/2
+		driver.get('https://user.qzone.qq.com/822989010/2')
+		#driver.get('file:///home/bcg/samba/test/selenium/qqdemo.html')
 		time.sleep(1)
 	except:
 		print ("err")
-		time.sleep(2)
-		driver.quit()
 		return
 		
-		
-		
-		
-	#try:
-		#driver.switch_to.frame("tblog")
-		#time.sleep(10)
-		#print "switchto frame ok"
-		#print driver.page_source
-		
-	#except:
-		#print driver.page_source+"err"
-		#driver.quit()
-	#else:
-		#print "dddddddddddddddddddddddddddddddddddddd"
-		#print driver.page_source+"else"
-		#driver.switch_to.frame("tblog")
-		#time.sleep(30)
-		#print "switchto frame ok"
-		#print( driver.find_element_by_id('page-container-blog').text)
-		#driver.find_element_by_id('switcher_plogin').click()
-		#driver.find_element_by_id('u').clear()
-		#driver.find_element_by_id('u').send_keys('#####') 
-		#driver.find_element_by_id('p').clear()
-		#driver.find_element_by_id('p').send_keys('#####') 
-		#driver.find_element_by_id('login_button').click()
-		#driver.implicitly_wait(3)
-		#	driver.quit()
-		
+	try:
+		driver.switch_to.frame(0)
+		driver.find_element_by_link_text("4").click()
+		time.sleep(4)
+	except:
+		print('page find err')
+		return
 		
 	try:
 		#print driver.page_source
 		#Links = driver.find_element_by_xpath("//a[starts-with(@href,'http://user.qzone.qq.com/822989010/blog/')]")		
 		#Links = driver.findElements(By.xpath("//a[starts-with(@href,'http://us')]"))
-		for link in driver.find_elements_by_xpath("//a[starts-with(@href,'http://user.qzone.qq.com/822989010/blog/')]"):
+		Links = driver.find_elements_by_xpath("//a[starts-with(@href,'http://user.qzone.qq.com/822989010/blog/')]")
+		for link in Links:
 			print (link.get_attribute('href'))
+			get_log_context('https://user.qzone.qq.com/822989010/blog/1488525155')
 			#print (elem.get_attribute("title"))
 				
-		driver.quit()
+
 	except:
 		print ("find_element_by_xpath no find")
-		driver.quit()
-#    try:
-#        driver.find_element_by_id('QM_OwnerInfo_Icon')
-#    except:
-#      
-#        time.sleep(2)
-#        driver.quit()
-#    else:
-#        driver.switch_to.frame('app_canvas_frame')
-#    #    last_page=driver.find_element_by_css_selector('.mod_pagenav')
-#    #    page_num=re.findall('\d+',last_page.text)[-1]
-#        next_page='page'
-#        page=1
-#        try:
-#            while next_page:
-#                content = driver.find_elements_by_css_selector('.content')
-#                stime = driver.find_elements_by_css_selector('.c_tx.c_tx3.goDetail')
-#                for con,sti in zip(content,stime):
-#                    data = {
-#                        'time':sti.text,
-#                        'shuos':con.text
-#                    }
-#                    write_data(data['time'],data['shuos'],path)
-#                next_page=driver.find_element_by_link_text(u'下一页')
-#                page=page+1
-#                print u'正在抓取第%d页面内容······'%page
-#                next_page.click()
-#
-#                time.sleep(3)
-#                driver.implicitly_wait(3)
-#            driver.quit()
-#        except:
-#            print u'抓取到%d页面结束'%page
-#            driver.quit()
 
-#def  testexist(path):
-#    if not os.path.exists(path):
-#        w= xlwt.Workbook()
-#        w.add_sheet('Sheet1')
-#        w.save(path)
-#    else:
-#        os.remove(path)
-#        w= xlwt.Workbook()
-#        w.add_sheet('Sheet1')
-#        w.save(path)
-def write_data(data1,data2,path):
-    f=xlrd.open_workbook(path)
-    sheet=f.sheet_by_name('Sheet1')
-    src=copy(f)
-    row=sheet.nrows
-    src.get_sheet(0).write(row,0,data1)
-    src.get_sheet(0).write(row,1,data2)
-    src.save(path)
+
 def create_id():
     m = hashlib.md5(str(time.clock()).encode('utf-8'))
     return m.hexdigest()	
 #通过url获取网页
 def getHtml(url):
-	headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
+	#headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
+	headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'}			
 	req = urllib2.Request(url = url, headers = headers)
 	content = urllib2.urlopen(req).read()
 	return content
 	
-def get_log_context():
+def get_log_context(url):
+	print ('getting  ' + url)
+	pathfile = create_path_base_url(url)
+	if len(pathfile)==0:
+		print("get path from url err")
+		return
+	pathfile = './'+pathfile	
+	print('pathfile='+pathfile)
+	os.system("mkdir -p "+pathfile)
+	
 	try:
-		driver.get('file:///home/bcg/samba/test/selenium/qqdemo_context.html')
-		#print (driver.page_source)
-		elem = driver.find_elements_by_id("blogDetailDiv")
-		#print (elem)
-		#print (elem.text)
-		#print (elem.get_attribute('innerHTML'))
-		#print (driver.find_elements_by_xpath("//div[@id='blogDetailDiv']").get_attribute('innerHTML'))
-		
+		driver.get(url)
+		#print (driver.page_source)		
+		time.sleep(1)
+		elem = driver.find_elements_by_id("tblog")
+		print("find tblog")
+
 	except:
 		print ("get_log_context err")
-		time.sleep(2)
-		driver.quit()
+		return
+
+	#with open("page_source_1.txt",'wb') as f:
+	#	f.write(driver.page_source)
+	
+	try:
+		driver.switch_to.frame(0)
+		print("switch tblog ok")
+	except:
+		print("switch_to.frame err")
+		return
+
+	with open("page_source_2.txt",'wb') as f:
+		f.write(driver.page_source)
+		
+	try:
+		#for link in driver.find_element_by_xpath("//img[starts-with(@data-src,'http')]"):
+		#	print ("loading...  "+link.get_attribute('src'))						
+
+		#s = re.findall(r'\btina','tian tinaaaa')
+		div_str = driver.find_element_by_id('blogDetailDiv').get_attribute('innerHTML')
+			
+		str_txt=div_str
+		urlarr = re.findall(r'data-src=".*?"',str_txt)
+		for  elem in urlarr:			
+			tmp_url = elem[len('data-src=')+1:len(elem)-1]
+			file_path_url = get_file_and_save(tmp_url,pathfile)
+			str_txt = str_txt.replace(tmp_url,file_path_url)
+			print(tmp_url)
+			print(file_path_url)
+		print('find_element_by_id ok')	
+		with open(pathfile+"/page_source.html",'wb') as f:
+			f.write(str_txt)
+		print(pathfile+"/page_source.html "+'save ok')
+	except:
+		print ("loading pic err")		
 		return
 	
-			
-	try:
-		str_text = driver.page_source
-		for link in driver.find_elements_by_xpath("//img[starts-with(@src,'http')]"):
-			print ("loading...  "+link.get_attribute('src'))						
-			cat_img = getHtml(link.get_attribute('src'))
-			print ("down load ok")
-			
-			filename=create_id()+'.jpg'
-			with open("pic/"+filename,'wb') as f:
-				f.write(cat_img)
-				print("save pic ok,"+filename)
-	except:
-		print ("loading pic err")
-		driver.quit()
-if __name__ == '__main__':
-	# work_path=raw_input(u'请输入存储数据路径--excle表格类型')2571278041
-	#work_path='E:\\0930\\WWWW.csv'
-	#get_shuoshuo('######',work_path)#输入好友QQ号
-	#get_log_context()
-	cat_img = getHtml("http://a3.qpic.cn/psb?/V11BnhDf16EbKg/TREmi7HFovaVOHQumc77eh4mEyvUQNoPq0xGZr.Yjt8!/b/dK4AAAAAAAAA&ek=1&kp=1&pt=0&bo=aQGvAQAAAAAFF*I!&t=5&su=4202235713&tm=1513915200&sce=0-12-12&rf=2-9")
+	
+	
+def get_file_and_save(url, path):
+	cat_img = getHtml(url)
+	print ("down load ok")
+
+	filename=path+"/"+create_id()+'.jpg'
+	with open(filename,'wb') as f:
+		f.write(cat_img)
+		print("save pic ok,"+filename)	
+	return filename
+	
 	
 
-	filename=create_id()+'.jpg'
-	with open("pic/"+filename,'wb') as f:
-		f.write(cat_img)
-	print("save pic ok,"+filename)
+def create_path_base_url(url):
+	strid = re.findall(r'/blog/[0-9]*',url)
+	path = strid[0][1:len(strid[0])]
+	return path
+	
+	
+	
+def debug_test():
+	pathfile = create_path_base_url('https://user.qzone.qq.com/822989010/blog/1488525103')
+	if len(pathfile)==0:
+		print("get path from url err")
+		return
+	pathfile = './'+pathfile	
+	print('pathfile='+pathfile)
+	
+	
+	with open(pathfile+"/page_source_3.html",'r') as f:
+		str_txt=f.read()
+		urlarr = re.findall(r'data-src=".*?"',str_txt)
+		for  elem in urlarr:			
+			tmp_url = elem[len('data-src=')+1:len(elem)-1]
+			#file_path_url = get_file_and_save(tmp_url,pathfile)
+			#print(file_path_url)
+			#str_txt = str_txt.replace(tmp_url,file_path_url)
+			print(tmp_url)
+			
+		try:
+			with open(pathfile+"/page_source_31.html",'wb') as f:
+				f.write(str_txt)
+		except:
+			print('save err')
+	
+			
+			
+if __name__ == '__main__':
+	
+	#work_path='E:\\0930\\WWWW.csv'
+	get_shuoshuo('sdf','ddd')
+	#get_log_context('https://user.qzone.qq.com/822989010/blog/1488525155')
+	#debug_test()
+	
+	driver.quit()
