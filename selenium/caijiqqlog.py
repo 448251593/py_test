@@ -5,8 +5,7 @@ import time,os,re,urllib,urllib2,hashlib,sys
 #import xlrd,xlwt
 #from xlutils.copy import copy
 #使用selenium
-#使用selenium的隐藏PhantimJS浏览器登陆账号后对内容获取
-#注意frame与iframe的格式框切换
+#使用selenium的隐藏PhantimJS浏览器登陆账号后对内容获�?#注意frame与iframe的格式框切换
 #driver = webdriver.PhantomJS(executable_path="E:\\mac\\id\\phantomjs-2.1.1-windows\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe")
 #driver=webdriver.Chrome()
 
@@ -19,7 +18,7 @@ driver=webdriver.Firefox()
 driver.minimize_window() 
 reload(sys)
 sys.setdefaultencoding( "utf-8" )
-def get_shuoshuo(qq,path):
+def get_shuoshuo():
     #testexist(path)
 	try:
 		#driver.set_page_load_timeout(10)
@@ -28,17 +27,21 @@ def get_shuoshuo(qq,path):
 		#driver.get('file:///home/bcg/samba/test/selenium/qqdemo.html')
 		time.sleep(1)
 	except:
-		print ("err")
+		print ("driver.get https://user.qzone.qq.com/822989010/2 err")
 		return
 		
 	try:
 		driver.switch_to.frame(0)
-		driver.find_element_by_link_text("4").click()
-		time.sleep(4)
 	except:
-		print('page find err')
+		print('switch_to frame 0 err')
 		return
-		
+
+	try:
+		driver.find_element_by_link_text("3").click()
+	except:
+		print('find_element_by_link_text err')
+  
+  	
 	try:
 		#print driver.page_source
 		#Links = driver.find_element_by_xpath("//a[starts-with(@href,'http://user.qzone.qq.com/822989010/blog/')]")		
@@ -46,8 +49,8 @@ def get_shuoshuo(qq,path):
 		Links = driver.find_elements_by_xpath("//a[starts-with(@href,'http://user.qzone.qq.com/822989010/blog/')]")
 		for link in Links:
 			print (link.get_attribute('href'))
-			get_log_context('https://user.qzone.qq.com/822989010/blog/1488525155')
-			#print (elem.get_attribute("title"))
+			#get_log_context('https://user.qzone.qq.com/822989010/blog/1488525155')
+			print (elem.get_attribute("title"))
 				
 
 	except:
@@ -74,6 +77,11 @@ def get_log_context(url):
 	pathfile = './'+pathfile	
 	print('pathfile='+pathfile)
 	os.system("mkdir -p "+pathfile)
+	isExists=os.path.exists(pathfile)
+	if isExists:
+		print('already exist');
+		return;
+		
 	
 	try:
 		driver.get(url)
@@ -86,6 +94,7 @@ def get_log_context(url):
 		print ("get_log_context err")
 		return
 
+
 	#with open("page_source_1.txt",'wb') as f:
 	#	f.write(driver.page_source)
 	
@@ -96,28 +105,45 @@ def get_log_context(url):
 		print("switch_to.frame err")
 		return
 
+	save_filename = '' 
+	try:
+		#elem = driver.find_elements_by_xpath("//*[@class=blog_tit_detail]")
+		elem = driver.find_element_by_class_name("blog_tit_detail")
+		save_filename = elem.get_attribute('textContent')
+		save_filename = save_filename.strip()
+		print('title='+save_filename)
+	except:
+		print('find_elements_by_xpath blog_tit_detail err')
+	
+
+		
 	with open("page_source_2.txt",'wb') as f:
 		f.write(driver.page_source)
-		
-	try:
-		#for link in driver.find_element_by_xpath("//img[starts-with(@data-src,'http')]"):
-		#	print ("loading...  "+link.get_attribute('src'))						
 
-		#s = re.findall(r'\btina','tian tinaaaa')
+	
+	try:
 		div_str = driver.find_element_by_id('blogDetailDiv').get_attribute('innerHTML')
 			
 		str_txt=div_str
-		urlarr = re.findall(r'data-src=".*?"',str_txt)
+		urlarr = re.findall(r'<img\b.*?data-src=\".*?>',str_txt)
 		for  elem in urlarr:			
-			tmp_url = elem[len('data-src=')+1:len(elem)-1]
+			tmp_url_arr = re.findall(r'\ssrc=\".*?\"',elem);
+			tmp_url = tmp_url_arr[0].strip()
+			tmp_url = tmp_url[len('src="'):len(tmp_url)-1]
+			print(tmp_url);
+			
 			file_path_url = get_file_and_save(tmp_url,pathfile)
 			str_txt = str_txt.replace(tmp_url,file_path_url)
-			print(tmp_url)
 			print(file_path_url)
+		#delete data-src=src <script></script>
+		strinfo = re.compile(r'data-src=\".*?\"')
+		str_txt = strinfo.sub('', str_txt)
+		strinfo = re.compile(r'<script(.|\n)*?</script>')
+		str_txt = strinfo.sub('', str_txt)
 		print('find_element_by_id ok')	
-		with open(pathfile+"/page_source.html",'wb') as f:
+		with open(pathfile+"/"+save_filename+".html",'wb') as f:
 			f.write(str_txt)
-		print(pathfile+"/page_source.html "+'save ok')
+		print(pathfile+"/page_source.html"+'save ok')
 	except:
 		print ("loading pic err")		
 		return
@@ -128,10 +154,13 @@ def get_file_and_save(url, path):
 	cat_img = getHtml(url)
 	print ("down load ok")
 
-	filename=path+"/"+create_id()+'.jpg'
-	with open(filename,'wb') as f:
+	
+	filename=create_id()+'.jpg'
+	pathfilename=path+"/"+filename
+	
+	with open(pathfilename,'wb') as f:
 		f.write(cat_img)
-		print("save pic ok,"+filename)	
+		print("save pic ok,"+pathfilename)	
 	return filename
 	
 	
@@ -152,9 +181,10 @@ def debug_test():
 	print('pathfile='+pathfile)
 	
 	
-	with open(pathfile+"/page_source_3.html",'r') as f:
+	with open("page_source_2.html",'r') as f:
 		str_txt=f.read()
-		urlarr = re.findall(r'data-src=".*?"',str_txt)
+		#urlarr = re.findall(r'data-src=".*?"',str_txt)
+		urlarr = re.findall(r'<img\b.*?data-src=".*?>',str_txt)
 		for  elem in urlarr:			
 			tmp_url = elem[len('data-src=')+1:len(elem)-1]
 			#file_path_url = get_file_and_save(tmp_url,pathfile)
@@ -173,8 +203,7 @@ def debug_test():
 if __name__ == '__main__':
 	
 	#work_path='E:\\0930\\WWWW.csv'
-	get_shuoshuo('sdf','ddd')
-	#get_log_context('https://user.qzone.qq.com/822989010/blog/1488525155')
-	#debug_test()
-	
+	#get_shuoshuo()
+	get_log_context('http://user.qzone.qq.com/822989010/blog/1485066289')
+	#debug_test()	
 	driver.quit()
