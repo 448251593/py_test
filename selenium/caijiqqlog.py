@@ -14,49 +14,72 @@ import time,os,re,urllib,urllib2,hashlib,sys
 #driver.set_preference('network.proxy.http', '127.0.0.1')
 #driver.set_preference('network.proxy.http_port', 17890)
 #driver.maximize_window() 
+
+
 driver=webdriver.Firefox()
 driver.minimize_window() 
 reload(sys)
-sys.setdefaultencoding( "utf-8" )
-def get_shuoshuo():
-    #testexist(path)
+sys.setdefaultencoding( "utf-8" );
+
+def get_page_links(page_num):
+	print('get page='+page_num+'data');
+	driver.find_element_by_xpath("//input[starts-with(@id,'pageIndex_input')]").click()
+	print ('1')
+	driver.find_element_by_xpath("//input[starts-with(@id,'pageIndex_input')]").clear()
+	print ('2')
+	driver.find_element_by_xpath("//input[starts-with(@id,'pageIndex_input')]").send_keys(page_num)
+	print ('3')
+	driver.find_element_by_xpath("//button[@type='button']").click()
+	print ('4')
+	print('sleep 5')
+	time.sleep(5);
+	
+	with open("page_source_frame_new.html",'wb') as f:
+		f.write(driver.page_source);
 	try:
-		#driver.set_page_load_timeout(10)
-		#https://user.qzone.qq.com/822989010/2
-		driver.get('https://user.qzone.qq.com/822989010/2')
-		#driver.get('file:///home/bcg/samba/test/selenium/qqdemo.html')
-		time.sleep(1)
+		Links = driver.find_elements_by_xpath("//a[starts-with(@href,'http://user.qzone.qq.com/822989010/blog/')]");
+		count1 = 0;
+		total = 0;
+		for link in Links:
+			url_context= link.get_attribute('href');
+			print (url_context);
+			total=total+1;
+
+		for link in Links:
+			url_context= link.get_attribute('href');
+			driver1=webdriver.Firefox();
+			driver1.minimize_window();
+			count1=count1+1
+			print('progress=('+str(count1)+'/'+str(total)+')')
+			rslt = get_log_context(driver1,url_context);
+			if rslt == -1:
+				err_log('get_log_context err, url='+url_context)
+			driver1.quit();	
 	except:
-		print ("driver.get https://user.qzone.qq.com/822989010/2 err")
-		return
+		print('find links err');
+
+def driver_browser_init():
+	rstl = 0
+	url = 'https://user.qzone.qq.com/822989010/2';
+	#url = 'file:///home/bcg/samba/test/selenium/page_source_frame.html'
+	try:
+		driver.get(url);	
+		print("get  "+url+'  ok' );
+	except:
+		print('get url err');
+		rstl = -1;
 		
 	try:
-		driver.switch_to.frame(0)
+		driver.switch_to.frame(0);		
+		print('switch frame 0 ok,sleep 10');
+		time.sleep(10);		
 	except:
-		print('switch_to frame 0 err')
-		return
+		print('switch frame 0 err');
+		rstl = -1;
 
-	try:
-		driver.find_element_by_link_text("3").click()
-	except:
-		print('find_element_by_link_text err')
-  
-  	
-	try:
-		#print driver.page_source
-		#Links = driver.find_element_by_xpath("//a[starts-with(@href,'http://user.qzone.qq.com/822989010/blog/')]")		
-		#Links = driver.findElements(By.xpath("//a[starts-with(@href,'http://us')]"))
-		Links = driver.find_elements_by_xpath("//a[starts-with(@href,'http://user.qzone.qq.com/822989010/blog/')]")
-		for link in Links:
-			print (link.get_attribute('href'))
-			#get_log_context('https://user.qzone.qq.com/822989010/blog/1488525155')
-			print (elem.get_attribute("title"))
-				
-
-	except:
-		print ("find_element_by_xpath no find")
-
-
+	with open("page_source_frame.html",'wb') as f:
+		f.write(driver.page_source);
+	return rstl;
 def create_id():
     m = hashlib.md5(str(time.clock()).encode('utf-8'))
     return m.hexdigest()	
@@ -68,61 +91,64 @@ def getHtml(url):
 	content = urllib2.urlopen(req).read()
 	return content
 	
-def get_log_context(url):
+def get_log_context(driver_web,url):
 	print ('getting  ' + url)
 	pathfile = create_path_base_url(url)
 	if len(pathfile)==0:
 		print("get path from url err")
-		return
+		return 0;
 	pathfile = './'+pathfile	
 	print('pathfile='+pathfile)
-	os.system("mkdir -p "+pathfile)
+	
 	isExists=os.path.exists(pathfile)
 	if isExists:
 		print('already exist');
-		return;
+		return 0;
+	else:
+		os.system("mkdir -p "+pathfile)
 		
 	
 	try:
-		driver.get(url)
-		#print (driver.page_source)		
-		time.sleep(1)
-		elem = driver.find_elements_by_id("tblog")
+		driver_web.get(url)
+		#print (driver_web.page_source)		
+		
+		elem = driver_web.find_elements_by_id("tblog")
 		print("find tblog")
-
+		
 	except:
 		print ("get_log_context err")
-		return
+		return -1;
 
 
 	#with open("page_source_1.txt",'wb') as f:
-	#	f.write(driver.page_source)
+	#	f.write(driver_web.page_source)
 	
 	try:
-		driver.switch_to.frame(0)
-		print("switch tblog ok")
+		driver_web.switch_to.frame(0)
+		print("switch tblog ok sleep 3")
+		time.sleep(3)
 	except:
 		print("switch_to.frame err")
-		return
+		return -1;
 
 	save_filename = '' 
 	try:
-		#elem = driver.find_elements_by_xpath("//*[@class=blog_tit_detail]")
-		elem = driver.find_element_by_class_name("blog_tit_detail")
+		#elem = driver_web.find_elements_by_xpath("//*[@class=blog_tit_detail]")
+		elem = driver_web.find_element_by_class_name("blog_tit_detail")
 		save_filename = elem.get_attribute('textContent')
 		save_filename = save_filename.strip()
 		print('title='+save_filename)
 	except:
 		print('find_elements_by_xpath blog_tit_detail err')
-	
+		return -1;
 
 		
-	with open("page_source_2.txt",'wb') as f:
-		f.write(driver.page_source)
+	#with open("page_source_2.txt",'wb') as f:
+	#	f.write(driver_web.page_source)
 
 	
 	try:
-		div_str = driver.find_element_by_id('blogDetailDiv').get_attribute('innerHTML')
+		div_str = driver_web.find_element_by_id('blogDetailDiv').get_attribute('innerHTML')
 			
 		str_txt=div_str
 		urlarr = re.findall(r'<img\b.*?data-src=\".*?>',str_txt)
@@ -146,7 +172,8 @@ def get_log_context(url):
 		print(pathfile+"/page_source.html"+'save ok')
 	except:
 		print ("loading pic err")		
-		return
+		return -1;
+	return 0;
 	
 	
 	
@@ -170,7 +197,9 @@ def create_path_base_url(url):
 	path = strid[0][1:len(strid[0])]
 	return path
 	
-	
+def err_log(log_data):
+	with open("err_log_caijiqqlog.log",'a') as f:
+		f.write(log_data+'\n')	
 	
 def debug_test():
 	pathfile = create_path_base_url('https://user.qzone.qq.com/822989010/blog/1488525103')
@@ -203,7 +232,16 @@ def debug_test():
 if __name__ == '__main__':
 	
 	#work_path='E:\\0930\\WWWW.csv'
-	#get_shuoshuo()
-	get_log_context('http://user.qzone.qq.com/822989010/blog/1485066289')
+	try:
+		rslt = driver_browser_init();
+		if rslt == 0:
+			page_num = 4
+			get_page_links(str(page_num));
+			os.system("mv blog page"+str(page_num))
+		else:
+			print('driver_browser_init');
+	except:
+		print ('driver_browser_init err');
+	#get_log_context('http://user.qzone.qq.com/822989010/blog/1485066289')
 	#debug_test()	
-	driver.quit()
+	driver.quit();
