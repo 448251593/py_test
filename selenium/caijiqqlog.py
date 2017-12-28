@@ -5,7 +5,7 @@ import time,os,re,urllib,urllib2,hashlib,sys
 #import xlrd,xlwt
 #from xlutils.copy import copy
 #使用selenium
-#使用selenium的隐藏PhantimJS浏览器登陆账号后对内容获�?#注意frame与iframe的格式框切换
+#使用selenium的隐藏PhantimJS浏览器登陆账号后对内容获�?#注意frame与iframe的格式框切换
 #driver = webdriver.PhantomJS(executable_path="E:\\mac\\id\\phantomjs-2.1.1-windows\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe")
 #driver=webdriver.Chrome()
 
@@ -54,7 +54,6 @@ def get_page_links(page_num):
 			rslt = get_log_context(driver1,url_context);
 			if rslt == -1:
 				err_log('get_log_context err, url='+url_context)
-			driver1.quit();	
 	except:
 		print('find links err');
 
