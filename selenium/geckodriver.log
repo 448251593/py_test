@@ -3627,6 +3627,7 @@ JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, 
 1514355297890	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.V2HaIrxQklaZ"
 1514355309347	Marionette	INFO	Enabled via --marionette
 1514355416141	Marionette	INFO	Listening on port 37895
+<<<<<<< HEAD
 ExceptionHandler::GenerateDump cloned child 33728
 ExceptionHandler::SendContinueSignalToChild sent continue signal to child
 ExceptionHandler::WaitForContinueSignal waiting for continue signal...
@@ -7016,3 +7017,5 @@ Sandbox: Unexpected EOF, op 0 flags 0302 path /dev/shm/org.chromium.UDQ1J4
 [GFX1-]: Failed 2 buffer db=0 dw=0 for 325, 191, 752, 92
 [GFX1-]: Failed 2 buffer db=0 dw=0 for 0, 0, 1270, 42
 [Child 39783, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+=======
+>>>>>>> 3ad9d991d237e7be1289e3b2f6569c49122442b1

@@ -1,0 +1,523 @@
+<html class="os_mac"><head>
+	<meta content="IE=Edge" http-equiv="X-UA-Compatible">
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+	<meta http-equiv="Content-Language" content="zh-cn">
+	<title>日志</title>
+<!--[if IE]><base href="//qzs.qzone.qq.com/"></base><![endif]-->
+<!--[if !(IE)]><!--><script charset="GB2312" src="https://h5.qzone.qq.com/proxy/domain/r.qzone.qq.com/cgi-bin/user/qz_opcnt2?unikey=http%3A%2F%2Fuser.qzone.qq.com%2F822989010%2Fblog%2F1488250642&amp;g_tk=2032131132&amp;ref=qzone"></script><script charset="utf-8" async="" src="https://qzonestyle.gtimg.cn/qzone/app/v8/config/1.0.js"></script><base href="//qzs.qzone.qq.com/"><!--<![endif]-->
+
+
+
+
+<!--[if IE]>
+<script type="text/javascript">
+    function toAbsURL(s) { 
+     var l = location, h, p, f, i; 
+     if (/^\w+:/.test(s)) { 
+       return s; 
+     } 
+     h = l.protocol + '//' + l.host + (l.port!=''?(':' + l.port):''); 
+     if (s.indexOf('/') == 0) { 
+       return h + s; 
+     } 
+     p = l.pathname.replace(/\/[^\/]*$/, ''); 
+     f = s.match(/\.\.\//g); 
+     if (f) { 
+       s = s.substring(f.length * 3); 
+       for (i = f.length; i--;) { 
+         p = p.substring(0, p.lastIndexOf('/')); 
+       } 
+     } 
+     return h + p + '/' + s; 
+   }
+
+
+    var base = document.getElementsByTagName('base')[0];
+    base.href = toAbsURL(base.href);
+</script>
+<![endif]-->
+
+	<script src="//qzonestyle.gtimg.cn/qzone/v8/applib/embeded.js"></script>
+	<script type="text/javascript">
+
+        
+        var isInPengyou = false;
+        var CONTENT_JS_PATH = "v6/script/";
+
+        
+        var g_exBlogType = 0;
+
+        
+        var pubtime = 1488257700;
+	    var g_sec_only_title = 0;
+	    var g_NonFriendReplyFlag = 0;
+	    var g_qSafeLevel = 0;
+	    var g_default_no_comment = 0;
+
+	    
+	    var g_insertSwfNum = 0;
+	    var swfInit = function(){g_insertSwfNum++;}
+
+	    
+		var getParameter = function(name){
+			var r = new RegExp("(\\?|#|&)" + name + "=([^&#]*)(&|#|$)");
+			var m = location.href.match(r);
+			return (!m?"":m[2]);
+		};
+		var _bJs = function(src, c){return '<script type="text/javascript" charset="'+(c || 'utf-8')+'" src="//'+parent.siDomain+src+'"><\/script>';};
+		var _bCss = function(href){return '<link rel="stylesheet" rev="stylesheet" href="//'+parent.siDomain+href+'" media="screen"/>';};
+		var _dw = function(h){return document.write(h)};
+
+		
+        (function(){
+        	try {
+        		if(!window.frameElement || parent.document.domain != document.domain){
+	        		var uin = getParameter('uin');
+	        		uin = /^(\w+)$/g.test(uin) ? uin : 0;
+	        		var blogId = parseInt(getParameter('blogid'), 10);
+	        		blogId = blogId === undefined ? '' : blogId;
+	        		top.location.href = 'http://user.qzone.qq.com/'+uin+'/blog/'+blogId;
+	        	}
+        	} catch(ex){
+        		top.location.href = 'http://qzone.qq.com/';
+        	}
+        })();
+
+		
+		if (parent.ua){
+			var htmlClass;
+			if (parent.ua.windows && parent.ua.windows > 6){
+				htmlClass = "os_win7"
+			}else if(parent.ua.windows && parent.ua.windows == 6){
+				htmlClass = "os_vista";
+			}else if(parent.ua.windows){
+				htmlClass = "os_winxp";
+			}else{
+				htmlClass = "os_mac";
+			}
+			document.documentElement.className += htmlClass;
+		}
+
+		
+        parent.bcSpeedBasePoint = new Date();
+        parent.blogSpeedBasePoint = (new Date()).getTime(); 
+
+        _dw(_bCss('/qzone_v6/gb/skin/'+parent.QZONE.FP.getQzoneConfig().styleId+'.css')+_bCss('/qzone_v6/blog_app.css'));
+	</script><link rel="stylesheet" rev="stylesheet" href="//qzonestyle.gtimg.cn/qzone_v6/gb/skin/1.css" media="screen"><link rel="stylesheet" rev="stylesheet" href="//qzonestyle.gtimg.cn/qzone_v6/blog_app.css" media="screen">
+
+	
+    <style type="text/css" id="pagestyle">
+    	ul#soso_exp_myNav {display:none;}
+    	.none {display:none;}
+		.lp_blogContainer {padding-left:16px; padding-right:16px;}
+		.lp_pic0_type_1 {width:390px; float:left; margin-left:-16px; display:block; }
+		.lp_pic_type_1 {display:none;}
+		.lp_title_type_1 {height:70px; width:430px; padding-top:50px; padding-bottom:35px; margin-left:374px;}
+		.lp_pic0_type_2 {display:none;}
+		.lp_pic_type_2 {display:block; width:390px; float:right; margin-top:-155px; margin-right:-16px;}
+		.lp_title_type_2 {height:70px; width:430px; margin-top:50px; margin-bottom:35px;}
+		.lp_pic0_type_3 {display:block;}
+		.lp_pic_type_3 {display:none;}
+		.lp_title_type_3 {height:70px; margin-bottom:35px;}
+		.lp_pic0_type_4 {display:none;}
+		.lp_pic_type_4 {display:none;}
+		.lp_title_type_4 {height:70px; width:690px; margin-left:72px; margin-bottom:35px; margin-top:35px;}
+    </style>
+<script id="_qz_jsloader_2" charset="utf-8" src="https://qzonestyle.gtimg.cn/qzone/app/f4a/lite/lite_1.3.js"></script><script id="_qz_jsloader_3" charset="utf-8" src="https://qzs.qq.com/qzone/v5/namecardv2.js"></script></head>
+<body class="mod_iteration"> 
+<script type="text/javascript">
+	
+    window.blogSpeedBasePoint = new Date();
+    var v6xws = false;
+    if((/\/blog/i).test(parent.location.href)) {
+        try {
+            parent.QZONE.statistic.stepTime.genTime(12);
+        } catch (e) {}
+    }
+
+	
+	try {v6xws = !!parent.QZONE.FP._t.QZONE.dressDataCenter.isOldXWMode();} catch(ex){}
+	if(v6xws){
+		parent.QZFL.css.addClassName(document.body, 'old_xiaowo_mode');	//V6小窝
+	}
+	
+</script>
+<div class="bg_mode bg">
+	<div class="box_ml bor">
+		<div class="mode_gb">
+			
+			
+			<div class="mode_gb_title bg2">
+				<div class="bg_mode_gb_title"><h3>日志</h3></div>
+				<div class="mode_gb_other">
+					<p>
+						<a id="returnListArea" href="javascript:void(0)" rel="returnBlogList" class="c_tx" title="返回日志列表">返回日志列表</a>
+					</p>
+				</div>
+			</div>
+			
+
+			<div class="mode_gb_cont">
+				<div class="blog_app" id="app_mod">
+				
+
+				
+					<div class="blog_header">
+						<div class="blog_title">
+							<div id="title" class="blog_tit_cont clearfix">
+								<strong>
+									
+										<span>
+											
+											<span class="blog_tit_detail" tabindex="1">
+												
+												
+												【十张内涵图 2月28日】看妹子满意的笑容，应该找到满意的了
+											</span>
+										</span>
+									
+									
+								</strong>
+								<span class="tit_other_info" style="display:inline;">
+									<span id="pubTime" class="c_tx3">2017-2-27 20:55</span>
+									<span id="readNum" class="c_tx3"> </span>
+									<span id="quoteInfo" class="c_tx3" style="display: none;"> </span>
+								</span>
+							</div>
+						</div>
+
+						
+						<div class="operate_toolbar">
+							<div class="mod_interactive"><ul id="upperInteractive"><li id="upperLike" class="adjust_praise"></li><li id="upperReplyInfoArea"><a id="upperReplyInfoAreaBtn" href="javascript:void(0)" onclick="return false;" class="c_tx rbor3"><span class="icon icon_comment"></span><span class="adjust">评论(2)</span></a></li><li id="upperQuoteInfoArea"><a id="upperQuoteInfoAreaBtn" href="javascript:void(0)" onclick="return false;" class="c_tx rbor3"><span class="icon icon_reprint"></span><span class="adjust">转载</span></a></li><li id="upperShareInfoArea"><a id="upperShareInfoAreaBtn" href="javascript:void(0)" onclick="return false;" class="c_tx rbor3"><span class="icon icon_share"></span><span class="adjust">分享</span></a></li><li id="upperCopyInfoArea"><a id="upperCopyInfoAreaBtn" href="javascript:void(0)" onclick="return false;" class="c_tx rbor3"><span class="icon icon_copy"></span><span class="adjust">复制地址</span></a></li><li class="none c_tx rbor3 addFavButton"></li><li id="upperModifyInfoArea"><a id="upperModifyInfoAreaBtn" href="javascript:void(0)" onclick="return false;" class="c_tx drop_list"><span class="adjust">更多</span><span class="mod_arr"></span></a></li></ul></div>
+							<div class="mod_links">
+								<span><a id="navigatorSpan3" rel="prevBlog" href="javascript:;" class="c_tx"></a></span> | <span><a id="navigatorSpan1" rel="nextBlog" href="javascript:;" class="c_tx"></a></span>
+							</div>
+						</div>
+					</div>
+					<div id="topHintArea"></div>
+					<script type="text/javascript">
+						var g_oBlogData =  {"data":{
+"blogid":1488250642,
+"voteids":0,
+"pubtime":1488257700,
+"replynum":2,
+"category":"个人日记",
+"title":"【十张内涵图 2月28日】看妹子满意的笑容，应该找到满意的了",
+"effect":66049,
+"effect2":524294,
+"exblogtype":0,
+"sus_flag":false,
+"friendrelation":[],
+"lp_type":0,
+"lp_id":0,
+"lp_style":0,
+"lp_flag":0,
+"orguin":822989010,
+"orgblogid":1488250642,
+"mention_uins":[ ],
+"attach":[],"comments":[{"id":2,
+"postTime":1488448672,
+"effect":0,
+"replyNum":0,
+"content":"加微信[x0662x】有你需要的 ",
+"capacity":12143,
+"poster":{
+"id":"770909756",
+"platform":1,
+"name":"桔色成人 ",
+"emoji":[ ]}
+,
+"bmp":"88949dc00407c001",
+"ismyreply":0,
+"replies":[]},
+{"id":3,
+"postTime":1489046750,
+"effect":0,
+"replyNum":0,
+"content":"[em]e100[\/em] ",
+"capacity":12151,
+"poster":{
+"id":"845352005",
+"platform":1,
+"name":"雪雪 ",
+"emoji":[ ]}
+,
+"bmp":"1800940000020001",
+"ismyreply":0,
+"replies":[]}]}};
+						
+					</script>
+					<div class="blog_cont">
+						
+						
+						<div class="blog_cont_details" id="veryContent" style="height:auto!important">
+							<table id="blogContentTable" style="table-layout:fixed;width:100%;position:relative" cellspacing="0" cellpadding="0">
+								<tbody><tr>
+									<td style="word-wrap:break-word" valign="top">
+										<div id="blogContainer" style="position:relative; overflow:hidden; height:100%;">
+											<script type="text/javascript">
+												var defaultHeight = [0, 530, 530, 220, 0];
+												var heightMap = {'32221':530,'39999':230,'45761':230,'45851':230,'45808':230,'46093':230,'46517':230,'46518':230,'48444':230,'49438':230,'49445':230,'50064':230,'50065':230,'51010':230,'51486':233,'51495':230,'51957':230,'51963':230,'52826':230,'52828':230,'52829':230,'52835':230,'53122':230,'53514':230,'53517':230,'53767':230,'53768':230,'53769':230,'53882':230,'53884':230,'53885':230,'54179':230,'54180':230,'54479':230,'54481':230,'54482':230,'54483':230,'54658':230,'54660':230,'54662':230,'54663':230,'54664':230,'54843':230,'54844':230,'54845':230,'54876':230,'54877':230,'54980':230,'54981':230,'55208':230,'55209':230,'55211':230,'55212':230,'60726':1,'81177':80,'82158':162,'82159':132,'82368':170,'82369':180,'82652':180,'82957':140,'82958':180,'83409':170,'85320':150,'85987':206,'89634':197,'93145':80};
+												var id = g_oBlogData.data.lp_id || 0;
+												var is_diy = g_oBlogData.data.lp_type;
+												var type = is_diy ? 3 : (((g_oBlogData.data.lp_style >> 8) & 0xff) || 0);
+												var flag = g_oBlogData.data.lp_flag || 0;
+												var picHeight = flag ? '230px' : ((heightMap[id] || defaultHeight[type]) + 'px');
+												var pic0Class = type ? ('lp_pic0_type_' + type) : 'none';
+												var picClass = type ? ('lp_pic_type_' + type) : 'none';
+												var titleClass = type ? ('lp_title_type_' + type) : '';
+												var lp_tmp = [
+													'<img id="paperPicArea0" style="height:',picHeight,'" class="',pic0Class,'" src="/ac/b.gif" />',
+													'<div id="paperTitleArea" align="center" class="',titleClass,'" >',
+													'	<span id="paperTitle" style="display:block;word-break:break-all">',
+													'	</span>',
+													'</div>',
+													'<img id="paperPicArea" style="height:',picHeight,'" class="',picClass,'" src="/ac/b.gif" />'
+												].join('');
+												document.write(lp_tmp);
+											</script><img id="paperPicArea0" style="height:0px" class="none" src="/ac/b.gif"><div id="paperTitleArea" class="" align="center">	<span id="paperTitle" style="display:block;word-break:break-all">	</span></div><img id="paperPicArea" style="height:0px" class="none" src="/ac/b.gif">
+                                            <div id="blogDetailDiv" style="font-size:14px;" data-webp-ctx-e="1">
+                                                
+                                                <div class="blog_details_20120222"><div>&nbsp;<span style="color:rgb(84, 84, 84);font-family:宋体;font-size:16px;widows:1;margin:0px;padding:0px;font-weight:bold">引导语：</span><span style="color:rgb(84, 84, 84);font-family:宋体;font-size:16px;widows:1">今年春节陪老婆回她家，其乐融融，忘乎所以。昨天老婆撒娇，惹我生气，我就冲她喊：＂你这毛病再不改，我就找你妈退货了！＂谁料岳母听到了，正紧张，却听岳母悠悠说道：＂这年头哪有退货道理，最多也就是换货＂。当我回头看见满脸羞红的小姨子时，我的心都醉了。这么好的丈母娘，哪里找啊！</span><br></div><span style="margin:0px;padding:0px;color:rgb(84, 84, 84);widows:1;font-size:16px;font-family:宋体"><span style="margin:0px;padding:0px"><br></span></span><span style="margin:0px;padding:0px;color:rgb(84, 84, 84);widows:1;font-family:宋体;font-size:16px"><span style="margin:0px;padding:0px">1、看妹子满意的笑容，应该找到满意的了。<br><br><img alt="图片" data-img-idx="0" data-src="http://a3.qpic.cn/psb?/V11BnhDf16EbKg/wwJYhSEcOVzjW2KRWixz9If5vevra6d4B8SI8Mb9OJ8!/b/dG4BAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=fAF9AQAAAAADNxM!&amp;su=418482417&amp;tm=1514350800&amp;sce=0-12-12&amp;rf=2-9" src="http://a3.qpic.cn/psb?/V11BnhDf16EbKg/wwJYhSEcOVzjW2KRWixz9If5vevra6d4B8SI8Mb9OJ8!/b/dG4BAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=fAF9AQAAAAADNxM!&amp;su=418482417&amp;tm=1514350800&amp;sce=0-12-12&amp;rf=2-9" style="margin:0px;padding:0px;border-width:0px;border-style:none;width:380px;height:381px"><br><br>2、不由的看了好久！<br><br><img alt="图片" data-img-idx="1" data-src="http://a3.qpic.cn/psb?/V11BnhDf16EbKg/eFunY6JEsfWlN.f848THa2lbvrjaxG7yRo11XqX7FLY!/b/dG4BAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=mgGtAQAAAAADJzU!&amp;su=427221377&amp;tm=1514350800&amp;sce=0-12-12&amp;rf=2-9" src="http://a3.qpic.cn/psb?/V11BnhDf16EbKg/eFunY6JEsfWlN.f848THa2lbvrjaxG7yRo11XqX7FLY!/b/dG4BAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=mgGtAQAAAAADJzU!&amp;su=427221377&amp;tm=1514350800&amp;sce=0-12-12&amp;rf=2-9" style="margin:0px;padding:0px;border-width:0px;border-style:none;width:410px;height:429px"><br><br>3、姑娘！墨水都没沾上装什么装啊！<br><br><img alt="图片" data-img-idx="2" data-src="http://a2.qpic.cn/psb?/V11BnhDf16EbKg/YGWWbOWJQWVYnOIyuTVXoAuNbSgYU9UVuI7tNf8R84A!/b/dCUAAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=kAFKAQAAAAADJ9g!&amp;su=3100190737&amp;tm=1514350800&amp;sce=0-12-12&amp;rf=2-9" src="http://a2.qpic.cn/psb?/V11BnhDf16EbKg/YGWWbOWJQWVYnOIyuTVXoAuNbSgYU9UVuI7tNf8R84A!/b/dCUAAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=kAFKAQAAAAADJ9g!&amp;su=3100190737&amp;tm=1514350800&amp;sce=0-12-12&amp;rf=2-9" style="margin:0px;padding:0px;border-width:0px;border-style:none;width:400px;height:330px"><br><br>4、牡丹花下死，做鬼也风流。。。<br><br><img alt="图片" data-img-idx="3" data-src="http://a3.qpic.cn/psb?/V11BnhDf16EbKg/Wxe27qkP*IorGlhT9CO0JxWtBIMTmAd74DrG4HWenyc!/b/dG4BAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=cwGpAQAAAAADJ9g!&amp;su=4241885825&amp;tm=1514350800&amp;sce=0-12-12&amp;rf=2-9" src="http://a3.qpic.cn/psb?/V11BnhDf16EbKg/Wxe27qkP*IorGlhT9CO0JxWtBIMTmAd74DrG4HWenyc!/b/dG4BAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=cwGpAQAAAAADJ9g!&amp;su=4241885825&amp;tm=1514350800&amp;sce=0-12-12&amp;rf=2-9" style="margin:0px;padding:0px;border-width:0px;border-style:none;width:371px;height:425px"><br><br>5、有些人真的只能看背影。。。<br><br><img alt="图片" data-img-idx="4" data-src="http://a3.qpic.cn/psb?/V11BnhDf16EbKg/U1FKUYrJziNr14VxNuBu27hKfWjN46v.CE07RbvNlwg!/b/dG4BAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=gwFiAQAAAAADJ.M!&amp;su=479243569&amp;tm=1488247200&amp;sce=0-12-12&amp;rf=2-9" src="http://a3.qpic.cn/psb?/V11BnhDf16EbKg/U1FKUYrJziNr14VxNuBu27hKfWjN46v.CE07RbvNlwg!/b/dG4BAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=gwFiAQAAAAADJ.M!&amp;su=479243569&amp;tm=1514350800&amp;sce=0-12-12&amp;rf=2-9" style="margin:0px;padding:0px;border-width:0px;border-style:none;width:387px;height:354px"><br><br>6、这椅子看着很舒服的样子。。。<br><br><img alt="图片" data-img-idx="5" data-src="http://a2.qpic.cn/psb?/V11BnhDf16EbKg/xwEpwRO5ddlwBeOd5gEeOWNvsoyDdUdGmh6lrR2.YdM!/b/dHkBAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=kAFeAQAAAAADJ8w!&amp;su=349513281&amp;tm=1514350800&amp;sce=0-12-12&amp;rf=2-9" src="http://a2.qpic.cn/psb?/V11BnhDf16EbKg/xwEpwRO5ddlwBeOd5gEeOWNvsoyDdUdGmh6lrR2.YdM!/b/dHkBAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=kAFeAQAAAAADJ8w!&amp;su=349513281&amp;tm=1514350800&amp;sce=0-12-12&amp;rf=2-9" style="margin:0px;padding:0px;border-width:0px;border-style:none;width:400px;height:350px"><br><br>7、这位少年我们需要谈一谈了。<br><br><img alt="图片" data-img-idx="6" data-src="http://a3.qpic.cn/psb?/V11BnhDf16EbKg/38zW2uX1aC59GdeqTNRq*juXJqNHUsCHyk0h.sS10xs!/b/dG4BAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=jgEoAQAAAAADJ6Q!&amp;su=4145313073&amp;tm=1514350800&amp;sce=0-12-12&amp;rf=2-9" src="http://a3.qpic.cn/psb?/V11BnhDf16EbKg/38zW2uX1aC59GdeqTNRq*juXJqNHUsCHyk0h.sS10xs!/b/dG4BAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=jgEoAQAAAAADJ6Q!&amp;su=4145313073&amp;tm=1514350800&amp;sce=0-12-12&amp;rf=2-9" style="margin:0px;padding:0px;border-width:0px;border-style:none;width:398px;height:296px"><br><br>8、这是想要一起来探讨生命么？<br><br><img alt="图片" data-img-idx="7" data-src="http://a3.qpic.cn/psb?/V11BnhDf16EbKg/ffpeYLZpD1MWSZYLLQ8MqaGlUebzJdvxVI4iPWJvINs!/b/dG4BAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=awGUAQAAAAADJ*0!&amp;su=446711809&amp;tm=1514350800&amp;sce=0-12-12&amp;rf=2-9" src="http://a3.qpic.cn/psb?/V11BnhDf16EbKg/ffpeYLZpD1MWSZYLLQ8MqaGlUebzJdvxVI4iPWJvINs!/b/dG4BAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=awGUAQAAAAADJ*0!&amp;su=446711809&amp;tm=1514350800&amp;sce=0-12-12&amp;rf=2-9" style="margin:0px;padding:0px;border-width:0px;border-style:none;width:363px;height:404px"><br><br>9、妹子，需要我帮忙吗？<br><br><img alt="图片" data-img-idx="8" data-src="http://a3.qpic.cn/psb?/V11BnhDf16EbKg/yjdQfJXD87UPh5lw1GhvX.Pr7u4KAWNdB5S4yEuc3e4!/b/dBYAAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=ggHDAQAAAAADB2M!&amp;su=4200077569&amp;tm=1514350800&amp;sce=0-12-12&amp;rf=2-9" src="http://a3.qpic.cn/psb?/V11BnhDf16EbKg/yjdQfJXD87UPh5lw1GhvX.Pr7u4KAWNdB5S4yEuc3e4!/b/dBYAAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=ggHDAQAAAAADB2M!&amp;su=4200077569&amp;tm=1514350800&amp;sce=0-12-12&amp;rf=2-9" style="margin:0px;padding:0px;border-width:0px;border-style:none;width:386px;height:451px"><br><br>10、透视装！妹子什么情况？<br><br><span style="margin:0px;padding:0px"><img alt="图片" data-img-idx="9" data-src="http://a3.qpic.cn/psb?/V11BnhDf16EbKg/j.FVds2TDBeGPu1TyRpQKnw9QVoS.gr4FnMJGzHz*6I!/b/dG4BAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=hwGUAQAAAAADBzE!&amp;su=4164249313&amp;tm=1514350800&amp;sce=0-12-12&amp;rf=2-9" src="http://a3.qpic.cn/psb?/V11BnhDf16EbKg/j.FVds2TDBeGPu1TyRpQKnw9QVoS.gr4FnMJGzHz*6I!/b/dG4BAAAAAAAA&amp;ek=1&amp;kp=1&amp;pt=0&amp;bo=hwGUAQAAAAADBzE!&amp;su=4164249313&amp;tm=1514350800&amp;sce=0-12-12&amp;rf=2-9" style="margin:0px;padding:0px;border-width:0px;border-style:none;width:391px;height:404px">&nbsp;<br><br></span></span></span><span style="margin:0px;padding:0px;color:rgb(84, 84, 84);widows:1;font-weight:bold;font-family:宋体;font-size:16px">编后语：</span><span style="margin:0px;padding:0px;color:rgb(84, 84, 84);widows:1;font-family:宋体;font-size:16px">感谢一直以来关注并支持【十张内涵图】的大大们，这个栏目因为你们才会一直存在，如果喜欢它，就随手点击转载分享给你的好友。让欢乐传达给更多人。</span><span style="margin:0px;padding:0px;color:rgb(84, 84, 84);widows:1;font-family:宋体;font-size:16px"><span style="margin:0px;padding:0px"><span style="margin:0px;padding:0px"><span style="margin:0px;padding:0px"><br></span></span></span></span><span style="margin:0px;padding:0px;color:rgb(84, 84, 84);widows:1;font-family:宋体;font-size:16px;font-weight:bold"></span><span style="margin:0px;padding:0px;color:rgb(84, 84, 84);widows:1;font-family:宋体;font-size:16px"></span><span style="margin:0px;padding:0px;color:rgb(84, 84, 84);widows:1;font-family:宋体;font-size:16px"></span><span style="margin:0px;padding:0px;color:rgb(84, 84, 84);widows:1;font-family:宋体;font-size:16px">&nbsp;</span><span style="margin:0px;padding:0px;color:rgb(84, 84, 84);widows:1;font-family:宋体;font-size:16px"><br><span style="margin:0px;padding:0px"></span></span><div style="margin:0px;padding:0px;color:rgb(84, 84, 84);font-family:punctuation, 微软雅黑, Tohoma;widows:1;text-align:center;font-size:16px"><span style="margin:0px;padding:0px;font-family:宋体">&nbsp;</span><span style="margin:0px;padding:0px;font-family:宋体">以上言论均来自空间网友精华，如有雷同纯属巧合！<br><br></span></div><div style="margin:0px;padding:0px;color:rgb(84, 84, 84);font-family:punctuation, 微软雅黑, Tohoma;widows:1;text-align:right;font-size:16px"><div style="margin:0px;padding:0px"><div style="margin:0px;padding:0px"><div style="margin:0px;padding:0px"><div style="margin:0px;padding:0px"><div style="margin:0px;padding:0px"><span style="margin:0px;padding:0px;font-family:宋体;color:rgb(0, 0, 0)"><a href="http://user.qzone.qq.com/82483143/main" se_prerender_url="complete" style="color:rgb(236, 92, 164);margin:0px;padding:0px;text-decoration:none;font-weight:bold" target="_blank" title="http://user.qzone.qq.com/82483143/main"><span style="margin:0px;padding:0px">&nbsp;</span><span style="margin:0px;padding:0px;color:rgb(0, 0, 0);font-weight:normal">供稿人：伊伊&nbsp;（QQ 82483143</span></a>）</span></div></div></div></div></div></div></div>
+                                                
+                                            </div>
+										</div>
+										<img id="paperPicArea1" style="position:relative;display:none;top:auto;" src="/ac/b.gif">
+									</td>
+								</tr>
+							</tbody></table>
+							<div id="paperBottom" class="clear"></div>
+						</div>
+
+						
+						<div id="attachList" class="attachment_list bgr2 none"></div>
+					</div>
+					<div class="blog_footer">
+						
+						<div class="operate_toolbar">
+							<div class="mod_interactive"><ul id="footerInteractive"><li id="footerLike" class="adjust_praise"></li><li id="footerReplyInfoArea"><a id="footerReplyInfoAreaBtn" href="javascript:void(0)" onclick="return false;" class="c_tx rbor3"><span class="icon icon_comment"></span><span class="adjust">评论(2)</span></a></li><li id="footerQuoteInfoArea"><a id="footerQuoteInfoAreaBtn" href="javascript:void(0)" onclick="return false;" class="c_tx rbor3"><span class="icon icon_reprint"></span><span class="adjust">转载</span></a></li><li id="footerShareInfoArea"><a id="footerShareInfoAreaBtn" href="javascript:void(0)" onclick="return false;" class="c_tx rbor3"><span class="icon icon_share"></span><span class="adjust">分享</span></a></li><li id="footerCopyInfoArea"><a id="footerCopyInfoAreaBtn" href="javascript:void(0)" onclick="return false;" class="c_tx rbor3"><span class="icon icon_copy"></span><span class="adjust">复制地址</span></a></li><li class="none c_tx rbor3 addFavButton"></li><li id="footerModifyInfoArea"><a id="footerModifyInfoAreaBtn" href="javascript:void(0)" onclick="return false;" class="c_tx drop_list"><span class="adjust">更多</span><span class="mod_arr"></span></a></li></ul></div>
+							<div class="mod_links">
+								<span><a id="navigatorSpan4" href="javascript:void(0)" rel="prevBlog" class="c_tx"></a></span>
+								<span><a id="navigatorSpan2" href="javascript:void(0)" rel="nextBlog" class="c_tx"></a></span>
+							</div>
+						</div>
+						
+						<div class="c_tx3" id="likeDetailArea" style="height: 12px; line-height: 0;"></div><div class="mod_tags c_tx3">
+							<span id="categorySpan" class=""><a id="infoBlogCate" href="javascript:void(0)" onclick="return false;" class="c_tx3">个人日记</a>&nbsp;|</span>
+							<span id="rightSettingSpan" class="none"></span>
+							<span id="contentAuthorSpan" class="">原创：<a link="nameCard_822989010" uin="822989010" id="contentAuthorHref" onclick="QZBlog.Util.Statistic.sendPV('original_author_click', 'rizhi.qzone.qq.com');" class="c_tx3 q_namecard" target="_blank" href="http://user.qzone.qq.com/822989010">我们都爱内涵图</a></span>
+							<span id="tagsSpan" class="blog_tags none"></span>
+						</div>
+						
+						<div id="mentionDiv" class="mod_links c_tx3 none"></div>
+						
+						
+						<div class="mod_signature">
+							<div class="tit">
+								<h4>签名档</h4>
+								<a href="javascript:void(0)" title="" class="c_tx none" onclick="InfoManager.modifySignature();return false;"></a>
+							</div>
+							<div class="bor3 cont" id="signatureDIV"></div>
+							<div class="bor3 cont edit" id="modifySigDiv" style="display:none;">
+								<div class="editor"></div>
+								<p class="btn"><button type="button" class="bt_tx2">发表</button> <a href="javascript:void(0)" title="取消" class="c_tx">取消</a></p>
+							</div>
+						</div>
+						
+						<div class="mod_related_info bbor3" id="recentBlogDIV" style="display:none">
+							<div class="mod_title">
+								<h4 style="cursor: pointer;">主人的热评日志</h4>
+								<span id="ctrl_arr" class="mod_arr" onclick="InfoScheduler.hideShowRecentBlog(this);return false;"></span>
+							</div>
+							<div class="mod_list">
+								<ul id="recentBlogList" style="display:none;">
+								</ul>
+							</div>
+						</div>
+						
+						<div class="mod_visitor" id="visitorArea" style="display:none"></div>
+						<div id="commentListContainer"><div class="blog_comment "><div class="mod_tab"><div class="mode_menu_tag2"><ul><li class="nowtag"><a id="commentCnt" href="javascript:;">评论(2)</a></li></ul></div><div class="mod_tab_other"><p class="mod_title_other"><a href="javascript:;" id="switchSigHref" onclick="CommentManager.switchSignature(this);return false;" title="显示评论签名" class="c_tx none">显示评论签名</a></p><p class="mod_title_other" id="famousOperArea" style="display:none"><span id="leftDeleteComParag" style="display:none"><label for="batchSelAllInput">全选</label><input id="batchSelAllInput" onclick="CommentManager.selectAllComments(this.checked);" type="checkbox"><button class="bt_tx2" style="margin-left:10px;" onclick="CommentManager.deleteBatchComments();">删除</button></span><a id="noBatchDelComHref" style="display:none" href="javascript:;" onclick="CommentManager.showCommentCheckBoxs(false, false); return false;" class="c_tx" title="取消批量删除评论">取消批量删除</a><a id="batchDelComHref" onclick="CommentManager.showCommentCheckBoxs(true, false); return false;" href="javascript:;" class="c_tx" title="批量删除评论">批量删除</a></p></div></div><p class="no_message" style="display:none" id="noCommentTip"><span class="c_tx3">还没有人发表评论</span>&nbsp;&nbsp;<a href="javascript:;" onclick="CommentManager.jumpCommmentEditor();QZBlog.Util.Statistic.sendPV('releasecomment_click', 'rizhi.qzone.qq.com');return false;" title="来坐第一个沙发" class="c_tx">来坐第一个沙发</a></p><div id="commentDiv" style=""><div class="hint" id="cheatHintArea" style="display:none"><strong class="icon_hint"><span>提示</span></strong><span>QQ空间郑重承诺：致力于为用户提供绿色、健康的网络空间！坚决杜绝低俗、恶意、反动等不良信息，在此愿每位QQ空间用户共同参与维护！对您的举报信息我们将第一时间核查处理，请点击：<a href="http://blog.qq.com/qzone/20050606/1303195943.htm" class="c_tx4" target="_blank">了解QQ空间举报入口</a></span><a href="javascript:;" title="关闭提示" class="hint_close" onclick="document.getElementById('cheatHintArea').style.display='none';if(parent.UserBlogConfig){parent.UserBlogConfig.setCheatHintFlag(true);}"></a></div><ol id="commentListDiv" class="list_without_avatar"><li id="singleCommentDiv1"><div name="commentItemDiv" class="comment_wrap bbor3 no_avatar"><div class="user_info"><a link="nameCard_770909756" href="http://user.qzone.qq.com/770909756" target="_blank" title="头像" onclick="QZBlog.Logic.TCISDClick('Comment.Picture', '/BlogContent');QZBlog.Util.Statistic.sendPV('guestportrait_comment', 'rizhi.qzone.qq.com');" class="avatar q_namecard"><img id="imgUrl1" src="/qzone_v4/client/userinfo_icon/5001.gif" alt="桔色成人 "></a><p class="username"><span class=""><a style="" href="http://user.qzone.qq.com/770909756" target="_blank" title="桔色成人 " link="nameCard_770909756" onclick="QZBlog.Logic.TCISDClick('Comment.Nick', '/BlogContent');" class="c_tx q_namecard">桔色成人 </a></span><a href="http://pay.qq.com/ipay/index.shtml?n=3&amp;c=xxjzghh,xxjzgw&amp;aid=mingpian_icon&amp;ch=qdqb,kj" target="_blank" title="点击查看黄钻特权详情" class="qz_vip_icon_l_year qz_vip_icon_l_year_3 year_vip"></a></p><p class="flower_info" id="flowerDiv1"></p></div><div class="comment_info"><div class="tit"><input name="commentCheckBox" value="2__770909756" type="checkbox"><span class="floor">1楼 <span class="icon icon_angle_love none" title="天使之爱"></span></span><span class=" username "><a href="http://user.qzone.qq.com/770909756" target="_blank" title="桔色成人 " link="nameCard_770909756" class="c_tx q_namecard">桔色成人 </a><a href="javascript:;" style="display:none" id="yellowHref1" target="_blank" title="点击查看黄钻特权详情" onclick="QZBlog.Logic.gotoVipInfo('770909756');return false;"></a></span><span class="c_tx3 time">评论时间: 2017-03-02 01:57:52</span><div id="op2" class="op"><p class="op_normal"><a href="javascript:;" onclick="CommentManager.quoteCommentContent('2');return false;" class="c_tx qzCommentOption" title="引用该评论">引用</a><a href="javascript:;" onmouseout="CommentManager.toggleList(2, true);" onmouseover="CommentManager.toggleList(2, false);" id="commentMoreOP2" title="更多" class="c_tx arr_wrap"><span class="mod_arr"></span></a></p><ul class="bg bor2" onmouseout="CommentManager.toggleList(2, true);" onmouseover="CommentManager.toggleList(2, false);" id="commentMoreOPList2" style="width:75px"><li onmouseover="this.className='bg2';" onmouseout="this.className='';">  <a href="javascript:;" class="c_tx" onclick="CommentManager.reportComment('770909756', 2, undefined);return false;" title="举报该评论">举报</a></li></ul></div></div><div class="gift_pic"><a href="javascript:;" onclick="CommentManager.showGift('2');return false;" title=""></a><p><a href="javascript:;" onclick="CommentManager.showGift('2');return false;" class="c_tx" title=""></a></p></div><table style="width:100%"><tbody><tr><td style="font-size:14px">加微信[x0662x】有你需要的 </td></tr></tbody></table><div class="mod_comment" style="width:400px; font-size:14px;" id="multiReplyDiv2"></div><div class="tbor3 c_tx3 signature none" id="signatureDIV1"></div></div></div></li><li id="singleCommentDiv2"><div name="commentItemDiv" class="comment_wrap bbor3 no_avatar"><div class="user_info"><a link="nameCard_845352005" href="http://user.qzone.qq.com/845352005" target="_blank" title="头像" onclick="QZBlog.Logic.TCISDClick('Comment.Picture', '/BlogContent');QZBlog.Util.Statistic.sendPV('guestportrait_comment', 'rizhi.qzone.qq.com');" class="avatar q_namecard"><img id="imgUrl2" src="/qzone_v4/client/userinfo_icon/5001.gif" alt="雪雪 "></a><p class="username"><span class=""><a style="" href="http://user.qzone.qq.com/845352005" target="_blank" title="雪雪 " link="nameCard_845352005" onclick="QZBlog.Logic.TCISDClick('Comment.Nick', '/BlogContent');" class="c_tx q_namecard">雪雪 </a></span><a href="http://pay.qq.com/ipay/index.shtml?n=3&amp;c=xxjzghh,xxjzgw&amp;aid=mingpian_icon&amp;ch=qdqb,kj" target="_blank" title="点击查看黄钻特权详情" class="qz_vip_icon_l qz_vip_icon_l_gray_1 normal_vip"></a></p><p class="flower_info" id="flowerDiv2"></p></div><div class="comment_info"><div class="tit"><input name="commentCheckBox" value="3__845352005" type="checkbox"><span class="floor">2楼 <span class="icon icon_angle_love none" title="天使之爱"></span></span><span class=" username "><a href="http://user.qzone.qq.com/845352005" target="_blank" title="雪雪 " link="nameCard_845352005" class="c_tx q_namecard">雪雪 </a><a href="javascript:;" style="display:none" id="yellowHref2" target="_blank" title="点击查看黄钻特权详情" onclick="QZBlog.Logic.gotoVipInfo('845352005');return false;"></a></span><span class="c_tx3 time">评论时间: 2017-03-09 00:05:50</span><div id="op3" class="op"><p class="op_normal"><a href="javascript:;" onclick="CommentManager.quoteCommentContent('3');return false;" class="c_tx qzCommentOption" title="引用该评论">引用</a><a href="javascript:;" onmouseout="CommentManager.toggleList(3, true);" onmouseover="CommentManager.toggleList(3, false);" id="commentMoreOP3" title="更多" class="c_tx arr_wrap"><span class="mod_arr"></span></a></p><ul class="bg bor2" onmouseout="CommentManager.toggleList(3, true);" onmouseover="CommentManager.toggleList(3, false);" id="commentMoreOPList3" style="width:75px"><li onmouseover="this.className='bg2';" onmouseout="this.className='';">  <a href="javascript:;" class="c_tx" onclick="CommentManager.reportComment('845352005', 3, undefined);return false;" title="举报该评论">举报</a></li></ul></div></div><div class="gift_pic"><a href="javascript:;" onclick="CommentManager.showGift('3');return false;" title=""></a><p><a href="javascript:;" onclick="CommentManager.showGift('3');return false;" class="c_tx" title=""></a></p></div><table style="width:100%"><tbody><tr><td style="font-size:14px"><img style="vertical-align:baseline  !important" src="http://qzs.qq.com/qzone/em/e100.gif"><wbr> </td></tr></tbody></table><div class="mod_comment" style="width:400px; font-size:14px;" id="multiReplyDiv3"></div><div class="tbor3 c_tx3 signature none" id="signatureDIV2"></div></div></div></li></ol><div class="page_wrap"><div class="pagenav" id="commentPageIndexArea"><div class="mod_pagenav"><p class="mod_pagenav_main"><span class="mod_pagenav_disable "><span>上一页</span></span><a onclick="QZBlog.Util.PageIndexManager.goPage(-1);return false;" class="c_tx none" href="javascript:;">上一页</a> <span class="mod_pagenav_count"> <span class="current"><span>1</span></span> </span> <span class="mod_pagenav_disable "><span>下一页</span></span><a class="c_tx none" onclick="QZBlog.Util.PageIndexManager.goPage(1);return false;" href="javascript:;">下一页</a> </p><p class="mod_pagenav_option"><span class="mod_pagenav_turn">转到<input class="textinput" id="pageIndex_input2" value="1" type="text"> 页 <button onclick="QZBlog.Util.PageIndexManager.goDirectPage($('pageIndex_input2').value.trim());" type="button" class="bt_tx2">确 定</button></span></p></div></div></div><div id="broadCastArea" style="display:none;"><div class="interact_wrap" id="broadcastListDiv"></div><div class="page_wrap"><div class="pagenav" id="broadCastPagination"></div></div></div></div></div><div><div class="qzCommentOption post_comment " id="commentArea"><div class="mod_title"><h4>发表评论</h4></div><div class="none post_cont" style="padding-left:0px;"><div class="hint"><img src="/ac/b.gif" alt="提示" class="icon_hint_advise"><span>系统正在进行升级维护中,暂不支持日志评论,敬请谅解!</span></div></div><div class=" post_cont"><div class="author"><p class="avatar"><a href="javascript:;" class=""><img src="/qzone_v4/client/userinfo_icon/5001.gif" id="commentAuthorImg" style="width:100px; height:100px;"></a></p></div><div class="post"><div class="post_wrap"><div id="commentEditorCon" class="bor3"><textarea class="editor_textarea" id="simpleCommentEditor" title="正在加载编辑器..." placeholder="您可以在这里发表评论"></textarea></div><div class="post_ft"><p class="post_publish"><button type="button" class="bt_tx2" id="submitCommentBtn">发表</button><a class="c_tx notice" id="registHrefEntry" href="http://dynamic.qzone.qq.com/cgi-bin/portal/cgi_select_activity" target="_blank">马上开通空间，体验权限日志、记事本等全新日志体验！</a></p><div class="op_toolbar_cont c_tx3 none" id="moreCommentOptionDiv"><p class="mod_arrange"><label id="shareArticleContainer" for="shareArticleCheck"><input id="shareArticleCheck" type="checkbox">分享此文章</label></p><p class="mod_arrange"><label title="隐身草道具" for="anonymcheck"><input id="anonymcheck" type="checkbox">匿名评论(隐身草)</label></p></div></div></div></div></div></div><style type="text/css"> #commentEditorCon {background-color:white;} div.veStatusbarContainer {display:none} div.veToolbarContainer {border-bottom:1px solid #ddd;} .editor_textarea {width:750px; height:150px; border:none; padding:5px;} #soso_exp_platform_box {margin-top:-332px}</style></div></div>
+					</div>
+					<div id="shareList" class="op_more bg bor2 op_extend none" style="top:0px;left:0px;">
+						<a id="shareListTitle" href="javascript:void(0)" onclick="return false;" class="c_tx drop_list">
+							<span class="icon icon_share"></span><span class="adjust">分享</span><span class="mod_arr"></span>
+						</a>
+						<ul id="shareListContainer">
+							<li id="shareBlogContainer" class="bg6_hover">
+								<a id="shareBlogBtn" href="javascript:void(0)" onclick="return false;" class="c_tx">分享到空间</a>
+							</li>
+							<li id="tweetBlogContainer" class="bg6_hover none">
+								<a id="tweetBlogBtn" href="javascript:void(0)" onclick="return false;" class="c_tx">转播到微博</a>
+							</li>
+						</ul>
+					</div>
+					<div id="modifyList" class="op_more op_extend op_drop none" style="top:0px;left:0px;">
+						<a id="modifyListTitle" href="javascript:void(0)" onclick="return false;" class="c_tx bg bor2 drop_list">
+							<span id="ModifyListAreaDesc" class="adjust">更多</span>
+							<span class="mod_arr"></span>
+						</a>
+						<ul class="bg bor2">
+							<li id="editBlogBtnContainer" class="none">
+								<a id="editBlogBtn" href="javascript:void(0)" onclick="return false;" class="c_tx bg6_hover">编辑</a>
+							</li>
+							<li id="deleteBlogBtnContainer" class="none">
+								<a id="deleteBlogBtn" href="javascript:void(0)" onclick="return false;" class="c_tx bg6_hover">删除</a>
+								<hr class="bbor2">
+							</li>
+							<li id="complaintBlogBtnContainer" class="">
+								<a id="complaintBlogBtn" href="javascript:void(0)" onclick="return false;" class="c_tx bg6_hover">举报</a>
+							</li>
+							<li id="useLetterPagerBtn" class="none">
+								<a href="javascript:void(0)" onclick="return false;" class="c_tx bg6_hover">使用该信纸</a>
+								<hr class="bbor2">
+							</li>
+							<li id="modSizeBtn" class="">
+								<div class="mod_size">
+									<span class="size_tip">字体：</span>
+									<span id="bigFonts" onclick="return false;" class="c_tx2 bg6_hover">大</span>
+									<span id="midFonts" onclick="return false;" class="c_tx2 bg6 current">中</span>
+									<span id="smallFonts" onclick="return false;" class="c_tx2 bg6_hover">小</span>
+								</div>
+								
+							</li>
+							<li id="setBlogRightBtnContainer" class="none">
+								<a id="setBlogRightBtn" href="javascript:void(0)" onclick="return false;" class="c_tx bg6_hover">权限设置</a>
+							</li>
+							<li id="setBlogCateBtnContainer" class="none">
+								<a id="setBlogCateBtn" href="javascript:void(0)" onclick="return false;" class="c_tx bg6_hover">修改分类</a>
+							</li>
+							<li id="setRecommendBtnContainer" class="none">
+								<a id="setRecommendBlogBtn" href="javascript:void(0)" onclick="return false;" class="c_tx bg6_hover">推荐日志</a>
+							</li>
+							<li id="setTopBlogBtnContainer" class="none">
+								<a id="setTopBlogBtn" href="javascript:void(0)" onclick="return false;" class="c_tx bg6_hover">设为置顶</a>
+							</li>
+							<li id="setPrivateBlogBtnContainer" class="none">
+								<a id="setPrivateBlogBtn" href="javascript:void(0)" onclick="return false;" class="c_tx bg6_hover">转为私密日志</a>
+							</li>
+							<li id="appealBlogBtnContainer" class="none">
+								<a id="appealtBlogBtn" href="javascript:void(0)" onclick="return false;" class="c_tx bg6_hover">申诉</a>
+							</li>
+						</ul>
+					</div>
+					
+					<div id="qzblog_copyurl_tip" class="bor2 bg3 panel_copy qzblog_copyurl_class none">
+						<p>
+							<label for="copyUrlInput">日志地址:</label>
+							<input checked="checked" readonly="readonly" class="bor textinput mod_copyaddress_txt" value="" id="copyUrlInput" type="text">
+						</p>
+						<p class="tips">请用Ctrl+C复制后贴给好友。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    if((/\/blog/i).test(parent.location.href)) {
+        try {
+            parent.QZONE.statistic.stepTime.genTime(13);
+        } catch (e) {}
+    }
+
+    var pubDate = new Date(pubtime * 1000);
+    document.getElementById('pubTime').innerHTML = pubDate.getFullYear() + "." + (pubDate.getMonth() + 1) + "." + pubDate.getDate();
+
+    var _rs = _bJs('/ac/qzone/qzfl/qzfl'+parent.g_V.qz+'.js');
+    var isTemplateBlog = (g_exBlogType == 2 && parent.QZFL.dom.getSize(document.body)[0] >= 895); //判断是否渲染为模板日志
+    if (isTemplateBlog) {
+    	_rs += _bJs('/qzone/app/blog/v6/script/templateblog.blogidadapter.js')+_bCss('/qzone_v6/blog_module_common.css');
+    }
+    _dw(_rs);
+</script><script type="text/javascript" charset="utf-8" src="//qzonestyle.gtimg.cn/ac/qzone/qzfl/qzfl_v8_2.1.65.js"></script>
+<script type="text/javascript">
+    
+    
+
+    
+    var HAS_ATTACH = g_oBlogData.data.attach && g_oBlogData.data.attach.length > 0;
+
+    
+    var GRID_BLOG = g_oBlogData.data.effect2 & (1 << (52 - 32));
+
+	_dw(_bJs('/qzone/newblog/v5/script/common.js')+
+		_bJs('/qzone/newblog/v5/script/newubb.js')+
+		_bJs('/ac/lib/seajs/sea-2.0.0.js')+
+		_bJs('/qzone/app/blog/api/seajs_config.js')+
+		_bJs('/qzone/app/blog/'+CONTENT_JS_PATH+'blog_content.js')+
+		(isTemplateBlog ? _bJs('/qzone/app/blog/'+CONTENT_JS_PATH+'content_templateblog.js') : '')+
+		(HAS_ATTACH ? _bJs('/qzone/app/blog/'+CONTENT_JS_PATH+'content_attach.js') : '')+
+		(GRID_BLOG ? _bJs('/qzone/app/blog/'+CONTENT_JS_PATH+'content_gridsblog.js') : ''));
+</script><script type="text/javascript" charset="utf-8" src="//qzonestyle.gtimg.cn/qzone/newblog/v5/script/common.js"></script><script type="text/javascript" charset="utf-8" src="//qzonestyle.gtimg.cn/qzone/newblog/v5/script/newubb.js"></script><script type="text/javascript" charset="utf-8" src="//qzonestyle.gtimg.cn/ac/lib/seajs/sea-2.0.0.js"></script><script type="text/javascript" charset="utf-8" src="//qzonestyle.gtimg.cn/qzone/app/blog/api/seajs_config.js"></script><script type="text/javascript" charset="utf-8" src="//qzonestyle.gtimg.cn/qzone/app/blog/v6/script/blog_content.js"></script>
+<script type="text/javascript">
+	QZBlog.Util.Statistic.addSpeedPoint(1, parent.blogSpeedBasePoint);
+	QZBlog.Util.Statistic.addSpeedPoint(2, contentRenderComplete);
+	
+	QZBlog.Util.Statistic.addSpeedPoint(3);
+	QZBlog.Util.Statistic.addSpeedPoint(5, commentRenderComplete);
+	//日志详情页测速上报
+	if (top.window.g_point0_2) {
+		this.reportSpeed({
+			points: {
+	            siteName: "user.qzone.qq.com",
+	            pageName: "2/detail",
+	            24: (new Date()).getTime() - top.window.g_point0_2
+	        },
+	        appid: "20141",
+	        appkey: "c373ba4a1ce77b27601e887e9f8eb3f4"
+		});
+	}
+
+	//上报测速
+	function reportSpeed(opt){
+		opt = opt || {};
+		opt.points = opt.points || {};
+		if (!opt.points.siteName || !opt.points.pageName || !opt.points[24]) {
+			console.log('需要siteName,pageName,24号上报点');
+			return;
+		}
+		opt.points.flag5 = 1;//采样率
+
+
+		var paramStr = toUrlParam({
+	        appid: opt.appid || '20141',
+	        appkey: opt.appkey || 'c373ba4a1ce77b27601e887e9f8eb3f4',
+	        speedparams: toUrlParam(opt.points),
+	        apn: opt.apn || 'wifi',
+	        device: opt.device || 'iPhone',
+	        platform: opt.platform || 'ios',
+	        app: opt.app || 'qq',
+	        _: Math.random()
+	    });
+
+	    new Image().src = 'https://huatuo.weiyun.com/report.cgi?' + paramStr;
+
+	    //alpha用户，看node流水
+	    if (window.isAlpha) {
+	        var xhr = new XMLHttpRequest();
+	        xhr.open('POST', 'https://h5.qzone.qq.com/log/post/speedlog', true);
+	        xhr.setRequestHeader('Content-Type', 'text/plain');
+	        xhr.withCredentials = true;
+	        xhr.send('speedlog' + opt.points.pageName + ': '+ JSON.stringify(opt.points, null, 2) + '\r\n');
+
+	        new Image().src = 'https://h5.qzone.qq.com/log/post/speedlog?' + paramStr;
+	    }
+
+	    console.log('上报成功：');
+	    console.log(opt.points);
+
+		function toUrlParam(data) {
+	        var rs = [];
+	        for(var key in data) {
+	            if(data.hasOwnProperty(key)) {
+	                if(data[key] !== '' && data[key] !== undefined) {
+	                    rs.push(key + '=' + encodeURIComponent(data[key]));
+	                }
+	            }
+	        }
+	        return rs.join('&');
+	    }
+	}
+</script>
+
+<iframe name="_fp_frm__fpInstence_0" id="_fp_frm__fpInstence_0" style="width: 0px; height: 0px; border-width: 0px; display: none;"></iframe></body></html>
