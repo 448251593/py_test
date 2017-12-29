@@ -15,18 +15,19 @@ def debug_test():
 		print(len(str_arr));
 		for i in range(0,len(str_arr)-1) :
 			elem = str_arr[i];
-			elem_str = elem.decode('utf-8')+'.jpg';
+			elem_str = '<'+elem.decode('utf-8')+'.jpg';
 			strinfo = re.compile(r'<(.|\n)*?>');
 			elem_str = strinfo.sub('', elem_str);
 			elem_str = elem_str.replace('&nbsp;','');
 			elem_str = elem_str.strip();
-			pic_arr = re.findall(r'[A-Za-z0-9]+\.jpg',str_txt)
-			
-			text = elem_str.split('<img')[0];
-			text = text[1:len(text)];
-			strinfo = re.compile(r'style=\".*?\">');
-			text = strinfo.sub('',text);
-			print(text);
+			#print(elem_str);
+			pic_arr = re.findall(r'[A-Za-z0-9]+\.jpg',elem_str)
+			text_arr = re.findall(u'.*?<',elem_str)
+			#text = elem_str.split('<img')[0];
+			#text = text[1:len(text)];
+			#strinfo = re.compile(r'style=\".*?\">');
+			#text = strinfo.sub('',text);
+			print(text_arr[0]);
 			print(pic_arr[0])
 		
 		#urlarr = re.findall(r'<img\b.*?data-src=\".*?>',str_txt)
