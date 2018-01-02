@@ -7019,3 +7019,351 @@ Sandbox: Unexpected EOF, op 0 flags 0302 path /dev/shm/org.chromium.UDQ1J4
 [Child 39783, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
 =======
 >>>>>>> 3ad9d991d237e7be1289e3b2f6569c49122442b1
+1514867893227	geckodriver	INFO	geckodriver 0.19.1
+1514867893254	geckodriver	INFO	Listening on 127.0.0.1:50049
+1514867894557	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Rvvi78euSI3J"
+1514867902494	Marionette	INFO	Enabled via --marionette
+1514867931967	Marionette	INFO	Listening on port 36531
+1514867932299	Marionette	WARN	TLS certificate errors will be ignored for this session
+1514867932483	Marionette	DEBUG	Register listener.js for window 2147483649
+1514867933881	geckodriver	INFO	geckodriver 0.19.1
+1514867933901	geckodriver	INFO	Listening on 127.0.0.1:36321
+1514867935813	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.u1Y1xBy9gRRc"
+1514867947728	Marionette	INFO	Enabled via --marionette
+1514867976330	Marionette	INFO	Listening on port 40663
+1514867976644	Marionette	WARN	TLS certificate errors will be ignored for this session
+1514867976826	Marionette	DEBUG	Register listener.js for window 2147483649
+1514867978836	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1514867979892	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1514867979893	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1514867981899	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://user.qzone.qq.com/822989010/2"
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/engine/migrate-plugin.js,/qzone/v8/engine/console-plus/console-plus.js,/qzone/v8/engine/request/request_61221.js,/qzone/v8/core/interface_mini.js?max_age=60628, line 4392: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/dress/xextend.js,/qzone/v8/dress/data.js,/qzone/v8/dress/viewbase.js,/qzone/v8/dress/dditem.js,/qzone/v8/dress/menuview_v8.js,/qzone/v8/dress/weather.js,/qzone/v8/dress/visitors.js, line 656: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+1514867984454	Marionette	DEBUG	Received DOM event "pageshow" for "https://user.qzone.qq.com/822989010/2"
+1514867991319	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514867996563	Marionette	DEBUG	Received DOM event "popstate" for "https://qzs.qq.com/qzone/app/blog/v6/bloglist.html#nojump=1"
+1514868004669	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1514868026609	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1514868026610	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1514868043509	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://user.qzone.qq.com/822989010/blog/1468897260"
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/engine/migrate-plugin.js,/qzone/v8/engine/console-plus/console-plus.js,/qzone/v8/engine/request/request_61221.js,/qzone/v8/core/interface_mini.js?max_age=60628, line 4392: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/dress/xextend.js,/qzone/v8/dress/data.js,/qzone/v8/dress/viewbase.js,/qzone/v8/dress/dditem.js,/qzone/v8/dress/menuview_v8.js,/qzone/v8/dress/weather.js,/qzone/v8/dress/visitors.js, line 656: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/ac/lib/seajs/sea-2.0.0.js, line 28: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/app/blog/v6/script/blog_content.js, line 43: unreachable code after return statement
+1514868059471	Marionette	DEBUG	Received DOM event "pageshow" for "https://user.qzone.qq.com/822989010/blog/1468897260"
+JavaScript warning: https://qzonestyle.gtimg.cn/utp/dnsnew.js, line 6: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/utp/dnsnew.js, line 6: unreachable code after return statement
+1514868080396	Marionette	DEBUG	Received DOM event "beforeunload" for "https://user.qzone.qq.com/822989010/blog/1468897260"
+1514868080676	Marionette	DEBUG	Received DOM event "pagehide" for "https://user.qzone.qq.com/822989010/blog/1468897260"
+1514868080678	Marionette	DEBUG	Received DOM event "unload" for "https://user.qzone.qq.com/822989010/blog/1468897260"
+JavaScript error: https://qzonestyle.gtimg.cn/qzone/newblog/v5/script/common.js, line 2229: TypeError: frameElement is null
+JavaScript error: https://qzonestyle.gtimg.cn/qzone/newblog/v5/script/common.js, line 2229: TypeError: frameElement is null
+JavaScript error: https://qzonestyle.gtimg.cn/qzone/newblog/v5/script/common.js, line 2229: TypeError: frameElement is null
+JavaScript error: https://qzonestyle.gtimg.cn/qzone/newblog/v5/script/common.js, line 2229: TypeError: frameElement is null
+1514868081609	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://user.qzone.qq.com/822989010/blog/1468809593"
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/engine/migrate-plugin.js,/qzone/v8/engine/console-plus/console-plus.js,/qzone/v8/engine/request/request_61221.js,/qzone/v8/core/interface_mini.js?max_age=60628, line 4392: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/dress/xextend.js,/qzone/v8/dress/data.js,/qzone/v8/dress/viewbase.js,/qzone/v8/dress/dditem.js,/qzone/v8/dress/menuview_v8.js,/qzone/v8/dress/weather.js,/qzone/v8/dress/visitors.js, line 656: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+1514868081896	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483657"
+1514868081899	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483653"
+1514868082192	Marionette	DEBUG	Received DOM event "pageshow" for "https://user.qzone.qq.com/822989010/blog/1468809593"
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/ac/lib/seajs/sea-2.0.0.js, line 28: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/app/blog/v6/script/blog_content.js, line 43: unreachable code after return statement
+1514868088217	Marionette	DEBUG	Received DOM event "beforeunload" for "https://user.qzone.qq.com/822989010/blog/1468809593"
+1514868088384	Marionette	DEBUG	Received DOM event "pagehide" for "https://user.qzone.qq.com/822989010/blog/1468809593"
+1514868088391	Marionette	DEBUG	Received DOM event "unload" for "https://user.qzone.qq.com/822989010/blog/1468809593"
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/engine/migrate-plugin.js,/qzone/v8/engine/console-plus/console-plus.js,/qzone/v8/engine/request/request_61221.js,/qzone/v8/core/interface_mini.js?max_age=60628, line 4392: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/dress/xextend.js,/qzone/v8/dress/data.js,/qzone/v8/dress/viewbase.js,/qzone/v8/dress/dditem.js,/qzone/v8/dress/menuview_v8.js,/qzone/v8/dress/weather.js,/qzone/v8/dress/visitors.js, line 656: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+1514868088830	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483666"
+1514868088831	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483662"
+1514868088885	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://user.qzone.qq.com/822989010/blog/1468548646"
+1514868089077	Marionette	DEBUG	Received DOM event "pageshow" for "https://user.qzone.qq.com/822989010/blog/1468548646"
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Child 54227, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 54227, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 54227, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 54227, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+1514868692082	geckodriver	INFO	geckodriver 0.19.1
+1514868692097	geckodriver	INFO	Listening on 127.0.0.1:54929
+1514868692321	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.owOfofYnSebl"
+1514868695582	Marionette	INFO	Enabled via --marionette
+1514868701083	Marionette	INFO	Listening on port 34131
+1514868701274	Marionette	WARN	TLS certificate errors will be ignored for this session
+1514868701359	Marionette	DEBUG	Register listener.js for window 2147483649
+1514868705845	geckodriver	INFO	geckodriver 0.19.1
+1514868705862	geckodriver	INFO	Listening on 127.0.0.1:56809
+1514868707447	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.BpeR6nk63tF0"
+1514868716472	Marionette	INFO	Enabled via --marionette
+1514868743350	Marionette	INFO	Listening on port 37843
+1514868745084	Marionette	WARN	TLS certificate errors will be ignored for this session
+1514868745219	Marionette	DEBUG	Register listener.js for window 2147483649
+1514868748183	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1514868751289	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1514868751290	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1514868754134	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://user.qzone.qq.com/822989010/2"
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/engine/migrate-plugin.js,/qzone/v8/engine/console-plus/console-plus.js,/qzone/v8/engine/request/request_61221.js,/qzone/v8/core/interface_mini.js?max_age=60628, line 4392: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/dress/xextend.js,/qzone/v8/dress/data.js,/qzone/v8/dress/viewbase.js,/qzone/v8/dress/dditem.js,/qzone/v8/dress/menuview_v8.js,/qzone/v8/dress/weather.js,/qzone/v8/dress/visitors.js, line 656: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+1514868755372	Marionette	DEBUG	Received DOM event "pageshow" for "https://user.qzone.qq.com/822989010/2"
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+1514868764393	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514868765057	Marionette	DEBUG	Received DOM event "popstate" for "https://qzs.qq.com/qzone/app/blog/v6/bloglist.html#nojump=1"
+1514868772546	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1514868789061	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1514868789062	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1514868801296	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://user.qzone.qq.com/822989010/blog/1468897260"
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/engine/migrate-plugin.js,/qzone/v8/engine/console-plus/console-plus.js,/qzone/v8/engine/request/request_61221.js,/qzone/v8/core/interface_mini.js?max_age=60628, line 4392: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/dress/xextend.js,/qzone/v8/dress/data.js,/qzone/v8/dress/viewbase.js,/qzone/v8/dress/dditem.js,/qzone/v8/dress/menuview_v8.js,/qzone/v8/dress/weather.js,/qzone/v8/dress/visitors.js, line 656: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/ac/lib/seajs/sea-2.0.0.js, line 28: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/app/blog/v6/script/blog_content.js, line 43: unreachable code after return statement
+1514868815732	Marionette	DEBUG	Received DOM event "pageshow" for "https://user.qzone.qq.com/822989010/blog/1468897260"
+JavaScript error: https://qzonestyle.gtimg.cn/ac/qzone/qzfl/qzfl_v8_2.1.65.js, line 101: TypeError: e.onTimeout is not a function
+JavaScript warning: https://qzonestyle.gtimg.cn/utp/dnsnew.js, line 6: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/utp/dnsnew.js, line 6: unreachable code after return statement
+1514868840116	Marionette	DEBUG	Received DOM event "beforeunload" for "https://user.qzone.qq.com/822989010/blog/1468897260"
+1514868840797	Marionette	DEBUG	Received DOM event "pagehide" for "https://user.qzone.qq.com/822989010/blog/1468897260"
+1514868840802	Marionette	DEBUG	Received DOM event "unload" for "https://user.qzone.qq.com/822989010/blog/1468897260"
+JavaScript error: https://qzonestyle.gtimg.cn/qzone/newblog/v5/script/common.js, line 2234: TypeError: window.frameElement is null
+1514868842098	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://user.qzone.qq.com/822989010/blog/1468809593"
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/engine/migrate-plugin.js,/qzone/v8/engine/console-plus/console-plus.js,/qzone/v8/engine/request/request_61221.js,/qzone/v8/core/interface_mini.js?max_age=60628, line 4392: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/dress/xextend.js,/qzone/v8/dress/data.js,/qzone/v8/dress/viewbase.js,/qzone/v8/dress/dditem.js,/qzone/v8/dress/menuview_v8.js,/qzone/v8/dress/weather.js,/qzone/v8/dress/visitors.js, line 656: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+1514868842461	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483661"
+1514868842461	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483657"
+1514868842462	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483653"
+1514868842716	Marionette	DEBUG	Received DOM event "pageshow" for "https://user.qzone.qq.com/822989010/blog/1468809593"
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+Sandbox: Unexpected EOF, op 0 flags 0302 path /dev/shm/org.chromium.Fdn8vS
+[GFX1-]: Failed 2 buffer db=0 dw=0 for 0, -1, 10, 456
+[GFX1-]: Failed 2 buffer db=0 dw=0 for 0, 128, 1270, 1024
+[GFX1-]: Failed 2 buffer db=0 dw=0 for 204, 314, 30, 39
+[GFX1-]: Failed 2 buffer db=0 dw=0 for 0, 0, 47, 93
+[Child 54757, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1514869205086	geckodriver	INFO	geckodriver 0.19.1
+1514869205098	geckodriver	INFO	Listening on 127.0.0.1:35513
+1514869209782	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.5Q9RQrw35zkB"
+1514869214145	Marionette	INFO	Enabled via --marionette
+1514869218998	Marionette	INFO	Listening on port 43375
+1514869219064	Marionette	WARN	TLS certificate errors will be ignored for this session
+1514869219139	Marionette	DEBUG	Register listener.js for window 2147483649
+1514869219915	geckodriver	INFO	geckodriver 0.19.1
+1514869219969	geckodriver	INFO	Listening on 127.0.0.1:51091
+1514869220984	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.kY2oLZWjin6g"
+1514869231643	Marionette	INFO	Enabled via --marionette
+1514869260409	Marionette	INFO	Listening on port 36349
+1514869260823	Marionette	WARN	TLS certificate errors will be ignored for this session
+1514869260955	Marionette	DEBUG	Register listener.js for window 2147483649
+1514869263517	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1514869265342	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1514869265344	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1514869273055	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://user.qzone.qq.com/822989010/2"
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/engine/migrate-plugin.js,/qzone/v8/engine/console-plus/console-plus.js,/qzone/v8/engine/request/request_61221.js,/qzone/v8/core/interface_mini.js?max_age=60628, line 4392: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/dress/xextend.js,/qzone/v8/dress/data.js,/qzone/v8/dress/viewbase.js,/qzone/v8/dress/dditem.js,/qzone/v8/dress/menuview_v8.js,/qzone/v8/dress/weather.js,/qzone/v8/dress/visitors.js, line 656: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+1514869276186	Marionette	DEBUG	Received DOM event "pageshow" for "https://user.qzone.qq.com/822989010/2"
+1514869281082	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514869281752	Marionette	DEBUG	Received DOM event "popstate" for "https://qzs.qq.com/qzone/app/blog/v6/bloglist.html#nojump=1"
+1514869286746	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1514869294634	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1514869294635	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1514869307707	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://user.qzone.qq.com/822989010/blog/1467599861"
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/engine/migrate-plugin.js,/qzone/v8/engine/console-plus/console-plus.js,/qzone/v8/engine/request/request_61221.js,/qzone/v8/core/interface_mini.js?max_age=60628, line 4392: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/dress/xextend.js,/qzone/v8/dress/data.js,/qzone/v8/dress/viewbase.js,/qzone/v8/dress/dditem.js,/qzone/v8/dress/menuview_v8.js,/qzone/v8/dress/weather.js,/qzone/v8/dress/visitors.js, line 656: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/ac/lib/seajs/sea-2.0.0.js, line 28: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/app/blog/v6/script/blog_content.js, line 43: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/utp/dnsnew.js, line 6: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/utp/dnsnew.js, line 6: unreachable code after return statement
+1514869321913	Marionette	DEBUG	Received DOM event "pageshow" for "https://user.qzone.qq.com/822989010/blog/1467599861"
+1514869348372	Marionette	DEBUG	Received DOM event "beforeunload" for "https://user.qzone.qq.com/822989010/blog/1467599861"
+1514869353513	Marionette	DEBUG	Received DOM event "pagehide" for "https://user.qzone.qq.com/822989010/blog/1467599861"
+1514869353514	Marionette	DEBUG	Received DOM event "unload" for "https://user.qzone.qq.com/822989010/blog/1467599861"
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/engine/migrate-plugin.js,/qzone/v8/engine/console-plus/console-plus.js,/qzone/v8/engine/request/request_61221.js,/qzone/v8/core/interface_mini.js?max_age=60628, line 4392: unreachable code after return statement
+1514869358069	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://user.qzone.qq.com/822989010/blog/1467340193"
+1514869358083	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483661"
+1514869358085	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483657"
+1514869358085	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483653"
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/dress/xextend.js,/qzone/v8/dress/data.js,/qzone/v8/dress/viewbase.js,/qzone/v8/dress/dditem.js,/qzone/v8/dress/menuview_v8.js,/qzone/v8/dress/weather.js,/qzone/v8/dress/visitors.js, line 656: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/ac/lib/seajs/sea-2.0.0.js, line 28: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/app/blog/v6/script/blog_content.js, line 43: unreachable code after return statement
+1514869367968	Marionette	DEBUG	Received DOM event "pageshow" for "https://user.qzone.qq.com/822989010/blog/1467340193"
+JavaScript warning: https://qzonestyle.gtimg.cn/utp/dnsnew.js, line 6: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/utp/dnsnew.js, line 6: unreachable code after return statement
+1514869372638	Marionette	DEBUG	Received DOM event "beforeunload" for "https://user.qzone.qq.com/822989010/blog/1467340193"
+1514869372785	Marionette	DEBUG	Received DOM event "pagehide" for "https://user.qzone.qq.com/822989010/blog/1467340193"
+1514869372787	Marionette	DEBUG	Received DOM event "unload" for "https://user.qzone.qq.com/822989010/blog/1467340193"
+1514869373194	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://user.qzone.qq.com/822989010/blog/1467340165"
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/engine/migrate-plugin.js,/qzone/v8/engine/console-plus/console-plus.js,/qzone/v8/engine/request/request_61221.js,/qzone/v8/core/interface_mini.js?max_age=60628, line 4392: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/dress/xextend.js,/qzone/v8/dress/data.js,/qzone/v8/dress/viewbase.js,/qzone/v8/dress/dditem.js,/qzone/v8/dress/menuview_v8.js,/qzone/v8/dress/weather.js,/qzone/v8/dress/visitors.js, line 656: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+1514869373372	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483668"
+1514869373374	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483664"
+1514869373575	Marionette	DEBUG	Received DOM event "pageshow" for "https://user.qzone.qq.com/822989010/blog/1467340165"
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Child 54985, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1514872129792	geckodriver	INFO	geckodriver 0.19.1
+1514872129814	geckodriver	INFO	Listening on 127.0.0.1:41793
+1514872130124	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.vwVVuhVdSoxg"
+1514872133145	Marionette	INFO	Enabled via --marionette
+1514872145547	Marionette	INFO	Listening on port 39727
+1514872145665	Marionette	WARN	TLS certificate errors will be ignored for this session
+1514872145752	Marionette	DEBUG	Register listener.js for window 2147483649
+1514872146963	geckodriver	INFO	geckodriver 0.19.1
+1514872146999	geckodriver	INFO	Listening on 127.0.0.1:33293
+1514872148228	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.SlVCRP0oPHne"
+1514872168009	Marionette	INFO	Enabled via --marionette
+1514872200948	Marionette	INFO	Listening on port 39897
+1514872201782	Marionette	WARN	TLS certificate errors will be ignored for this session
+1514872201923	Marionette	DEBUG	Register listener.js for window 2147483649
+1514872207600	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1514872209383	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1514872209384	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1514872217550	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://user.qzone.qq.com/822989010/2"
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/engine/migrate-plugin.js,/qzone/v8/engine/console-plus/console-plus.js,/qzone/v8/engine/request/request_61221.js,/qzone/v8/core/interface_mini.js?max_age=60628, line 4392: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/c/=/qzone/v8/dress/xextend.js,/qzone/v8/dress/data.js,/qzone/v8/dress/viewbase.js,/qzone/v8/dress/dditem.js,/qzone/v8/dress/menuview_v8.js,/qzone/v8/dress/weather.js,/qzone/v8/dress/visitors.js, line 656: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/photo/v7/js/common/qzone/common.js, line 4: unreachable code after return statement
+JavaScript warning: https://qzonestyle.gtimg.cn/qzone/v8/animate/app_scroll.js, line 2: unreachable code after return statement
+1514872222183	Marionette	DEBUG	Received DOM event "pageshow" for "https://user.qzone.qq.com/822989010/2"
+[Child 55615, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 55615, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 55760, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
