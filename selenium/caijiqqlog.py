@@ -25,16 +25,17 @@ reload(sys)
 sys.setdefaultencoding( "utf-8" );
 
 def get_page_links(page_num):
-	print('get page='+page_num+'data');
-	driver.find_element_by_xpath("//input[starts-with(@id,'pageIndex_input')]").click()
-	print ('1')
-	driver.find_element_by_xpath("//input[starts-with(@id,'pageIndex_input')]").clear()
-	print ('2')
-	driver.find_element_by_xpath("//input[starts-with(@id,'pageIndex_input')]").send_keys(page_num)
-	print ('3')
-	driver.find_element_by_xpath("//button[@type='button']").click()
-	print ('4')
-	print('sleep 5')
+	if page_num!='1':
+		print('get page='+page_num+'data');
+		driver.find_element_by_xpath("//input[starts-with(@id,'pageIndex_input')]").click()
+		print ('1')
+		driver.find_element_by_xpath("//input[starts-with(@id,'pageIndex_input')]").clear()
+		print ('2')
+		driver.find_element_by_xpath("//input[starts-with(@id,'pageIndex_input')]").send_keys(page_num)
+		print ('3')
+		driver.find_element_by_xpath("//button[@type='button']").click()
+		print ('4')
+		print('sleep 5')
 
 	driver.implicitly_wait(5);
 	
@@ -65,16 +66,16 @@ def get_page_links(page_num):
 			str_title = str_title.replace('<span>','');
 			str_title = str_title.replace('</span>','');
 			
-			pathfile = create_path_base_url(url);
+			#pathfile = create_path_base_url(url);
 			try:
-				rslt = get_log_context(driver1,url_context,str_title);
+				rslt = get_log_context(driver1,url_context,str_title,page_num);
 				if rslt == -1:
-					err_log('err0,url='+url_context);					
-					os.system("rm "+pathfile+' -rf');
+					err_log('page='+page_num+','+url_context);					
+					os.system("rm "+pathfile_current+' -rf');
 			except:
-					err_log('err1,url='+url_context);
-					os.system("rm "+pathfile+' -rf');
-			
+				err_log('page='+page_num+','+url_context);
+				os.system("rm "+pathfile_current+' -rf');
+
 
 	except:
 		print('find links err');
@@ -94,8 +95,8 @@ def driver_browser_init():
 		
 		driver.switch_to.frame(0);		
 		print('switch frame 0 ok,sleep 10');
-		#time.sleep(10);
-		driver.implicitly_wait(10);		
+		time.sleep(10);
+		#driver.implicitly_wait(10);		
 
 	except:
 		print('switch frame 0 err');
@@ -103,7 +104,7 @@ def driver_browser_init():
 
 	#with open("source_frame.html",'wb') as f:
 	#	f.write(driver.page_source);
-	return 0
+	return 0;
 
 def create_id():
     m = hashlib.md5(str(time.clock()).encode('utf-8'))
@@ -116,17 +117,17 @@ def getHtml(url):
 	content = urllib2.urlopen(req).read()
 	return content
 	
-
-def get_log_context(driver_web,url,str_title):
+pathfile_current='';
+def get_log_context(driver_web,url,str_title,page_num):
 
 	print ('getting  ' + url)
 	pathfile = create_path_base_url(url)
 	if len(pathfile)==0:
 		print("get path from url err")
 		return 0;
-	pathfile = './'+pathfile	
+	pathfile = './blog/page'+page_num+'/'+pathfile	
 	print('pathfile='+pathfile)
-	
+	pathfile_current = pathfile;
 	isExists=os.path.exists(pathfile)
 	if isExists:
 		print('already exist');
@@ -148,14 +149,13 @@ def get_log_context(driver_web,url,str_title):
 
 
 	#with open("source_1.txt",'wb') as f:
-
 	#	f.write(driver_web.page_source)
 	
 	try:
 		driver_web.switch_to.frame(0)
 		print("switch tblog ok sleep 3")
 		#time.sleep(3);
-		driver.sleep(10);
+		time.sleep(10);
 	except:
 		print("switch_to.frame err")
 		return -1;
@@ -231,14 +231,13 @@ def get_file_and_save(url, path):
 
 def create_path_base_url(url):
 	strid = re.findall(r'/blog/[0-9]*',url)
-	path = strid[0][1:len(strid[0])]
+	path = strid[0][6:len(strid[0])]
 	return path
 
 
-file_errlog="err_log_caijiqqlog.log";
+file_errlog="log_caijiqqlog.log";
 def err_log(log_data):
-	with open(file_errlog,'a') as f:
-
+	with open('./blog/'+file_errlog,'a') as f:
 		f.write(log_data+'\n')	
 	
 def debug_test():
@@ -275,12 +274,9 @@ if __name__ == '__main__':
 	try:
 		rslt = driver_browser_init();
 		if rslt == 0:
-			for page_num in range(18,19):
-				#page_num = 8
+			for page_num in range(1,2):				
 				get_page_links(str(page_num));
-				os.system("mv blog page"+str(page_num));
-				os.system('mv '+file_errlog+' page'+str(page_num));					
-			os.system("mv  page* blog_data");	
+			#os.system("mv  page* blog_data");	
 
 		else:
 			print('driver_browser_init');
