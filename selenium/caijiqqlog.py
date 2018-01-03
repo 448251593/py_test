@@ -187,15 +187,17 @@ def get_log_context(driver_web,url,str_title,page_num):
 	try:
 		str_txt=div_str
 		urlarr = re.findall(r'<img\b.*?data-src=\".*?>',str_txt)
+		sortid = 0;
 		for  elem in urlarr:			
 			tmp_url_arr = re.findall(r'\ssrc=\".*?\"',elem);
 			tmp_url = tmp_url_arr[0].strip()
 			tmp_url = tmp_url[len('src="'):len(tmp_url)-1]
 			print(tmp_url);
 			
-			file_path_url = get_file_and_save(tmp_url,pathfile)
+			file_path_url = get_file_and_save(tmp_url,pathfile,sortid)
 			str_txt = str_txt.replace(tmp_url,file_path_url)
 			print(file_path_url)
+			sortid = sortid + 1
 		#delete data-src=src <script></script>
 		strinfo = re.compile(r'data-src=\".*?\"')
 		str_txt = strinfo.sub('', str_txt)
@@ -214,12 +216,12 @@ def get_log_context(driver_web,url,str_title,page_num):
 	
 	
 	
-def get_file_and_save(url, path):
+def get_file_and_save(url, path,sortid):
 	cat_img = getHtml(url)
 	print ("down load ok")
 
 	
-	filename=create_id()+'.jpg'
+	filename=str(sortid).zfill(2)+'_'+create_id()+'.jpg'
 	pathfilename=path+"/"+filename
 	
 	with open(pathfilename,'wb') as f:
@@ -274,7 +276,7 @@ if __name__ == '__main__':
 	try:
 		rslt = driver_browser_init();
 		if rslt == 0:
-			for page_num in range(1,2):				
+			for page_num in range(6,7):				
 				get_page_links(str(page_num));
 			#os.system("mv  page* blog_data");	
 
