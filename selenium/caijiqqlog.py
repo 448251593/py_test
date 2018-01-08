@@ -37,7 +37,7 @@ def get_page_links(page_num):
 		print ('4')
 		print('sleep 5')
 
-	driver.implicitly_wait(5);
+	time.sleep(10);
 	
 	#with open("source_frame_new.html",'wb') as f:
 	#	f.write(driver.page_source);
@@ -276,8 +276,12 @@ if __name__ == '__main__':
 	try:
 		rslt = driver_browser_init();
 		if rslt == 0:
-			for page_num in range(6,7):				
-				get_page_links(str(page_num));
+			#for page_num in range(25,27):				
+			page_num = 32;
+			get_page_links(str(page_num));
+			#page_num = 33;
+			#get_page_links(str(page_num));
+			
 			#os.system("mv  page* blog_data");	
 
 		else:
