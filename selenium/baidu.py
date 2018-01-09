@@ -3,7 +3,8 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 #driver = webdriver.PhantomJS()
-driver = webdriver.Firefox()    
+driver = webdriver.Firefox()
+driver.minimize_window();
 driver.get("https://www.baidu.com/")
 
 #size = driver.find_element_by_name("wd").size
