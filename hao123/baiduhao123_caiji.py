@@ -211,7 +211,7 @@ def get_log_context(driver_web,url,str_title,page_num):
 		str_txt = strinfo.sub('', str_txt)
 		
 		strinfo = re.compile(r'\simg-src=')
-		str_txt = strinfo.sub('src=', str_txt)
+		str_txt = strinfo.sub(' src=', str_txt)
 		
 		str_txt = '<title>'+save_filename+'</title>'+str_txt
 		print('find_element_by_id ok')	
