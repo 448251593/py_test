@@ -3,7 +3,39 @@ import time,os,re,urllib,urllib2,hashlib,sys
 import os;
 reload(sys)
 sys.setdefaultencoding( "utf-8" );
+def  creat_index():
 
+	
+	for page_num in range(139,149):
+		creat_page_index(page_num);
+		pathstr='blog/page'+str(page_num)+'/';
+		
+		page_txt = ''
+		with open(pathstr+'page.index','r') as f:
+			page_txt = f.read();
+		with open('blog/index.data','a') as f:
+			f.write(page_txt);
+	#print('pathstr->'+pathstr);
+	
+	
+
+def  creat_page_index(pagenum):
+
+	pathstr='blog/page'+str(pagenum)+'/';
+	print('pathstr->'+pathstr);
+	
+	isExists=os.path.exists(pathstr)
+	if isExists:
+		#print('exist');
+		cmd = "find "+pathstr+' -name \"*.html\" | xargs ls -rt > '+ pathstr+'page.index';
+		#print("cmd->"+cmd);
+		os.system(cmd);
+		#return 0;
+	else:
+		print('not exist');
+		#os.system("mkdir -p "+pathfile)
+		#os.makedirs(pathfile);
+		
 def err_log(dd):
 	str_context='';
 	with open("index.data",'r') as f:
@@ -36,4 +68,23 @@ def err_log(dd):
 		
 	#print(html_str);
 if __name__ == '__main__':
-	err_log("111");
+	#err_log("111");
+	
+	for page_num in range(139,149):
+		creat_page_index(page_num);
+	
+	creat_index();
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
