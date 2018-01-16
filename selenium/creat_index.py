@@ -28,7 +28,7 @@ def strip_title():
 			elemnew=elem;		
 			strinfo = re.compile(r'#.*?#');
 			elemnew = strinfo.sub('', elemnew);
-			strinfo = re.compile(r'°æ.*?°ø');
+			strinfo = re.compile(r'„Äê.*?„Äë');
 			elemnew = strinfo.sub('', elemnew);
 			strinfo = re.compile(r'#');
 			elemnew = strinfo.sub('', elemnew);
