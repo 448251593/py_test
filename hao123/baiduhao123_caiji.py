@@ -45,16 +45,34 @@ def get_page_links(driverweb,page_num):
 	
 	div_str = '';
 	try:
-		div_str = driver_web.find_element_by_id('J_mainList').get_attribute('innerHTML')
+		div_str = driverweb.find_element_by_id('J_mainList').get_attribute('innerHTML')
+		#div_str = driverweb.find_element_by_id('J_mainList').get_attribute('innerHTML')
 	except:
 		print('find J_mainList err');
 	
-	with open("J_mainList.html",'wb') as f:
-		f.write(driverweb.page_source);	
+	#with open("J_mainList.html",'wb') as f:
+	#	f.write(driverweb.page_source);	
 	
-	print(driver_web.find_element_by_id('list clearfix'))
+	#print(div_str);
 	try:
-		print('nop');
+		
+		
+		str_txt = re.compile(r'<img.+?>').sub('', div_str);
+		#print(str_txt);
+		urlarr = re.findall(r'<a.*?>.*?</a>',str_txt);
+		for  elem in urlarr:
+			if elem.find("class=\"title\"") != -1:
+				href_url_arr= re.findall(r'href=\".*?\"',elem); 
+				href_url = href_url_arr[0][6:len(href_url_arr[0])-1];
+				print(href_url);
+				href_title_arr =  re.findall(u'>.*?<', elem);
+				href_title =  href_title_arr[0][1:len(href_title_arr[0])-1];
+				print(href_title);
+				
+				try:
+					get_log_context(driver1,href_url);
+				except:
+					print('getlog err');
 		#Links = driverweb.find_elements_by_xpath("//a[starts-with(@href,'http://user.qzone.qq.com/822989010/blog/')]");
 		#count1 = 0;
 		#total = 0;
@@ -94,8 +112,8 @@ def get_page_links(driverweb,page_num):
 
 def driver_browser_init(driverweb):
 	rstl = 0
-	url = 'http://www.hao123.com/gaoxiao/haomeizi/list';
-	#url = 'file:///home/bcg/samba/test/selenium/page_source_frame.html'
+	#url = 'http://www.hao123.com/gaoxiao/haomeizi/list';
+	url = 'file:///D:/py_test/hao123/J_mainList.html'
 	try:
 		driverweb.get(url);	
 		print("get  "+url+'  ok' );
