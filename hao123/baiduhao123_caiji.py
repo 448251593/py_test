@@ -138,7 +138,7 @@ def getHtml(url):
 	return content
 	
 pathfile_current='';
-def get_log_context(driver_web,url,str_title,page_num):
+def get_log_context(driver_web,url):
 
 	print ('getting  ' + url)
 	pathfile = create_path_base_url(url)
@@ -181,7 +181,10 @@ def get_log_context(driver_web,url,str_title,page_num):
 	#	return -1;
 
 
-	save_filename = driver_web.title 
+	save_filename = driver_web.title;
+	save_filename= re.compile(r' ').sub('', save_filename);
+	save_filename= re.compile(r'#').sub('', save_filename);
+	
 	#try:
 	#	#elem = driver_web.find_elements_by_xpath("//*[@class=blog_tit_detail]")
 	#	elem = driver_web.find_element_by_class_name("blog_tit_detail")
@@ -267,7 +270,7 @@ def create_path_base_url(url):
 
 file_errlog="hao123_caijilog.log";
 def err_log(log_data):
-	with open('./blog/'+file_errlog,'a') as f:
+	with open('haomeizi/'+file_errlog,'a') as f:
 		f.write(log_data+'\n')	
 	
 def debug_test():
@@ -300,22 +303,49 @@ def debug_test():
 			
 if __name__ == '__main__':
 	
-	try:
-		rslt = driver_browser_init(driver1);
-		if rslt == 0:
-			#for page_num in range(25,27):				
-			page_num = 141;
-			get_page_links(driver1,str(page_num));
-			#page_num = 142;
-			#get_page_links(str(page_num));
-			
-			#os.system("mv  page* blog_data");	
-    
-		else:
-			print('driver_browser_init');
-	except:
-		print ('driver_browser_init err');
-	#get_log_context(driver1,'http://www.hao123.com/gaoxiao/haomeizi/1110','','')
+	#try:
+	#	rslt = driver_browser_init(driver1);
+	#	if rslt == 0:
+	#		#for page_num in range(25,27):				
+	#		page_num = 141;
+	#		get_page_links(driver1,str(page_num));
+	#		#page_num = 142;
+	#		#get_page_links(str(page_num));
+	#		
+	#		#os.system("mv  page* blog_data");	
+    #
+	#	else:
+	#		print('driver_browser_init');
+	#except:
+	#	print ('driver_browser_init err');
+	#get_log_context(driver1,'http://www.hao123.com/gaoxiao/haomeizi/1114');
+	#get_log_context(driver1,'');
+	get_log_context(driver1,'http://www.hao123.com/gaoxiao/haomeizi/1113');
+	time.sleep(3);
+	get_log_context(driver1,'http://www.hao123.com/gaoxiao/haomeizi/1112');
+	time.sleep(3);
+	get_log_context(driver1,'http://www.hao123.com/gaoxiao/haomeizi/1111');
+	time.sleep(3);
+	get_log_context(driver1,'http://www.hao123.com/gaoxiao/haomeizi/1110');
+	time.sleep(3);
+	get_log_context(driver1,'http://www.hao123.com/gaoxiao/haomeizi/1109');
+	time.sleep(3);
+	get_log_context(driver1,'http://www.hao123.com/gaoxiao/haomeizi/1108');
+	time.sleep(3);
+	get_log_context(driver1,'http://www.hao123.com/gaoxiao/haomeizi/1107');
+	time.sleep(3);
+	get_log_context(driver1,'http://www.hao123.com/gaoxiao/haomeizi/1106');
+	time.sleep(3);
+	get_log_context(driver1,'http://www.hao123.com/gaoxiao/haomeizi/1105');
+	time.sleep(3);
+	get_log_context(driver1,'http://www.hao123.com/gaoxiao/haomeizi/1104');
+	time.sleep(3);
+	get_log_context(driver1,'http://www.hao123.com/gaoxiao/haomeizi/1103');
+	time.sleep(3);
+	get_log_context(driver1,'http://www.hao123.com/gaoxiao/haomeizi/1102');
+	time.sleep(3);
+	get_log_context(driver1,'http://www.hao123.com/gaoxiao/haomeizi/1101');
+	time.sleep(3);
 	#debug_test()	
 
 	driver1.quit();
