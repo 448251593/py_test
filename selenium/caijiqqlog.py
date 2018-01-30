@@ -1,7 +1,7 @@
 #coding:utf-8
 from selenium import webdriver
 import time,os,re,urllib,urllib2,hashlib,sys
-
+import imghdr;
 #import xlrd,xlwt
 #from xlutils.copy import copy
 #使用selenium
@@ -220,8 +220,8 @@ def get_file_and_save(url, path,sortid):
 	cat_img = getHtml(url)
 	print ("down load ok")
 
-	
-	filename=str(sortid).zfill(2)+'_'+create_id()+'.jpg'
+	result = imghdr.what('',cat_img);
+	filename=str(sortid).zfill(2)+'_'+create_id()+'.'+result;
 	pathfilename=path+"/"+filename
 	
 	with open(pathfilename,'wb') as f:
