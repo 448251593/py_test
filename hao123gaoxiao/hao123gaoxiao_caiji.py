@@ -17,8 +17,8 @@ import imghdr;
 #driver.maximize_window() 
 
 
-driver1=webdriver.Firefox();
-driver1.minimize_window();
+#driver1=webdriver.Firefox();
+#driver1.minimize_window();
 
 #driver=webdriver.Firefox()
 #driver.minimize_window() 
@@ -233,14 +233,17 @@ def get_log_context(driver_web,url):
 		for  elem in urlarr:	
 			picurl_str		= urlarr[0][len('src="'):len(urlarr[0])-2];
 			print("pic-----------------------"+picurl_str)
-			get_file_and_save(picurl_str,pathfile,0, save_filename)			#save_filename[0:len(save_filename)-14]
+			get_file_and_save(picurl_str,pathfile,0, save_filename[0:len(save_filename)-12])			#save_filename[0:len(save_filename)-14]
+			sleep(3);
+			
+			driver.find_element_by_xpath("//div[@id='bd']/div/div/div/div[4]/div[4]/a/div").click();
 			break;
 	except:
 		print("pic url find err")
 	
 	
 		
-
+	
 	
 	#try:
 	#	str_txt=div_str
@@ -305,6 +308,13 @@ file_errlog="hao123_caijilog.log";
 def err_log(log_data):
 	with open('haomeizi/'+file_errlog,'a') as f:
 		f.write(log_data+'\n')	
+def  exe_main():
+	driver1=webdriver.Firefox();
+	driver1.minimize_window();	
+	
+	get_log_context(driver1,'http://www.hao123.com/gaoxiao/detail/388655');
+	
+	driver1.quit();
 	
 def debug_test():
 	#pathfile = create_path_base_url('https://user.qzone.qq.com/822989010/blog/1488525103')
@@ -351,12 +361,12 @@ def debug_test():
 			
 			
 if __name__ == '__main__':
-
+	
+	exe_main();
 	#debug_test();
-	get_log_context(driver1,'http://www.hao123.com/gaoxiao/detail/388655');
+	
 	#time.sleep(3);
 
 
-	driver1.quit();
 
 	#driver.quit();
