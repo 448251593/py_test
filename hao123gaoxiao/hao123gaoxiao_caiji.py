@@ -197,7 +197,7 @@ def get_log_context(driver_web,count):
 		for  elem in urlarr:	
 			picurl_str		= urlarr[0][len('src="'):len(urlarr[0])-2];
 			print("pic----"+picurl_str)
-			get_file_and_save(picurl_str,'hao123gaoxiao/', count, save_filename)	;		#save_filename[0:len(save_filename)-12]
+			get_file_and_save(picurl_str,'hao123gaoxiao/', count, save_filename[0:len(save_filename)-12])	;		#save_filename[0:len(save_filename)-12]
 			return 2;
 			break;
 			
@@ -242,21 +242,22 @@ def err_log(log_data):
 	with open('haomeizi/'+file_errlog,'a') as f:
 		f.write(log_data+'\n')	
 def exe_main(count):
+	
 	driver1=webdriver.Firefox();
 	driver1.minimize_window();	
 	ret = init_get(driver1,'http://www.hao123.com/gaoxiao/detail/388655');
-	
+	tmp_ct = 0;
 	if ret==0:
 		
-		while(count > 0):
-			count = count -1;
-			ret2 = get_log_context(driver1,count);
+		while(tmp_ct > count):
+			tmp_ct = tmp_ct + 1;
+			ret2 = get_log_context(driver1,tmp_ct);
 			if ret2 == 2:
 				time.sleep(3);
-				get_next_click(driver1,count);
+				get_next_click(driver1,tmp_ct);
 			else:
 				print("err break=" + ret2);
-				break;
+				#break;
 
 	driver1.quit();
 	
@@ -306,7 +307,7 @@ def debug_test():
 			
 if __name__ == '__main__':
 	
-	exe_main(5);
+	exe_main(1);
 	#debug_test();
 	
 	#time.sleep(3);
