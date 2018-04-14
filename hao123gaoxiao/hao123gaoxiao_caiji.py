@@ -5,8 +5,8 @@ import time,os,re,urllib,urllib2,hashlib,sys
 import imghdr;
 #import xlrd,xlwt
 #from xlutils.copy import copy
-#ä½¿ç”¨selenium
-#ä½¿ç”¨seleniumçš„éšè—PhantimJSæµè§ˆå™¨ç™»é™†è´¦å·åŽå¯¹å†…å®¹èŽ·ï¿½?#æ³¨æ„frameä¸Žiframeçš„æ ¼å¼æ¡†åˆ‡æ¢
+#Ê¹ÓÃselenium
+#Ê¹ÓÃseleniumµÄÒþ²ØPhantimJSä¯ÀÀÆ÷µÇÂ½ÕËºÅºó¶ÔÄÚÈÝ»ñ??#×¢ÒâframeÓëiframeµÄ¸ñÊ½¿òÇÐ»»
 #driver = webdriver.PhantomJS(executable_path="E:\\mac\\id\\phantomjs-2.1.1-windows\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe")
 #driver=webdriver.Chrome()
 
@@ -129,17 +129,15 @@ def driver_browser_init(driverweb):
 def create_id():
     m = hashlib.md5(str(time.clock()).encode('utf-8'))
     return m.hexdigest()	
-#é€šè¿‡urlèŽ·å–ç½‘é¡µ
+#Í¨¹ýurl»ñÈ¡ÍøÒ³
 def getHtml(url):
 	#headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
 	headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'}			
 	req = urllib2.Request(url = url, headers = headers)
 	content = urllib2.urlopen(req).read()
 	return content
-	
-pathfile_current='';
-def get_log_context(driver_web,url):
-
+pathfile = "";
+def init_get(driver_web,url):
 	print ('getting  ' + url)
 	#pathfile = create_path_base_url(url)
 	#if len(pathfile)==0:
@@ -147,7 +145,6 @@ def get_log_context(driver_web,url):
 	#	return 0;
 	pathfile = 'hao123gaoxiao/'	
 	print('pathfile='+pathfile)
-	pathfile_current = pathfile;
 	isExists=os.path.exists(pathfile)
 	if isExists:
 		print('already exist');
@@ -162,55 +159,22 @@ def get_log_context(driver_web,url):
 		
 		#elem = driver_web.find_elements_by_id("J_article")
 		#print("find J_article")
-		
+		return 0;
 	except:
 		print ("find J_article err")
 		return -1;
-
-
-	#with open("source_1.txt",'wb') as f:
-	#	f.write(driver_web.page_source)
-	
-	#try:
-	#	driver_web.switch_to.frame(0)
-	#	print("switch tblog ok sleep 3")
-	#	#time.sleep(3);
-	#	time.sleep(10);
-	#except:
-	#	print("switch_to.frame err")
-	#	return -1;
+		
+def get_log_context(driver_web,count):
 
 
 	save_filename = driver_web.title;
 	save_filename= re.compile(r' ').sub('', save_filename);
 	save_filename= re.compile(r'#').sub('', save_filename);
 	#save_filename= save_filename.replace('hao123');
-	#save_filename= save_filename.replace('ä¸Šç½‘å¯¼èˆª');
+	#save_filename= save_filename.replace('ÉÏÍøµ¼º½');
 	
 	print("save_filename="+save_filename);
 
-	
-
-		
-	#with open("source_2.txt",'wb') as f:
-	#	f.write(driver_web.page_source)
-	#div_str = ''
-	#try:
-	#	div_str = driver_web.find_element_by_class_name('brief').get_attribute('innerHTML')
-	#	print ("find brief ")
-    #
-	#except:
-	#	print ("find brief  err")
-	#	return -1;
-	#	
-	#try:
-	#	titlearr = re.findall(r'title=\".*?\"',div_str)
-	#	for  elem in titlearr:
-	#		save_filename = elem[0][len("title=\"")-2];
-	#		print("title->"+save_filename);
-	#		break;
-	#except:
-	#	print("title err");
 
 	try:
 		div_str = driver_web.find_element_by_class_name('pic-content').get_attribute('innerHTML')
@@ -232,54 +196,23 @@ def get_log_context(driver_web,url):
 		urlarr = re.findall(r'src=\".*? ',str_txt)
 		for  elem in urlarr:	
 			picurl_str		= urlarr[0][len('src="'):len(urlarr[0])-2];
-			print("pic-----------------------"+picurl_str)
-			get_file_and_save(picurl_str,pathfile,0, save_filename[0:len(save_filename)-12])			#save_filename[0:len(save_filename)-14]
-			sleep(3);
-			
-			driver.find_element_by_xpath("//div[@id='bd']/div/div/div/div[4]/div[4]/a/div").click();
+			print("pic----"+picurl_str)
+			get_file_and_save(picurl_str,'hao123gaoxiao/', count, save_filename)	;		#save_filename[0:len(save_filename)-12]
+			return 2;
 			break;
+			
 	except:
-		print("pic url find err")
-	
-	
+		print("pic url find err");
 		
-	
-	
-	#try:
-	#	str_txt=div_str
-	#	urlarr = re.findall(r'<img\b.*?src=\".*?>',str_txt)
-	#	sortid = 0;
-	#	for  elem in urlarr:			
-	#		tmp_url_arr = re.findall(r'\simg-src=\".*?\"',elem);
-	#		tmp_url = tmp_url_arr[0].strip()
-	#		tmp_url = tmp_url[len('img-src="'):len(tmp_url)-1]
-	#		print(tmp_url);
-	#		
-	#		file_path_url = get_file_and_save(tmp_url,pathfile,sortid)
-	#		str_txt = str_txt.replace(tmp_url,file_path_url)
-	#		print(file_path_url)
-	#		sortid = sortid + 1
-	#	#delete data-src=src <script></script>
-	#	strinfo = re.compile(r'\ssrc=\"https://gss0.*?\"')
-	#	str_txt = strinfo.sub('', str_txt)
-	#	strinfo = re.compile(r'\swap_url=\".*?\"')
-	#	str_txt = strinfo.sub('', str_txt)
-	#	
-	#	strinfo = re.compile(r'\simg-src=')
-	#	str_txt = strinfo.sub(' src=', str_txt)
-	#	
-	#	str_txt = '<title>'+save_filename+'</title>'+str_txt
-	#	print('find_element_by_id ok')	
-	#	with open(pathfile+"/"+save_filename+".html",'wb') as f:
-	#		f.write(str_txt);
-	#	print(pathfile+" /page_source.html "+'save ok');
-	#except:
-	#	print ("loading pic err");
-	#	return -1;
-	#	
 	return 0;
-	
-	
+def  get_next_click(driver_web,count):
+	try:
+		print("next click ok ct="+str(count));
+		driver_web.find_element_by_xpath("//div[@class='user-act']/div[4]/a/div").click();
+		
+	except:
+		print("next click err ct="+str(count));
+		return -1;
 	
 def get_file_and_save(url, path,sortid, title):
 	cat_img = getHtml(url)
@@ -289,7 +222,7 @@ def get_file_and_save(url, path,sortid, title):
 	
 	filename=str(sortid).zfill(3)+'_'+title+'.'+result
 	
-	pathfilename=path+"/"+filename
+	pathfilename=path+filename
 	
 	with open(pathfilename,'wb') as f:
 		f.write(cat_img)
@@ -308,12 +241,23 @@ file_errlog="hao123_caijilog.log";
 def err_log(log_data):
 	with open('haomeizi/'+file_errlog,'a') as f:
 		f.write(log_data+'\n')	
-def  exe_main():
+def exe_main(count):
 	driver1=webdriver.Firefox();
 	driver1.minimize_window();	
+	ret = init_get(driver1,'http://www.hao123.com/gaoxiao/detail/388655');
 	
-	get_log_context(driver1,'http://www.hao123.com/gaoxiao/detail/388655');
-	
+	if ret==0:
+		
+		while(count > 0):
+			count = count -1;
+			ret2 = get_log_context(driver1,count);
+			if ret2 == 2:
+				time.sleep(3);
+				get_next_click(driver1,count);
+			else:
+				print("err break=" + ret2);
+				break;
+
 	driver1.quit();
 	
 def debug_test():
@@ -362,7 +306,7 @@ def debug_test():
 			
 if __name__ == '__main__':
 	
-	exe_main();
+	exe_main(5);
 	#debug_test();
 	
 	#time.sleep(3);
