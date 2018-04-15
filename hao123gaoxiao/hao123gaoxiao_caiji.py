@@ -1,7 +1,7 @@
 #coding:utf-8
 from selenium import webdriver
 import time,os,re,urllib,urllib2,hashlib,sys
-
+import sqlite3;
 import imghdr;
 #import xlrd,xlwt
 #from xlutils.copy import copy
@@ -24,6 +24,21 @@ import imghdr;
 #driver.minimize_window() 
 reload(sys)
 sys.setdefaultencoding( "utf-8" );
+	
+def sqlite3_con():
+	conn = sqlite3.connect('pic_info.db')
+	print "Opened database successfully";
+	c = conn.cursor()
+	try:
+		c.execute("CREATE TABLE pic_info  (MD5_PIC        TEXT      NOT NULL);")
+		conn.commit()
+		print "Table created successfully";
+	except:
+		print "Table exist";
+	
+	return conn;
+	
+conn=sqlite3_con();
 
 def get_page_links(driverweb,page_num):
 	#try:
@@ -166,15 +181,35 @@ def init_get(driver_web,url):
 		
 def get_log_context(driver_web,count):
 
-
-	save_filename = driver_web.title;
-	save_filename= re.compile(r' ').sub('', save_filename);
-	save_filename= re.compile(r'#').sub('', save_filename);
+	#
+	with open("current_url.txt",'wb') as f:
+		f.write(driver_web.current_url);
+		
+	#save_filename = driver_web.title;
+	#save_filename= re.compile(r' ').sub('', save_filename);
+	#save_filename= re.compile(r'#').sub('', save_filename);
 	#save_filename= save_filename.replace('hao123');
 	#save_filename= save_filename.replace('上网导航');
 	
-	print("save_filename="+save_filename);
+	
 
+	try:
+		div_str = driver_web.find_element_by_class_name('brief').get_attribute('innerHTML')
+		#print ("find brief ok "+div_str);
+		#urlarr = re.findall(r'<a class(\s|\S).*?</a>',div_str);
+		#for  elem in urlarr:
+		elem = div_str;
+		#print(elem)
+		#
+		#print(elem.find(">"));
+		#print(elem.find("<",10));
+		save_filename = elem[elem.find(">")+1:elem.find("<",10)]
+		print("save_filename="+save_filename);				
+		#break;
+	except:
+		print ("find brief  err")
+		return -1;
+		
 
 	try:
 		div_str = driver_web.find_element_by_class_name('pic-content').get_attribute('innerHTML')
@@ -186,8 +221,8 @@ def get_log_context(driver_web,count):
 	#  <div class="brief">([\s\S]*?)</div>
 	# <div class="pic-content">([\s\S]*?)</div>
 
-	with open("J_article_src.txt",'wb') as f:
-		f.write(div_str);
+	#with open("J_article_src.txt",'wb') as f:
+	#	f.write(div_str);
 		
 	str_txt=div_str
 	
@@ -197,7 +232,7 @@ def get_log_context(driver_web,count):
 		for  elem in urlarr:	
 			picurl_str		= urlarr[0][len('src="'):len(urlarr[0])-2];
 			print("pic----"+picurl_str)
-			get_file_and_save(picurl_str,'hao123gaoxiao/', count, save_filename[0:len(save_filename)-12])	;		#save_filename[0:len(save_filename)-12]
+			get_file_and_save(picurl_str,'hao123gaoxiao/', count, save_filename);		#save_filename[0:len(save_filename)-12]
 			return 2;
 			break;
 			
@@ -217,19 +252,27 @@ def  get_next_click(driver_web,count):
 def get_file_and_save(url, path,sortid, title):
 	cat_img = getHtml(url)
 	print ("down load ok")
-
-	result = imghdr.what('',cat_img);
 	
-	filename=str(sortid).zfill(3)+'_'+title+'.'+result
+	md5obj = hashlib.md5();
+	md5obj.update(cat_img);
+	hash = md5obj.hexdigest();
+	print(hash);
 	
-	pathfilename=path+filename
-	
-	with open(pathfilename,'wb') as f:
-		f.write(cat_img)
-		print("save pic ok, "+pathfilename)	
-	return filename
-	
-	
+	ret = insert_pic_info(conn, hash)
+	if ret == 1:
+		result = imghdr.what('',cat_img);
+		
+		filename=str(sortid).zfill(3)+'_'+title+'.'+result
+		
+		pathfilename=path+filename
+		
+		with open(pathfilename,'wb') as f:
+			f.write(cat_img)
+			print("save pic ok, "+pathfilename)	
+		return filename
+	else:
+		print ("pic already exist");
+		return ""
 
 def create_path_base_url(url):
 	strid = re.findall(r'/haomeizi/[0-9]*',url)#haomeizi/1109
@@ -242,23 +285,30 @@ def err_log(log_data):
 	with open('haomeizi/'+file_errlog,'a') as f:
 		f.write(log_data+'\n')	
 def exe_main(count):
+
 	
 	driver1=webdriver.Firefox();
 	driver1.minimize_window();	
-	ret = init_get(driver1,'http://www.hao123.com/gaoxiao/detail/388655');
+	with open("current_url.txt",'r') as f:
+		str_txt=f.read()
+	if (len(str_txt) ==0):
+		print("start url is null");
+		return ;
+	ret = init_get(driver1,str_txt);
 	tmp_ct = 0;
 	if ret==0:
 		
-		while(tmp_ct > count):
+		while(tmp_ct < count):
 			tmp_ct = tmp_ct + 1;
 			ret2 = get_log_context(driver1,tmp_ct);
 			if ret2 == 2:
-				time.sleep(3);
+				time.sleep(9);
 				get_next_click(driver1,tmp_ct);
 			else:
-				print("err break=" + ret2);
+				print("err break=" + str(ret2));
 				#break;
-
+	else:
+		print("init_get err");
 	driver1.quit();
 	
 def debug_test():
@@ -302,12 +352,33 @@ def debug_test():
 		#		f.write(str_txt)
 		#except:
 		#	print('save err')
+
+
+def insert_pic_info(cnn_hd, md5):
+	#select 是否存在,不存在则插入
+	flag = 0;
+	c = cnn_hd.cursor()
+	#c.execute("insert into pic_info values('"+md5+"')");
+	#return;
+	sql_select =  "select MD5_PIC from pic_info where MD5_PIC='"+md5+"';";
+	print(sql_select)
+	cursor =  c.execute(sql_select);	
+	rslt = len(cursor.fetchall());
+	print("count ="+str(rslt));
 	
-			
-			
+	if rslt == 0:
+		print("no item,can insert");
+		c.execute("insert into pic_info values('"+md5+"')");
+		print("insert sucess");	
+		flag = 1;
+	else:
+		print(md5+" is exist");
+		flag = 0;
+	cnn_hd.commit()
+	return flag;	
 if __name__ == '__main__':
 	
-	exe_main(1);
+	exe_main(300);
 	#debug_test();
 	
 	#time.sleep(3);
