@@ -1,0 +1,28 @@
+1.去官网下载 Python2.7
+https://www.python.org/downloads/windows/ 选择Python2.7
+然后下载 64bit 安装包Windows x86-64 MSI installer
+
+2.下载 geckodriver 
+https://github.com/mozilla/geckodriver/releases 选择 v0.19.1 
+geckodriver-v0.19.1-win64.zip安装包
+说明:此驱动是selenium 驱动 Firefox浏览器用的
+
+3.Firefox浏览器下载 http://www.firefox.com.cn/ 去官网下载即可
+
+4.安装 Python2.7 双击 下一步...直到完成
+
+5.右击桌面 '我的电脑'->'属性'->'高级系统设置' ->'环境变量'(按钮) ->'系统变量里面找到Path'
+在后面追加 ';C:\Python27;C:\Python27\Scripts' 注意';' 分号
+点击开始菜单 输入 cmd ; 然后 在dos 输入 python 回车已经安装好了Python2.7的环境
+
+6.将 geckodriver 解压放置在 C:\Python27 下面
+7.安装Firefox浏览器最新版本 
+
+8.配置 Python插件 selenium 
+	直接在dos 输入 pip install selenium自动会安装完成
+9.至此Python +selenium的爬虫环境已经完成可以 运行Python爬虫软件
+
+
+
+
+
