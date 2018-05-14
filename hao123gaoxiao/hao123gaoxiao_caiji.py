@@ -274,7 +274,7 @@ def insert_pic_info(cnn_hd, md5):
 	cnn_hd.commit()
 	return flag;	
 if __name__ == '__main__':
-	
+	#输入一次采集的数量300
 	exe_main(300);
 	#debug_test();
 	
