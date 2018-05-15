@@ -13,18 +13,14 @@ import imghdr;
 #driver.set_preference('network.proxy.type', 1)
 #driver.set_preference('network.proxy.http', '127.0.0.1')
 #driver.set_preference('network.proxy.http_port', 17890)
-#driver.maximize_window() 
+#driver.maximize_window()
 
 
-driver1=webdriver.Firefox();
-driver1.minimize_window();
 
-driver=webdriver.Firefox()
-driver.minimize_window() 
 reload(sys)
 sys.setdefaultencoding( "utf-8" );
 
-def get_page_links(page_num):
+def get_page_links(driver_web, page_num):
 	if page_num!='1':
 		print('get page='+page_num+'data');
 		driver.find_element_by_xpath("//input[starts-with(@id,'pageIndex_input')]").click()
@@ -68,7 +64,7 @@ def get_page_links(page_num):
 			
 			#pathfile = create_path_base_url(url);
 			try:
-				rslt = get_log_context(driver1,url_context,str_title,page_num);
+				rslt = get_log_context(driver_web,url_context,str_title,page_num);
 				if rslt == -1:
 					err_log('page='+page_num+','+url_context);					
 					os.system("rm "+pathfile_current+' -rf');
@@ -80,12 +76,12 @@ def get_page_links(page_num):
 	except:
 		print('find links err');
 
-def driver_browser_init():
+def driver_browser_init(driver_web):
 	rstl = 0
 	url = 'https://user.qzone.qq.com/822989010/2';
 	#url = 'file:///home/bcg/samba/test/selenium/page_source_frame.html'
 	try:
-		driver.get(url);	
+		driver_web.get(url);	
 		print("get  "+url+'  ok' );
 	except:
 		print('get url err');
@@ -93,7 +89,7 @@ def driver_browser_init():
 		
 	try:
 		
-		driver.switch_to.frame(0);		
+		driver_web.switch_to.frame(0);		
 		print('switch frame 0 ok,sleep 10');
 		time.sleep(10);
 		#driver.implicitly_wait(10);		
@@ -271,18 +267,20 @@ def debug_test():
 			
 			
 if __name__ == '__main__':
-	
-	#work_path='E:\\0930\\WWWW.csv'
+	#用来抓取指定文章的内容
+	driver1=webdriver.Firefox();
+	driver1.minimize_window();
+	#用来提取页面文章链接,和页面跳转
+	driver=webdriver.Firefox();
+	driver.minimize_window();
 	try:
-		rslt = driver_browser_init();
+		rslt = driver_browser_init(driver);#初始化入口页面
 		if rslt == 0:
 			#for page_num in range(25,27):				
-			page_num = 139;
-			get_page_links(str(page_num));
-			page_num = 140;
-			get_page_links(str(page_num));
-			
-			#os.system("mv  page* blog_data");	
+			page_num = 10;#页码
+			get_page_links(driver1,str(page_num));#提取当前页的所有文章链接
+			#page_num = 2;#页码
+			#get_page_links(driver1,str(page_num));
 
 		else:
 			print('driver_browser_init');
@@ -292,5 +290,4 @@ if __name__ == '__main__':
 	#debug_test()	
 
 	driver1.quit();
-
 	driver.quit();
