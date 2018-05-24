@@ -121,7 +121,7 @@ def  get_next_click(driver_web,count):
 	try:
 		print("next click ok ct="+str(count));
 		#driver_web.find_element_by_xpath("//div[@class='cp-pagenavi']/div[4]/a/div").click();
-		driver.find_element_by_xpath("//div[@id='comments']/div[2]/div[3]/a[2]").click()
+		driver_web.find_element_by_xpath("//div[@id='comments']/div[2]/div[3]/a[2]").click()
 	except:
 		print("next click err ct="+str(count));
 		return -1;
@@ -151,17 +151,7 @@ def get_file_and_save(url, path,sortid):
 		print ("pic already exist");
 		return ""
 
-def create_path_base_url(url):
-	strid = re.findall(r'/haomeizi/[0-9]*',url)#haomeizi/1109
-	path = strid[0][10:len(strid[0])]
-	return path
-
-
-file_errlog="hao123_caijilog.log";
-def err_log(log_data):
-	with open('haomeizi/'+file_errlog,'a') as f:
-		f.write(log_data+'\n')	
-#运行主函数
+#---------------------------运行主函数------------------------------
 def exe_main(count):
 
 	#浏览器驱动变量,控制浏览器的
@@ -197,7 +187,6 @@ def debug_test():
 	#	return
 	#pathfile = './'+pathfile	
 	#print('pathfile='+pathfile)
-	
 	
 	with open("J_article_src.txt",'r') as f:
 		str_txt=f.read()
