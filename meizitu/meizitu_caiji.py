@@ -44,14 +44,15 @@ conn=sqlite3_con();
 
 def create_id():
     m = hashlib.md5(str(time.clock()).encode('utf-8'))
-    return m.hexdigest()	
+    return m.hexdigest();
+	
 #通过url获取图片
 def getHtml(url):
 	#headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
-	headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'}			
-	req = urllib2.Request(url = url, headers = headers)
-	content = urllib2.urlopen(req).read()
-	return content
+	headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'};			
+	req = urllib2.Request(url = url, headers = headers);
+	content = urllib2.urlopen(req).read();
+	return content;
 	
 pathfile = 'MEIZITU/';
 def init_get(driver_web,url):
@@ -80,7 +81,7 @@ def init_get(driver_web,url):
 		print ("find J_article err")
 		return -1;
 #获取网页内容并提取图片保存		
-def get_log_context(driver_web,count):
+def get_log_context(driver_web, count):
 
 	#
 	with open("current_url.txt",'wb') as f:
@@ -102,18 +103,20 @@ def get_log_context(driver_web,count):
 		for  elem in urlarr:
 			urlpic = re.findall(r'http[\s\S]*?\"',elem);
 			if len(urlpic) > 0:
-				picurl_str = urlpic[0];#[0:len(urlpic[0])-1];
+				picurl_str = urlpic[0][0:len(urlpic[0])-1];
 				print('getting pic url='+picurl_str);
 				#获取保存图片
-				picname = get_file_and_save(picurl_str, pathfile, count);
-				print('getting pic name='+picname);
+				try:
+					get_file_and_save(picurl_str, pathfile, count);
+				except:
+					print("get_file_and_save err");
 			else:
 				print("no find url");
 
 	except:
 		print ("getting  pic err");
 		
-	return 0;
+	return 2;
 	
 	
 #点击下一页函数
@@ -126,10 +129,10 @@ def  get_next_click(driver_web,count):
 		print("next click err ct="+str(count));
 		return -1;
 	
-def get_file_and_save(url, path,sortid):
+def get_file_and_save(url, path, sortid):
 	cat_img = getHtml(url)
 	print ("down load ok")
-	
+
 	md5obj = hashlib.md5();
 	md5obj.update(cat_img);
 	hash = md5obj.hexdigest();
