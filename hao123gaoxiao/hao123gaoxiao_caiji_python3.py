@@ -1,8 +1,9 @@
 #coding:utf-8
 from selenium import webdriver
-import time,os,re,urllib,urllib2,hashlib,sys
+import time,os,re,urllib,hashlib,sys;
 import sqlite3;
 import imghdr;
+import urllib.request;
 #import xlrd,xlwt
 #from xlutils.copy import copy
 #使用selenium
@@ -17,24 +18,19 @@ import imghdr;
 #driver.maximize_window() 
 
 
-#driver1=webdriver.Firefox();
-#driver1.minimize_window();
-
-#driver=webdriver.Firefox()
-#driver.minimize_window() 
-reload(sys)
-sys.setdefaultencoding( "utf-8" );
+#reload(sys)
+#sys.setdefaultencoding( "utf-8" );
 	
 def sqlite3_con():
 	conn = sqlite3.connect('pic_info.db')
-	print "Opened database successfully";
+	print ("Opened database successfully");
 	c = conn.cursor()
 	try:
 		c.execute("CREATE TABLE pic_info  (MD5_PIC        TEXT      NOT NULL);")
 		conn.commit()
-		print "Table created successfully";
+		print ("Table created successfully");
 	except:
-		print "Table exist";
+		print ("Table exist");
 	
 	return conn;
 	
@@ -44,14 +40,15 @@ conn=sqlite3_con();
 
 def create_id():
     m = hashlib.md5(str(time.clock()).encode('utf-8'))
-    return m.hexdigest()	
+    return m.hexdigest();
+	
 #通过url获取图片
 def getHtml(url):
 	#headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
-	headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'}			
-	req = urllib2.Request(url = url, headers = headers)
-	content = urllib2.urlopen(req).read()
-	return content
+	headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'};			
+	req = urllib.request.Request(url = url, headers = headers);
+	content =  urllib.request.urlopen(req).read();
+	return content;
 	
 pathfile = "";
 def init_get(driver_web,url):
@@ -84,7 +81,7 @@ def init_get(driver_web,url):
 def get_log_context(driver_web,count):
 
 	#
-	with open("current_url.txt",'wb') as f:
+	with open("current_url.txt",'w') as f:
 		f.write(driver_web.current_url);
 	try:
 		div_str = driver_web.find_element_by_class_name('brief').get_attribute('innerHTML')
@@ -208,48 +205,6 @@ def exe_main(count):
 		print("init_get err");
 	driver1.quit();
 	
-def debug_test():
-	#pathfile = create_path_base_url('https://user.qzone.qq.com/822989010/blog/1488525103')
-	#if len(pathfile)==0:
-	#	print("get path from url err")
-	#	return
-	#pathfile = './'+pathfile	
-	#print('pathfile='+pathfile)
-	
-	
-	with open("J_article_src.txt",'r') as f:
-		str_txt=f.read()
-		#print(str_txt);
-		#urlarr = re.findall(r'data-src=".*?"',str_txt)
-		urlarr = re.findall(r'brief([\s\S]*?)</div>',str_txt)
-		for  elem in urlarr:			
-			#tmp_url = elem[len('data-src=')+1:len(elem)-1]
-			#file_path_url = get_file_and_save(tmp_url,pathfile)
-			#print(file_path_url)
-			#str_txt = str_txt.replace(tmp_url,file_path_url)
-			print("-----------------------");
-			title_urlarr = re.findall(r'title=\".*?>',elem);
-			print(title_urlarr[0])
-			print("-----------------------");
-			
-		urlarr = re.findall(r'pic-content([\s\S]*?)</div>',str_txt)
-		for  elem in urlarr:			
-			#tmp_url = elem[len('data-src=')+1:len(elem)-1]
-			#file_path_url = get_file_and_save(tmp_url,pathfile)
-			#print(file_path_url)
-			#str_txt = str_txt.replace(tmp_url,file_path_url)
-			print("-----------------------");
-			
-			pic_urlarr = re.findall(r'src=\".*? ',elem);
-			print(pic_urlarr[0])
-			print("-----------------------");
-			break;
-		#try:
-		#	with open(pathfile+"/page_source_31.html",'wb') as f:
-		#		f.write(str_txt)
-		#except:
-		#	print('save err')
-
 
 def insert_pic_info(cnn_hd, md5):
 	#select 是否存在,不存在则插入
@@ -275,11 +230,4 @@ def insert_pic_info(cnn_hd, md5):
 	return flag;	
 if __name__ == '__main__':
 	#输入一次采集的数量300
-	exe_main(300);
-	#debug_test();
-	
-	#time.sleep(3);
-
-
-
-	#driver.quit();
+	exe_main(30);
