@@ -1,4 +1,5 @@
 #coding:utf-8
+# -*- coding: UTF-8 -*-
 from selenium import webdriver
 import time,os,re,urllib,urllib2,hashlib,sys
 import sqlite3;
@@ -27,14 +28,14 @@ sys.setdefaultencoding( "utf-8" );
 	
 def sqlite3_con():
 	conn = sqlite3.connect('pic_info.db')
-	print "Opened database successfully";
+	print ("Opened database successfully");
 	c = conn.cursor()
 	try:
 		c.execute("CREATE TABLE pic_info  (MD5_PIC        TEXT      NOT NULL);")
 		conn.commit()
-		print "Table created successfully";
+		print ("Table created successfully");
 	except:
-		print "Table exist";
+		print ("Table exist");
 	
 	return conn;
 	
@@ -120,11 +121,13 @@ def get_log_context(driver_web, count):
 	
 	
 #点击下一页函数
-def  get_next_click(driver_web,count):
+def  get_next_click(driver,count):
 	try:
+		#selenium 定位下一页的按钮并点击,此地方需要根据网站的变化进行调试,
+		#driver.find_element_by_xpath("//div[@class='cp-pagenavi']/a[6]").click();
+		#driver.find_element_by_xpath("//div[@id='comments']/div[2]/div/a[5]").click();
+		driver.find_element_by_xpath("//a[@class='previous-comment-page']").click()
 		print("next click ok ct="+str(count));
-		#driver_web.find_element_by_xpath("//div[@class='cp-pagenavi']/div[4]/a/div").click();
-		driver_web.find_element_by_xpath("//div[@id='comments']/div[2]/div[3]/a[2]").click()
 	except:
 		print("next click err ct="+str(count));
 		return -1;
@@ -166,64 +169,26 @@ def exe_main(count):
 		print("start url is null");
 		return ;
 	ret = init_get(driver1,str_txt);
+	
+
 	tmp_ct = 0;
+
+	
 	if ret==0:
 		
 		while(tmp_ct < count):
 			tmp_ct = tmp_ct + 1;
 			ret2 = get_log_context(driver1,tmp_ct);#获取当前网页的图片
 			if ret2 == 2:
-				time.sleep(3);
+				time.sleep(2);
 				get_next_click(driver1,tmp_ct);#点击下一页
-				time.sleep(6);#点击完成延时等待网页
+				time.sleep(3);#点击完成延时等待网页
 			else:
 				print("err break=" + str(ret2));
 				#break;
 	else:
 		print("init_get err");
 	driver1.quit();
-	
-def debug_test():
-	#pathfile = create_path_base_url('https://user.qzone.qq.com/822989010/blog/1488525103')
-	#if len(pathfile)==0:
-	#	print("get path from url err")
-	#	return
-	#pathfile = './'+pathfile	
-	#print('pathfile='+pathfile)
-	
-	with open("J_article_src.txt",'r') as f:
-		str_txt=f.read()
-		#print(str_txt);
-		#urlarr = re.findall(r'data-src=".*?"',str_txt)
-		urlarr = re.findall(r'brief([\s\S]*?)</div>',str_txt)
-		for  elem in urlarr:			
-			#tmp_url = elem[len('data-src=')+1:len(elem)-1]
-			#file_path_url = get_file_and_save(tmp_url,pathfile)
-			#print(file_path_url)
-			#str_txt = str_txt.replace(tmp_url,file_path_url)
-			print("-----------------------");
-			title_urlarr = re.findall(r'title=\".*?>',elem);
-			print(title_urlarr[0])
-			print("-----------------------");
-			
-		urlarr = re.findall(r'pic-content([\s\S]*?)</div>',str_txt)
-		for  elem in urlarr:			
-			#tmp_url = elem[len('data-src=')+1:len(elem)-1]
-			#file_path_url = get_file_and_save(tmp_url,pathfile)
-			#print(file_path_url)
-			#str_txt = str_txt.replace(tmp_url,file_path_url)
-			print("-----------------------");
-			
-			pic_urlarr = re.findall(r'src=\".*? ',elem);
-			print(pic_urlarr[0])
-			print("-----------------------");
-			break;
-		#try:
-		#	with open(pathfile+"/page_source_31.html",'wb') as f:
-		#		f.write(str_txt)
-		#except:
-		#	print('save err')
-
 
 def insert_pic_info(cnn_hd, md5):
 	#select 是否存在,不存在则插入
@@ -249,5 +214,5 @@ def insert_pic_info(cnn_hd, md5):
 	return flag;	
 if __name__ == '__main__':
 	#输入一次采集的数量300
-	exe_main(3);
+	exe_main(2);
 
