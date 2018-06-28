@@ -195,9 +195,9 @@ def exe_main(count):
 			tmp_ct = tmp_ct + 1;
 			ret2 = get_log_context(driver1,tmp_ct);#获取当前网页的图片
 			if ret2 == 2:
-				time.sleep(3);
+				time.sleep(2);
 				get_next_click(driver1,tmp_ct);#点击下一页
-				time.sleep(6);#点击完成延时等待网页 此时间可以根据网络速度调整 ,越小采集速度越快.不能为0
+				time.sleep(3);#点击完成延时等待网页 此时间可以根据网络速度调整 ,越小采集速度越快.不能为0
 			else:
 				print("err break=" + str(ret2));
 				#break;
@@ -230,4 +230,4 @@ def insert_pic_info(cnn_hd, md5):
 	return flag;	
 if __name__ == '__main__':
 	#输入一次采集的数量300
-	exe_main(30);
+	exe_main(50);
