@@ -61,10 +61,11 @@ def getHtml(url):
 	return content
 	
 pathfile_current='';
+#下载网页
 def get_log_context(driver_web,url):
 
 	print ('getting  ' + url)
-
+	#先创建一个目录
 	pathfile = 'caicai_weixin/'+create_id();	
 	print('pathfile='+pathfile)
 	pathfile_current = pathfile;
@@ -76,7 +77,7 @@ def get_log_context(driver_web,url):
 		#os.system("mkdir -p "+pathfile)
 		os.makedirs(pathfile); 
 
-	
+	#打开url地址
 	try:
 		driver_web.get(url)
 		#print (driver_web.page_source)		
@@ -100,21 +101,22 @@ def get_log_context(driver_web,url):
 	#	print("switch_to.frame err")
 	#	return -1;
 
-
+	#获取当前网页的标题
 	save_filename = driver_web.title;
 	save_filename= re.compile(r' ').sub('', save_filename);
 	save_filename= re.compile(r'#').sub('', save_filename);
 	
-
+	#查找html里面的元素标签,浏览器F12可以看到相关标签信息
 	div_str = ''
 	try:
 		div_str = driver_web.find_element_by_id('js_content').get_attribute('innerHTML')
 	except:
 		print ("find js_content  err")
 		return -1;
-		
+	#保存一下标签的html文本 ,调试用,无其他用途可以关闭
 	with open("js_content.txt",'wb') as f:
 		f.write(div_str);
+	#利用正则find 匹配查找到图片的url地址然后下载
 	try:
 		str_txt=div_str
 		urlarr = re.findall(r'<img\b.*?data-src=\".*?>',str_txt)
