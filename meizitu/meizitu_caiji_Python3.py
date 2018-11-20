@@ -1,9 +1,10 @@
 #coding:utf-8
 # -*- coding: UTF-8 -*-
 from selenium import webdriver
-import time,os,re,urllib,urllib2,hashlib,sys
+import time,os,re,urllib,hashlib,sys;
 import sqlite3;
 import imghdr;
+import urllib.request;
 #import xlrd,xlwt
 #from xlutils.copy import copy
 #使用selenium
@@ -18,13 +19,8 @@ import imghdr;
 #driver.maximize_window() 
 
 
-#driver1=webdriver.Firefox();
-#driver1.minimize_window();
-
-#driver=webdriver.Firefox()
-#driver.minimize_window() 
-reload(sys)
-sys.setdefaultencoding( "utf-8" );
+#reload(sys)
+#sys.setdefaultencoding( "utf-8" );
 	
 def sqlite3_con():
 	conn = sqlite3.connect('pic_info.db')
@@ -51,8 +47,8 @@ def create_id():
 def getHtml(url):
 	#headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
 	headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'};			
-	req = urllib2.Request(url = url, headers = headers);
-	content = urllib2.urlopen(req).read();
+	req = urllib.request.Request(url = url, headers = headers);
+	content =  urllib.request.urlopen(req).read();
 	return content;
 	
 pathfile = 'MEIZITU/';
@@ -85,7 +81,7 @@ def init_get(driver_web,url):
 def get_log_context(driver_web, count):
 
 	#
-	with open("current_url.txt",'wb') as f:
+	with open("current_url.txt",'w') as f:
 		f.write(driver_web.current_url);
 	div_str = ''
 	try:
@@ -214,5 +210,5 @@ def insert_pic_info(cnn_hd, md5):
 	return flag;	
 if __name__ == '__main__':
 	#输入一次采集的数量300
-	exe_main(2);
+	exe_main(6);
 

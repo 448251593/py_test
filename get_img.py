@@ -1,15 +1,23 @@
-import requests;
+#import requests;
 import os;
 import re;
 import imghdr;
+import time,os,re,urllib,hashlib,sys;
 
-def url_open(url):
-    headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'}
-    req = requests.get(url,headers=headers)
-    return req.content;
-
+import urllib.request;
+#def url_open(url):
+#    headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'}
+#    req = requests.get(url,headers=headers)
+#    return req.content;
+	
+def getHtml(url):
+	#headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'}
+	headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'};			
+	req = urllib.request.Request(url = url, headers = headers);
+	content =  urllib.request.urlopen(req).read();
+	return content;
 def  main():
-	cat_img = url_open("https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3332982453,1637075014&fm=27&gp=0.jpg");
+	cat_img = getHtml("http://wx4.sinaimg.cn/mw600/0076BSS5ly1fs3xe3vd00j31kw11x1ky.jpg");
 	
 	result = imghdr.what('',cat_img);	
 	filename='test1.'+result;

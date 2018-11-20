@@ -270,17 +270,14 @@ if __name__ == '__main__':
 	#用来抓取指定文章的内容
 	driver1=webdriver.Firefox();
 	driver1.minimize_window();
-	#用来提取页面文章链接,和页面跳转
+	#用来采集 指定页 文章链接,和页面跳转
 	driver=webdriver.Firefox();
 	driver.minimize_window();
 	try:
 		rslt = driver_browser_init(driver);#初始化入口页面
 		if rslt == 0:
-			#for page_num in range(25,27):				
-			page_num = 10;#页码
-			get_page_links(driver1,str(page_num));#提取当前页的所有文章链接
-			#page_num = 2;#页码
-			#get_page_links(driver1,str(page_num));
+			for page_num in range(11,12):#页码范围				
+				get_page_links(driver1,str(page_num));#提取当前页的所有文章链接
 
 		else:
 			print('driver_browser_init');
