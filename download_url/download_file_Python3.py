@@ -78,15 +78,17 @@ def get_file_and_save(url,  sortid):
 
 
 #---------------------------运行主函数------------------------------
-def exe_main(startid , endid):
+def exe_main(url_addr, startid , endid):
 
 	tmp_ct = startid;
-
-	url_addr = "https://m001.m1m2m3u8mp4.com/F0604/yrza/yrza"
+	#000.ts
+	
+	
 	url_suffix = ".ts"
-		
+	print(url_addr[0:-5]);
+
 	while(tmp_ct <= endid):
-		ret2 = get_log_context(url_addr +str(tmp_ct).zfill(3) + url_suffix,tmp_ct);#获取当前网页的图片
+		ret2 = get_log_context(url_addr[0:-5] + str(tmp_ct).zfill(3) + url_suffix,tmp_ct);#获取当前网页的图片
 		if ret2 == 2:
 			# time.sleep(1);
 			print("ok")
@@ -94,10 +96,11 @@ def exe_main(startid , endid):
 			print("err break=" + str(ret2));
 			#break;
 		tmp_ct = tmp_ct + 1;
-
-
+	os.system("copy /b *.ts all.ts");
+	
 
 if __name__ == '__main__':
-	#输入一次采集的数量300
-	exe_main(210, 212);
+	#根据m3u8文件信息填充现在文件的间隔
+	url_addr = "https://m001.m1m2m3u8mp4.com/F0604/yrza/yrza.m3u8"
+	exe_main(url_addr,000, 2);
 
