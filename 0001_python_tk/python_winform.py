@@ -4,7 +4,7 @@ import platform
 import tkinter
 import time
 import hashlib
-from tkinter.constants import END
+from tkinter.constants import END, LEFT, RIDGE, RIGHT, SW, TOP, Y
 
 
 LOG_LINE_NUM = 0
@@ -24,14 +24,13 @@ class MY_GUI():
 		scn_w, scn_h = self.init_window_name.maxsize()
 		curWidth = scn_w/2# 1680
 		curHight = scn_h/2#681
-
+		print(curWidth)
+		print(curHight)
 
 		# 计算中心坐标
 		cen_x = (scn_w- curWidth) / 2;
 		cen_y = (scn_h-curHight) / 2;
-		# cen_x = (scn_w[0] - curWidth) / 2;
-		# cen_y = (scn_h[0] - curHight) / 2;
-		# print(scn_w[0], scn_h[0])
+
 
 		# 设置窗口初始大小和位置
 		size_xy = '%dx%d+%d+%d' % (curWidth, curHight, cen_x, cen_y)
@@ -42,23 +41,37 @@ class MY_GUI():
 		#self.init_window_name.attributes("-alpha",0.9)                          #虚化，值越小虚化程度越高
 		#标签
 		self.init_data_label = tkinter.Label(self.init_window_name, text="待处理数据")
-		self.init_data_label.grid(row=0, column=0)
-		self.init_data_Text = tkinter.Text(self.init_window_name, width=67, height=15)  #原始数据录入框
-		self.init_data_Text.grid(row=1, column=0, rowspan=10, columnspan=10)
+		self.init_data_label.grid(row=0, column=0);
 
-		self.result_data_label = tkinter.Label(self.init_window_name, text="输出结果")
-		self.result_data_label.grid(row=0, column=1)
-		self.log_label = tkinter.Label(self.init_window_name, text="日志")
-		self.log_label.grid(row=12, column=0)
+		self.init_data_Text = tkinter.Text(self.init_window_name,height=10)  #原始数据录入框
+		self.init_data_Text.insert(1.0,"11111")
+		self.init_data_Text.grid(row=1, column=0);
+
 		#文本框
+		self.log_label = tkinter.Label(self.init_window_name, text="日志")
+		self.log_label.grid(row=2, column=0);
+		self.log_data_Text = tkinter.Text(self.init_window_name,height= 10)  # 日志框
+		self.log_data_Text.insert(1.0,"2222")
+		self.log_data_Text.grid(row=3, column=0, padx=5);
 
-		self.result_data_Text = tkinter.Text(self.init_window_name, width=70, height=19)  #处理结果展示
-		self.result_data_Text.grid(row=1, column=12, rowspan=15, columnspan=10)
-		self.log_data_Text = tkinter.Text(self.init_window_name, width=66, height=9)  # 日志框
-		self.log_data_Text.grid(row=13, column=0, columnspan=10)
+
+
 		#按钮
 		self.str_trans_to_md5_button = tkinter.Button(self.init_window_name, text="字符串转MD5", bg="lightblue", width=10,command=self.str_trans_to_md5)  # 调用内部方法  加()为直接调用
-		self.str_trans_to_md5_button.grid(row=1, column=11)
+		self.str_trans_to_md5_button.grid(row=1, column=1, padx=5);
+
+		self.result_data_label = tkinter.Label(self.init_window_name, text="输出结果")
+		self.result_data_label.grid(row=0, column=2,padx=5);
+		self.result_data_Text = tkinter.Text(self.init_window_name ,height= 10)  #处理结果展示
+		self.result_data_Text.insert(1.0,"3333")
+		self.result_data_Text.grid(row=1, column=2,padx=5);
+
+
+
+
+
+
+
 
 
 
