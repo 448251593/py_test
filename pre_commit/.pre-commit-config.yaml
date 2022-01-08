@@ -1,0 +1,16 @@
+fail_fast: false
+repos:
+  # - repo: https://github.com/pocc/pre-commit-hooks
+  - repo: https://gitee.com/bcg_448251593/pre-commit-hooks.git
+    rev: master
+    hooks:
+      #- id: clang-format
+        #args: [ -style=file ]
+      # - id: clang-tidy
+      # - id: oclint
+      # - id: uncrustify
+      # - id: cppcheck
+      - id: cpplint
+        # args: [--filter=-whitespace/braces,-legal/copyright ]
+        args: [ --verbose=2 ,'--filter=-readability/multiline_comment,-runtime/printf,-whitespace/parens, -whitespace/newline,-whitespace/braces,-whitespace/line_length,-whitespace/comments,-whitespace/todo,-legal/copyright,-build/include_subdir,-build/include_order,-readability/utf8', ]
+      # - id: include-what-you-use
