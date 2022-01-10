@@ -4359,15 +4359,15 @@ def CheckBraces_vs(filename, clean_lines, linenum, error):
 
   line = clean_lines.elided[linenum]        # get rid of comments and strings
 
-  if Match(r'.+{\s*$', line) and (Search(r'if|for|else|switch|case|do|while', line)):
-	#   prevline = GetPreviousNonBlankLine(clean_lines, linenum)[0]
-	#   if (not Search(r'[,;:}{(]\s*$', prevline) and
-	# 	not Match(r'\s*#', prevline) and
-	# 	not (GetLineWidth(prevline) > _line_length - 2 and '[]' in prevline)):
-	# 	error(filename, linenum, 'whitespace/braces', 4,
-	# 		'{ should almost always be at the end of the previous line')
+  # if Match(r'.+{\s*$', line) and (Search(r'if|for|else|switch|case|do|while', line)):
+  if (Match(r'.+{\s*$', line) ) and (len(line.replace(" ", ""))!=1):
 	  error(filename, linenum, 'whitespace/braces', 4,
-	  '{ should be on one line')
+	  '{  should be on one line')
+
+  if ( Match(r'.+}\s*$', line)) and (len(line.replace(" ", ""))!=1):
+	  error(filename, linenum, 'whitespace/braces', 4,
+	  ' } should be on one line')
+
 
     # prevline = GetPreviousNonBlankLine(clean_lines, linenum)[0]
     # if (not Search(r'[,;:}{(]\s*$', prevline) and
