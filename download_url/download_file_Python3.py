@@ -96,11 +96,17 @@ def exe_main(url_addr, startid , endid):
 			print("err break=" + str(ret2));
 			#break;
 		tmp_ct = tmp_ct + 1;
-	os.system("copy /b *.ts all.ts");
+	# os.system("copy /b *.ts all.ts");
+	# ffmpeg -i all.ts -vcodec copy -acodec copy -f mp4 all.mp4
 	
 
 if __name__ == '__main__':
 	#根据m3u8文件信息填充现在文件的间隔
-	url_addr = "https://m001.m1m2m3u8mp4.com/F0604/yrza/yrza.m3u8"
-	exe_main(url_addr,000, 2);
+	# url_addr = "https://m001.m1m2m3u8mp4.com/F0929/amgd/amgd.m3u8"
+	print(sys.argv[0])
+	print(sys.argv[1])
+	print(sys.argv[2])
+	print(sys.argv[3])
+	url_addr = sys.argv[1]
+	exe_main(url_addr,int(sys.argv[2]), int(sys.argv[3]));
 
